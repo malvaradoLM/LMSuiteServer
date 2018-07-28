@@ -150,7 +150,7 @@ namespace RPSuiteServer
             return Res;
         }
 
-<<<<<<< HEAD
+
         //public int GuardaDocumentoNuevo(TDocumentoNuevo Datos)
         //{
         //    //string[] Params;
@@ -187,7 +187,7 @@ namespace RPSuiteServer
 
         //    return Res;
         //}
-=======
+
         public int GuardaDocumentoNuevo(TDocumentoNuevo Datos)
         {
             //string[] Params;
@@ -224,7 +224,7 @@ namespace RPSuiteServer
 
             return Res;
         }
->>>>>>> parent of d67a937... Implementacion CrearConsumo
+
 
 
         public TCliente BuscarCliente(int clienteID)
@@ -366,7 +366,7 @@ namespace RPSuiteServer
             }
             return res;
         }
-<<<<<<< HEAD
+
 
         public bool CrearConsumo(TConsumo Datos)
         {
@@ -444,7 +444,7 @@ namespace RPSuiteServer
         }
 
        
-=======
->>>>>>> parent of d67a937... Implementacion CrearConsumo
+
+
     }
 }
