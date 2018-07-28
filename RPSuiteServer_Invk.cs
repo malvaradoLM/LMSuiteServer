@@ -105,25 +105,6 @@ namespace RPSuiteServer {
                 @__ObjectDisposer.Dispose();
             }
         }
-        public static void Invoke_GuardaDocumentoNuevo(RemObjects.SDK.IROService @__Instance, RemObjects.SDK.IMessage @__Message, RemObjects.SDK.Server.IServerChannelInfo @__ServerChannelInfo, out RemObjects.SDK.Server.ResponseOptions @__oResponseOptions)
-        {
-            RemObjects.SDK.ObjectDisposer @__ObjectDisposer = new RemObjects.SDK.ObjectDisposer(1);
-            try
-            {
-                TDocumentoNuevo Datos = ((TDocumentoNuevo)(@__Message.Read("Datos", typeof(TDocumentoNuevo), RemObjects.SDK.StreamingFormat.Default)));
-                @__ObjectDisposer.Add(Datos);
-                int Result;
-                Result = ((IRPDataService)(@__Instance)).GuardaDocumentoNuevo(Datos);
-                @__Message.InitializeResponseMessage(@__ServerChannelInfo, "RPSuiteServer", "RPDataService", "GuardaDocumentoNuevoResponse");
-                @__Message.WriteInt32("Result", Result);
-                @__Message.FinalizeMessage();
-                @__oResponseOptions = RemObjects.SDK.Server.ResponseOptions.roDefault;
-            }
-            finally
-            {
-                @__ObjectDisposer.Dispose();
-            }
-        }
         public static void Invoke_BuscarCliente(RemObjects.SDK.IROService @__Instance, RemObjects.SDK.IMessage @__Message, RemObjects.SDK.Server.IServerChannelInfo @__ServerChannelInfo, out RemObjects.SDK.Server.ResponseOptions @__oResponseOptions) {
             RemObjects.SDK.ObjectDisposer @__ObjectDisposer = new RemObjects.SDK.ObjectDisposer(1);
             try {
@@ -139,6 +120,20 @@ namespace RPSuiteServer {
             finally {
                 @__ObjectDisposer.Dispose();
             }
+        }
+        public static void Invoke_EntregarPremio(RemObjects.SDK.IROService @__Instance, RemObjects.SDK.IMessage @__Message, RemObjects.SDK.Server.IServerChannelInfo @__ServerChannelInfo, out RemObjects.SDK.Server.ResponseOptions @__oResponseOptions) {
+            int ClienteID = @__Message.ReadInt32("ClienteID");
+            string Descripcion = @__Message.ReadAnsiString("Descripcion");
+            double cargo = @__Message.ReadDouble("cargo");
+            double Abono = @__Message.ReadDouble("Abono");
+            string Observaciones = @__Message.ReadAnsiString("Observaciones");
+            int PuntosPremioID = @__Message.ReadInt32("PuntosPremioID");
+            bool Result;
+            Result = ((IRPDataService)(@__Instance)).EntregarPremio(ClienteID, Descripcion, cargo, Abono, Observaciones, PuntosPremioID);
+            @__Message.InitializeResponseMessage(@__ServerChannelInfo, "RPSuiteServer", "RPDataService", "EntregarPremioResponse");
+            @__Message.WriteBoolean("Result", Result);
+            @__Message.FinalizeMessage();
+            @__oResponseOptions = RemObjects.SDK.Server.ResponseOptions.roDefault;
         }
     }
     [System.Reflection.ObfuscationAttribute(Exclude=true, ApplyToMembers=false)]

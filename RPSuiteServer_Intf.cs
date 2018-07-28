@@ -1787,7 +1787,7 @@ namespace RPSuiteServer {
         int Folio(string Campo, string Serie);
         int GuardaClienteNuevo(TClienteNuevo Datos);
         TCliente BuscarCliente(int ClienteID);
-        int GuardaDocumentoNuevo(TDocumentoNuevo Datos);
+        bool EntregarPremio(int ClienteID, string Descripcion, double cargo, double Abono, string Observaciones, int PuntosPremioID);
     }
     public partial class RPDataService_Proxy : RemObjects.DataAbstract.Server.DataAbstractService_Proxy, IRPDataService {
         public RPDataService_Proxy(RemObjects.SDK.IMessage message, RemObjects.SDK.IClientChannel clientChannel) : 
@@ -1886,23 +1886,6 @@ namespace RPSuiteServer {
                 this.@__ClearMessage(@__LocalMessage);
             }
         }
-        public virtual int GuardaDocumentoNuevo(TDocumentoNuevo Datos)
-        {
-            RemObjects.SDK.IMessage @__LocalMessage = this.@__GetMessage();
-            try
-            {
-                @__LocalMessage.InitializeRequestMessage(this.ClientChannel, "RPSuiteServer", this.ActiveInterfaceName, "GuardaDocumentoNuevo");
-                @__LocalMessage.Write("Datos", Datos, typeof(TDocumentoNuevo), RemObjects.SDK.StreamingFormat.Default);
-                @__LocalMessage.FinalizeMessage();
-                this.ClientChannel.Dispatch(@__LocalMessage);
-                int _Result = @__LocalMessage.ReadInt32("Result");
-                return _Result;
-            }
-            finally
-            {
-                this.@__ClearMessage(@__LocalMessage);
-            }
-        }
         public virtual TCliente BuscarCliente(int ClienteID) {
             RemObjects.SDK.IMessage @__LocalMessage = this.@__GetMessage();
             try {
@@ -1911,6 +1894,25 @@ namespace RPSuiteServer {
                 @__LocalMessage.FinalizeMessage();
                 this.ClientChannel.Dispatch(@__LocalMessage);
                 TCliente _Result = ((TCliente)(@__LocalMessage.Read("Result", typeof(TCliente), RemObjects.SDK.StreamingFormat.Default)));
+                return _Result;
+            }
+            finally {
+                this.@__ClearMessage(@__LocalMessage);
+            }
+        }
+        public virtual bool EntregarPremio(int ClienteID, string Descripcion, double cargo, double Abono, string Observaciones, int PuntosPremioID) {
+            RemObjects.SDK.IMessage @__LocalMessage = this.@__GetMessage();
+            try {
+                @__LocalMessage.InitializeRequestMessage(this.ClientChannel, "RPSuiteServer", this.ActiveInterfaceName, "EntregarPremio");
+                @__LocalMessage.WriteInt32("ClienteID", ClienteID);
+                @__LocalMessage.WriteAnsiString("Descripcion", Descripcion);
+                @__LocalMessage.WriteDouble("cargo", cargo);
+                @__LocalMessage.WriteDouble("Abono", Abono);
+                @__LocalMessage.WriteAnsiString("Observaciones", Observaciones);
+                @__LocalMessage.WriteInt32("PuntosPremioID", PuntosPremioID);
+                @__LocalMessage.FinalizeMessage();
+                this.ClientChannel.Dispatch(@__LocalMessage);
+                bool _Result = @__LocalMessage.ReadBoolean("Result");
                 return _Result;
             }
             finally {
@@ -1951,6 +1953,9 @@ namespace RPSuiteServer {
         System.IAsyncResult BeginBuscarCliente(int ClienteID, System.AsyncCallback @__Callback, object @__UserData);
         TCliente EndBuscarCliente(System.IAsyncResult @__AsyncResult);
         System.Threading.Tasks.Task<TCliente> BuscarClienteAsync(int ClienteID);
+        System.IAsyncResult BeginEntregarPremio(int ClienteID, string Descripcion, double cargo, double Abono, string Observaciones, int PuntosPremioID, System.AsyncCallback @__Callback, object @__UserData);
+        bool EndEntregarPremio(System.IAsyncResult @__AsyncResult);
+        System.Threading.Tasks.Task<bool> EntregarPremioAsync(int ClienteID, string Descripcion, double cargo, double Abono, string Observaciones, int PuntosPremioID);
     }
     public partial class RPDataService_AsyncProxy : RemObjects.DataAbstract.Server.DataAbstractService_AsyncProxy, IRPDataService_Async {
         public RPDataService_AsyncProxy(RemObjects.SDK.IMessage message, RemObjects.SDK.IClientChannel clientChannel) : 
@@ -2135,6 +2140,37 @@ namespace RPSuiteServer {
         public virtual System.Threading.Tasks.Task<TCliente> BuscarClienteAsync(int ClienteID) {
             return System.Threading.Tasks.Task<TCliente>.Factory.FromAsync(this.BeginBuscarCliente(ClienteID, null, null), new System.Func<System.IAsyncResult, TCliente>(this.EndBuscarCliente));
         }
+        public virtual System.IAsyncResult BeginEntregarPremio(int ClienteID, string Descripcion, double cargo, double Abono, string Observaciones, int PuntosPremioID, System.AsyncCallback @__Callback, object @__UserData) {
+            RemObjects.SDK.IMessage @__LocalMessage = this.@__GetMessage();
+            try {
+                @__LocalMessage.InitializeRequestMessage(this.ClientChannel, "RPSuiteServer", this.ActiveInterfaceName, "EntregarPremio");
+                @__LocalMessage.WriteInt32("ClienteID", ClienteID);
+                @__LocalMessage.WriteAnsiString("Descripcion", Descripcion);
+                @__LocalMessage.WriteDouble("cargo", cargo);
+                @__LocalMessage.WriteDouble("Abono", Abono);
+                @__LocalMessage.WriteAnsiString("Observaciones", Observaciones);
+                @__LocalMessage.WriteInt32("PuntosPremioID", PuntosPremioID);
+                @__LocalMessage.FinalizeMessage();
+                return this.ClientChannel.AsyncDispatch(@__LocalMessage, @__Callback, @__UserData);
+            }
+            catch (System.Exception ex) {
+                this.@__ClearMessage(@__LocalMessage);
+                throw ex;
+            }
+        }
+        public virtual bool EndEntregarPremio(System.IAsyncResult @__AsyncResult) {
+            RemObjects.SDK.IMessage @__LocalMessage = ((RemObjects.SDK.IClientAsyncResult)(@__AsyncResult)).Message;
+            try {
+                bool Result = @__LocalMessage.ReadBoolean("Result");
+                return Result;
+            }
+            finally {
+                this.@__ClearMessage(@__LocalMessage);
+            }
+        }
+        public virtual System.Threading.Tasks.Task<bool> EntregarPremioAsync(int ClienteID, string Descripcion, double cargo, double Abono, string Observaciones, int PuntosPremioID) {
+            return System.Threading.Tasks.Task<bool>.Factory.FromAsync(this.BeginEntregarPremio(ClienteID, Descripcion, cargo, Abono, Observaciones, PuntosPremioID, null, null), new System.Func<System.IAsyncResult, bool>(this.EndEntregarPremio));
+        }
     }
     public class CoRPDataServiceAsync {
         public static IRPDataService_Async Create(RemObjects.SDK.IMessage message, RemObjects.SDK.IClientChannel clientChannel) {
@@ -2148,172 +2184,6 @@ namespace RPSuiteServer {
         }
         public static IRPDataService_Async Create(string url) {
             return new RPDataService_AsyncProxy(url);
-        }
-    }
-    [System.Serializable()]
-    [RemObjects.SDK.Remotable(ActivatorClass = typeof(TDocumentoNuevo_Activator))]
-    [System.Reflection.ObfuscationAttribute(Exclude = true)]
-    public partial class TDocumentoNuevo : RemObjects.SDK.Types.ComplexType
-    {
-        private int @__DocumentoId;
-        private DateTime @__Fecha;
-        private string @__Observaciones;
-        private string @__Imagen;
-        private int @__EmpleadoId;
-        private int @__TipoDocumentoId;
-        private int @__UsuarioId;
-        
-        
-        public virtual int DocumentoId
-        {
-            get
-            {
-                return @__DocumentoId;
-            }
-            set
-            {
-                @__DocumentoId = value;
-                this.TriggerPropertyChanged("DocumentoID");
-            }
-        }
-        [RemObjects.SDK.StreamAs(RemObjects.SDK.StreamingFormat.AnsiString)]
-        public virtual DateTime Fecha
-        {
-            get
-            {
-                return @__Fecha;
-            }
-            set
-            {
-                @__Fecha = value;
-                this.TriggerPropertyChanged("Fecha");
-            }
-        }
-        [RemObjects.SDK.StreamAs(RemObjects.SDK.StreamingFormat.WideString)]
-        public virtual string Observaciones
-        {
-            get
-            {
-                return @__Observaciones;
-            }
-            set
-            {
-                @__Observaciones = value;
-                this.TriggerPropertyChanged("Observaciones");
-            }
-        }
-        [RemObjects.SDK.StreamAs(RemObjects.SDK.StreamingFormat.AnsiString)]
-        public virtual string Imagen
-        {
-            get
-            {
-                return @__Imagen;
-            }
-            set
-            {
-                @__Imagen = value;
-                this.TriggerPropertyChanged("Imagen");
-            }
-        }
-        //[RemObjects.SDK.StreamAs(RemObjects.SDK.StreamingFormat.AnsiString)]
-        public virtual int EmpleadoId
-        {
-            get
-            {
-                return @__EmpleadoId;
-            }
-            set
-            {
-                @__EmpleadoId = value;
-                this.TriggerPropertyChanged("EmpleadoID");
-            }
-        }
-        //[RemObjects.SDK.StreamAs(RemObjects.SDK.StreamingFormat.AnsiString)]
-        public virtual int TipoDocumentoId
-        {
-            get
-            {
-                return @__TipoDocumentoId;
-            }
-            set
-            {
-                @__TipoDocumentoId = value;
-                this.TriggerPropertyChanged("TipoDocumentoID");
-            }
-        }
-        //[RemObjects.SDK.StreamAs(RemObjects.SDK.StreamingFormat.AnsiString)]
-        public virtual int UsuarioId
-        {
-            get
-            {
-                return @__UsuarioId;
-            }
-            set
-            {
-                @__UsuarioId = value;
-                this.TriggerPropertyChanged("UsuarioID");
-            }
-        }
-
-        public override void ReadComplex(RemObjects.SDK.Serializer serializer)
-        {
-            if (serializer.RecordStrictOrder)
-            {
-                this.DocumentoId = serializer.ReadInt32("DocumentoID");
-                this.Fecha = serializer.ReadDateTime("Fecha");
-                this.Observaciones = serializer.ReadWideString("Observaciones");
-                this.Imagen = serializer.ReadAnsiString("Imagen");
-                //this.Imagen = (byte[])serializer.ReadObject("Imagen", typeof(byte[]));
-                this.EmpleadoId = serializer.ReadInt32("EmpleadoID");
-                this.TipoDocumentoId = serializer.ReadInt32("TipoDocumentoID");
-                this.UsuarioId = serializer.ReadInt32("UsuarioID");
-            }
-            else
-            {
-                this.DocumentoId = serializer.ReadInt32("DocumentoID");
-                this.Fecha = serializer.ReadDateTime("Fecha");
-                this.Observaciones = serializer.ReadWideString("Observaciones");
-                this.Imagen = serializer.ReadWideString("Imagen");
-                //this.Imagen = (byte[])serializer.ReadObject("Imagen", typeof(byte[]));
-                this.EmpleadoId = serializer.ReadInt32("EmpleadoID");
-                this.TipoDocumentoId = serializer.ReadInt32("TipoDocumentoID");
-                this.UsuarioId = serializer.ReadInt32("UsuarioID");
-            }
-        }
-        public override void WriteComplex(RemObjects.SDK.Serializer serializer)
-        {
-            if (serializer.RecordStrictOrder)
-            {
-                serializer.WriteInt32("DocumentoID", this.DocumentoId);
-                serializer.WriteDateTime("Fecha", this.Fecha);
-                serializer.WriteWideString("Observaciones", this.Observaciones);
-                //serializer.WriteObject("Imagen", this.Imagen);
-                serializer.WriteAnsiString("Imagen", this.Imagen);
-                serializer.WriteInt32("EmpleadoID", this.EmpleadoId);
-                serializer.WriteInt32("TipoDocumentoID", this.TipoDocumentoId);
-                serializer.WriteInt32("UsuarioID", this.UsuarioId);
-            }
-            else
-            {
-                serializer.WriteInt32("DocumentoID", this.DocumentoId);
-                serializer.WriteDateTime("Fecha", this.Fecha);
-                serializer.WriteWideString("Observaciones", this.Observaciones);
-                serializer.WriteWideString("Imagen", this.Imagen);
-                serializer.WriteInt32("EmpleadoID", this.EmpleadoId);
-                serializer.WriteInt32("TipoDocumentoID", this.TipoDocumentoId);
-                serializer.WriteInt32("UsuarioID", this.UsuarioId);
-            }
-        }
-    }
-    [System.Reflection.ObfuscationAttribute(Exclude = true, ApplyToMembers = false)]
-    public class TDocumentoNuevo_Activator : object, RemObjects.SDK.ITypeActivator
-    {
-        public TDocumentoNuevo_Activator()
-        {
-        }
-        public object CreateInstance()
-        {
-            return new TDocumentoNuevo();
         }
     }
 }

@@ -327,5 +327,23 @@ namespace RPSuiteServer
             }
             return res;
         }
+
+
+        public bool EntregarPremio(int ClienteID,string Descripcion, double Cargo, double Abono, string Observaciones,int PuntosPremioID)
+        {
+            IDbCommand command;
+            using (IDataReader reader = this.ServiceSchema.GetDataReader(this.Connection, "spFolio", new string[] { "Campo", "Serie" }, new object[] { "user", "password" }, out command))
+            {
+                while (reader.Read())
+                {
+
+
+                    // do something
+                }
+            }
+            return false;
+        }
+
+       
     }
 }
