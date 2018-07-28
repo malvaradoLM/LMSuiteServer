@@ -152,7 +152,6 @@ namespace RPSuiteServer
 
         //public int GuardaDocumentoNuevo(TDocumentoNuevo Datos)
         //{
-        //
         //    //string[] Params;
         //    //Params = new string[32];
         //    Datos.DocumentoId = Folio("DocumentoID", "");
