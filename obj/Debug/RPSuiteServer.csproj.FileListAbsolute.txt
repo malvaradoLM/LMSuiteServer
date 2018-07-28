@@ -233,6 +233,7 @@ C:\LM2\LMSuiteServer\bin\Debug\RemObjects.SDK.ZeroConf.pdb
 C:\LM2\LMSuiteServer\bin\Debug\RemObjects.SDK.ZLib.pdb
 C:\LM2\LMSuiteServer\bin\Debug\RemObjects.DataAbstract.pdb
 C:\LM2\LMSuiteServer\bin\Debug\RemObjects.DataAbstract.Server.pdb
+C:\LM2\LMSuiteServer\obj\Debug\RPSuiteServer.csprojResolveAssemblyReference.cache
 C:\LM2\LMSuiteServer\obj\Debug\RPSuiteServer.RPDataService.resources
 C:\LM2\LMSuiteServer\obj\Debug\RPSuiteServer.RPLoginService.resources
 C:\LM2\LMSuiteServer\obj\Debug\RPSuiteServer.Engine.resources
