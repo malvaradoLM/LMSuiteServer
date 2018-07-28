@@ -1,7 +1,7 @@
 <TDASchema>
   <UnionDataTables IsObject="true" Count="0" IsCollection="true" Type="TDAUnionDataTableCollection" ItemClass="TDAUnionDataTable" />
   <JoinDataTables IsObject="true" Count="0" IsCollection="true" Type="TDAJoinDataTableCollection" ItemClass="TDAJoinDataTable" />
-  <Datasets IsObject="true" Count="37" IsCollection="true" Type="TDADatasetCollection" ItemClass="TDADataset">
+  <Datasets IsObject="true" Count="36" IsCollection="true" Type="TDADatasetCollection" ItemClass="TDADataset">
     <Item0>
       <ReadOnly>False</ReadOnly>
       <Fields IsObject="true" Count="44" IsCollection="true" ItemClass="TDAField" Type="TDASchemaFieldCollection">
@@ -14865,6 +14865,7 @@ WHERE
       <Description />
       <Name>spCatUsuario</Name>
     </Item35>
+<<<<<<< HEAD
     <Item36>
       <ReadOnly>False</ReadOnly>
 <<<<<<< HEAD
@@ -16714,6 +16715,631 @@ DocumentoID
       <Name>InsertaDocumentoNuevo</Name>
     </Item3>
     <Item4>
+=======
+  </Datasets>
+  <Commands IsObject="true" Count="6" IsCollection="true" ItemClass="TDASQLCommand" Type="TDASQLCommandCollection">
+    <Item0>
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
+      <BusinessRulesServer Type="TDABusinessRuleScript" IsObject="true">
+        <Script />
+        <ScriptLanguageStr />
+        <Description />
+        <Name />
+      </BusinessRulesServer>
+      <Statements IsCollection="true" IsObject="true" Count="0" ItemClass="TDAStatement" Type="TDAStatementCollection" />
+      <Params IsObject="true" Count="0" IsCollection="true" Type="TDAParamCollection" ItemClass="TDAParam" />
+      <CustomAttributes />
+      <IsPublic>True</IsPublic>
+      <DynamicWhereXML>Insert into UsuarioID</DynamicWhereXML>
+      <BusinessClassID />
+      <Description />
+      <Name>NewCommand</Name>
+    </Item0>
+    <Item1>
+      <BusinessRulesServer Type="TDABusinessRuleScript" IsObject="true">
+        <Script />
+        <ScriptLanguageStr />
+        <Description />
+        <Name />
+      </BusinessRulesServer>
+      <Statements IsCollection="true" IsObject="true" Count="1" ItemClass="TDAStatement" Type="TDAStatementCollection">
+        <Item0>
+          <Connection>RPSuite</Connection>
+          <SQL>Insert Into Cliente
+(
+ ClienteID
+ ,Codigo
+ ,Nombre
+ ,Grupo
+ ,Calle
+ ,Colonia
+ ,Ciudad
+ ,Telefono
+ ,CodigoPostal
+ ,RFC
+ ,Curp
+ ,status
+ ,AutorizaCheque
+ ,TicketBoucher
+ ,AutorizaValeCredito
+ ,LimiteCredito
+ ,email
+ ,Localidad
+ ,Estado
+ ,NoExterior
+ ,NoInterior
+  ,CuentaBancaria
+ 
+ )
+ Values
+ (
+ :ClienteID
+ ,:Codigo
+ ,:Nombre
+ ,:Grupo
+ ,:Calle
+ ,:Colonia
+ ,:Ciudad
+ ,:Telefono
+ ,:CodigoPostal
+ ,:RFC
+ ,:Curp
+ ,:status
+ ,:AutorizaCheque
+ ,:TicketBoucher
+ ,:AutorizaValeCredito
+ ,:LimiteCredito
+ ,:email
+ ,:Localidad
+ ,:Estado
+ ,:NoExterior
+ ,:NoInterior
+  ,:CuentaBancaria
+ 
+ )</SQL>
+          <TargetTable>Cliente</TargetTable>
+          <ConnectionType>SQLite</ConnectionType>
+          <Default>True</Default>
+          <StatementName />
+          <StatementType>stSQL</StatementType>
+          <GeneratorName />
+          <ColumnMappings IsObject="true" Count="0" IsCollection="true" Type="TDAColumnMappingCollection" ItemClass="TDAColumnMapping" />
+          <Description />
+        </Item0>
+      </Statements>
+      <Params IsObject="true" Count="22" IsCollection="true" Type="TDAParamCollection" ItemClass="TDAParam">
+        <Item0>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>ClienteID</Name>
+          <DataType>datInteger</DataType>
+          <Size>0</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item0>
+        <Item1>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>Codigo</Name>
+          <DataType>datString</DataType>
+          <Size>10</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item1>
+        <Item2>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>Nombre</Name>
+          <DataType>datString</DataType>
+          <Size>80</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item2>
+        <Item3>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>Grupo</Name>
+          <DataType>datString</DataType>
+          <Size>30</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item3>
+        <Item4>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>Calle</Name>
+          <DataType>datString</DataType>
+          <Size>60</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item4>
+        <Item5>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>Colonia</Name>
+          <DataType>datString</DataType>
+          <Size>60</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item5>
+        <Item6>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>Ciudad</Name>
+          <DataType>datString</DataType>
+          <Size>30</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item6>
+        <Item7>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>Telefono</Name>
+          <DataType>datString</DataType>
+          <Size>20</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item7>
+        <Item8>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>CodigoPostal</Name>
+          <DataType>datString</DataType>
+          <Size>5</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item8>
+        <Item9>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>RFC</Name>
+          <DataType>datString</DataType>
+          <Size>15</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item9>
+        <Item10>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>Curp</Name>
+          <DataType>datString</DataType>
+          <Size>20</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item10>
+        <Item11>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>status</Name>
+          <DataType>datBoolean</DataType>
+          <Size>0</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item11>
+        <Item12>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>AutorizaCheque</Name>
+          <DataType>datBoolean</DataType>
+          <Size>0</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item12>
+        <Item13>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>TicketBoucher</Name>
+          <DataType>datBoolean</DataType>
+          <Size>0</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item13>
+        <Item14>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>AutorizaValeCredito</Name>
+          <DataType>datBoolean</DataType>
+          <Size>0</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item14>
+        <Item15>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>LimiteCredito</Name>
+          <DataType>datFloat</DataType>
+          <Size>0</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item15>
+        <Item16>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>email</Name>
+          <DataType>datString</DataType>
+          <Size>100</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item16>
+        <Item17>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>Localidad</Name>
+          <DataType>datString</DataType>
+          <Size>300</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item17>
+        <Item18>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>Estado</Name>
+          <DataType>datString</DataType>
+          <Size>30</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item18>
+        <Item19>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>NoExterior</Name>
+          <DataType>datString</DataType>
+          <Size>10</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item19>
+        <Item20>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>NoInterior</Name>
+          <DataType>datString</DataType>
+          <Size>10</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item20>
+        <Item21>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>CuentaBancaria</Name>
+          <DataType>datString</DataType>
+          <Size>50</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item21>
+      </Params>
+      <CustomAttributes />
+      <IsPublic>True</IsPublic>
+      <DynamicWhereXML />
+      <BusinessClassID />
+      <Description />
+      <Name>InsertarClienteNuevo</Name>
+    </Item1>
+    <Item2>
+      <BusinessRulesServer Type="TDABusinessRuleScript" IsObject="true">
+        <Script />
+        <ScriptLanguageStr />
+        <Description />
+        <Name />
+      </BusinessRulesServer>
+      <Statements IsCollection="true" IsObject="true" Count="1" ItemClass="TDAStatement" Type="TDAStatementCollection">
+        <Item0>
+          <Connection>RPSuite</Connection>
+          <SQL>SELECT
+  ClienteID
+ ,Codigo
+ ,Nombre
+ ,Grupo
+ ,Calle
+ ,Colonia
+ ,Ciudad
+ ,Telefono
+ ,CodigoPostal
+ ,RFC
+ ,Curp
+ ,Status
+ ,AutorizaCheque
+ ,TicketBoucher
+ ,AutorizaValeCredito
+ ,CuentaContableAnticipo
+ ,CuentaContableCredito
+ ,LimiteCredito
+ ,Credito
+ ,DiasCredito
+ ,NIP
+ ,FacturayLiquidacion
+ ,ApellidoPaterno
+ ,ApellidoMaterno
+ ,Nombres
+ ,email
+ ,Nacimiento
+ ,Referencia
+ ,Telefonos
+ ,FacturaExpress
+ ,Saldo
+ ,PuntosCategoriaID
+ ,Localidad
+ ,Estado
+ ,NoExterior
+ ,NoInterior
+ ,Actualizado
+ ,CuentaBancaria
+ ,Sexo
+ ,Clasificacion
+ ,INE
+ ,INETipoProceso
+ ,INETipoComite
+ ,INEidContabilidad
+ ,INEClaveEntidad
+ ,INEEntidadAmbito
+ ,INEEntidadidContabilidad
+ ,UUID
+FROM dbo.Cliente 
+WHERE 
+  ClienteID=:ClienteID</SQL>
+          <TargetTable>Cliente</TargetTable>
+          <ConnectionType>SQLite</ConnectionType>
+          <Default>True</Default>
+          <StatementName />
+          <StatementType>stSQL</StatementType>
+          <GeneratorName />
+          <ColumnMappings IsObject="true" Count="0" IsCollection="true" Type="TDAColumnMappingCollection" ItemClass="TDAColumnMapping" />
+          <Description />
+        </Item0>
+      </Statements>
+      <Params IsObject="true" Count="1" IsCollection="true" Type="TDAParamCollection" ItemClass="TDAParam">
+        <Item0>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>ClienteID</Name>
+          <DataType>datInteger</DataType>
+          <Size>0</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item0>
+      </Params>
+      <CustomAttributes />
+      <IsPublic>True</IsPublic>
+      <DynamicWhereXML />
+      <BusinessClassID />
+      <Description />
+      <Name>cmdBuscarCliente</Name>
+    </Item2>
+    <Item3>
+      <BusinessRulesServer Type="TDABusinessRuleScript" IsObject="true">
+        <Script />
+        <ScriptLanguageStr />
+        <Description />
+        <Name />
+      </BusinessRulesServer>
+      <Statements IsCollection="true" IsObject="true" Count="1" ItemClass="TDAStatement" Type="TDAStatementCollection">
+        <Item0>
+          <Connection>RPSuite</Connection>
+          <SQL>Insert Into Documento
+(
+DocumentoID
+ ,Fecha
+ ,Observaciones
+ ,Imagen
+ ,EmpleadoID
+ ,TipoDocumentoID
+ ,UsuarioID
+ 
+ )
+ Values
+ (
+  :DocumentoID
+ ,:Fecha
+ ,:Observaciones
+ ,:Imagen
+ ,:EmpleadoID
+ ,:TipoDocumentoID
+ ,:UsuarioID
+ 
+ 
+ )</SQL>
+          <TargetTable>Documento</TargetTable>
+          <ConnectionType>SQLite</ConnectionType>
+          <Default>True</Default>
+          <StatementName />
+          <StatementType>stSQL</StatementType>
+          <GeneratorName />
+          <ColumnMappings IsObject="true" Count="0" IsCollection="true" Type="TDAColumnMappingCollection" ItemClass="TDAColumnMapping" />
+          <Description />
+        </Item0>
+      </Statements>
+      <Params IsObject="true" Count="7" IsCollection="true" Type="TDAParamCollection" ItemClass="TDAParam">
+        <Item0>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>DocumentoID</Name>
+          <DataType>datInteger</DataType>
+          <Size>0</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item0>
+        <Item1>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>Fecha</Name>
+          <DataType>datDateTime</DataType>
+          <Size>0</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item1>
+        <Item2>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>Observaciones</Name>
+          <DataType>datWideString</DataType>
+          <Size>65536</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item2>
+        <Item3>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>Imagen</Name>
+          <DataType>datBlob</DataType>
+          <Size>0</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtBlob</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item3>
+        <Item4>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>EmpleadoID</Name>
+          <DataType>datInteger</DataType>
+          <Size>0</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item4>
+        <Item5>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>TipoDocumentoID</Name>
+          <DataType>datInteger</DataType>
+          <Size>0</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item5>
+        <Item6>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>UsuarioID</Name>
+          <DataType>datInteger</DataType>
+          <Size>0</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item6>
+      </Params>
+      <CustomAttributes />
+      <IsPublic>True</IsPublic>
+      <DynamicWhereXML />
+      <BusinessClassID />
+      <Description />
+      <Name>InsertaDocumentoNuevo</Name>
+    </Item3>
+    <Item4>
       <BusinessRulesServer Type="TDABusinessRuleScript" IsObject="true">
         <Script />
         <ScriptLanguageStr />
@@ -16858,494 +17484,6 @@ DetallePedidoID
       <Description />
       <Name>cmdGuardarDireccion</Name>
     </Item5>
-    <Item6>
-      <BusinessRulesServer Type="TDABusinessRuleScript" IsObject="true">
-        <Script />
-        <ScriptLanguageStr />
-        <Description />
-        <Name />
-      </BusinessRulesServer>
-      <Statements IsCollection="true" IsObject="true" Count="1" ItemClass="TDAStatement" Type="TDAStatementCollection">
-        <Item0>
-          <Connection>RPSuite</Connection>
-          <SQL>Insert Into Consumo
-(
-SecuenciaVenta, 
-Serie,
-EstacionID, 
-FechaMovimiento, 
-FechaCarga, 
-Ejercicio, 
-Periodo, 
-Dia,
-Turno, 
-Kilometraje,
-Tarjeta, 
-PosicionCarga, 
-Cantidad,
-Precio,
-Importe, 
-ImpuestoImporte, 
-ImpuestoPorcentaje,
-ManualAutomatico, 
-Facturado,
-EnIngresos,
-Auditado, 
-FacturaID,
-ProductoID,
-GasolineroID, 
-ClienteID,
-VehiculoID, 
-IEPS, 
-Rendimiento,
-ID,
-FechaCaptura
- 
- )
- Values
- (
- :SecuenciaVenta, 
-:Serie,
-:EstacionID, 
-:FechaMovimiento, 
-:FechaCarga, 
-:Ejercicio, 
-:Periodo, 
-:Dia,
-:Turno, 
-:Kilometraje,
-:Tarjeta, 
-:PosicionCarga, 
-:Cantidad,
-:Precio,
-:Importe, 
-:ImpuestoImporte, 
-:ImpuestoPorcentaje,
-:ManualAutomatico, 
-:Facturado,
-:EnIngresos,
-:Auditado, 
-:FacturaID,
-:ProductoID,
-:GasolineroID, 
-:ClienteID,
-:VehiculoID, 
-:IEPS, 
-:Rendimiento,
-:ID,
-:FechaCaptura
- 
- 
- )</SQL>
-          <TargetTable>Consumo</TargetTable>
-          <ConnectionType>SQLite</ConnectionType>
-          <Default>True</Default>
-          <StatementName />
-          <StatementType>stSQL</StatementType>
-          <GeneratorName />
-          <ColumnMappings IsObject="true" Count="0" IsCollection="true" Type="TDAColumnMappingCollection" ItemClass="TDAColumnMapping" />
-          <Description />
-        </Item0>
-      </Statements>
-      <Params IsObject="true" Count="30" IsCollection="true" Type="TDAParamCollection" ItemClass="TDAParam">
-        <Item0>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>SecuenciaVenta</Name>
-          <DataType>datInteger</DataType>
-          <Size>0</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item0>
-        <Item1>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>Serie</Name>
-          <DataType>datString</DataType>
-          <Size>5</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item1>
-        <Item2>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>EstacionID</Name>
-          <DataType>datInteger</DataType>
-          <Size>0</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item2>
-        <Item3>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>FechaMovimiento</Name>
-          <DataType>datDateTime</DataType>
-          <Size>0</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item3>
-        <Item4>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>FechaCarga</Name>
-          <DataType>datDateTime</DataType>
-          <Size>0</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item4>
-        <Item5>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>Ejercicio</Name>
-          <DataType>datInteger</DataType>
-          <Size>0</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item5>
-        <Item6>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>Periodo</Name>
-          <DataType>datInteger</DataType>
-          <Size>0</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item6>
-        <Item7>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>Dia</Name>
-          <DataType>datInteger</DataType>
-          <Size>0</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item7>
-        <Item8>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>Turno</Name>
-          <DataType>datInteger</DataType>
-          <Size>0</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item8>
-        <Item9>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>Kilometraje</Name>
-          <DataType>datInteger</DataType>
-          <Size>0</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item9>
-        <Item10>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>Tarjeta</Name>
-          <DataType>datString</DataType>
-          <Size>50</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item10>
-        <Item11>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>PosicionCarga</Name>
-          <DataType>datInteger</DataType>
-          <Size>0</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item11>
-        <Item12>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>Cantidad</Name>
-          <DataType>datFloat</DataType>
-          <Size>0</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item12>
-        <Item13>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>Precio</Name>
-          <DataType>datFloat</DataType>
-          <Size>0</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item13>
-        <Item14>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>Importe</Name>
-          <DataType>datFloat</DataType>
-          <Size>0</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item14>
-        <Item15>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>ImpuestoImporte</Name>
-          <DataType>datFloat</DataType>
-          <Size>0</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item15>
-        <Item16>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>ImpuestoPorcentaje</Name>
-          <DataType>datFloat</DataType>
-          <Size>0</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item16>
-        <Item17>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>ManualAutomatico</Name>
-          <DataType>datString</DataType>
-          <Size>1</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item17>
-        <Item18>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>Facturado</Name>
-          <DataType>datBoolean</DataType>
-          <Size>0</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item18>
-        <Item19>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>EnIngresos</Name>
-          <DataType>datBoolean</DataType>
-          <Size>0</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item19>
-        <Item20>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>Auditado</Name>
-          <DataType>datBoolean</DataType>
-          <Size>0</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item20>
-        <Item21>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>FacturaID</Name>
-          <DataType>datInteger</DataType>
-          <Size>0</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item21>
-        <Item22>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>ProductoID</Name>
-          <DataType>datInteger</DataType>
-          <Size>0</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item22>
-        <Item23>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>GasolineroID</Name>
-          <DataType>datInteger</DataType>
-          <Size>0</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item23>
-        <Item24>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>ClienteID</Name>
-          <DataType>datInteger</DataType>
-          <Size>0</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item24>
-        <Item25>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>VehiculoID</Name>
-          <DataType>datInteger</DataType>
-          <Size>0</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item25>
-        <Item26>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>IEPS</Name>
-          <DataType>datFloat</DataType>
-          <Size>0</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item26>
-        <Item27>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>Rendimiento</Name>
-          <DataType>datFloat</DataType>
-          <Size>0</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item27>
-        <Item28>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>ID</Name>
-          <DataType>datInteger</DataType>
-          <Size>0</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item28>
-        <Item29>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>FechaCaptura</Name>
-          <DataType>datDateTime</DataType>
-          <Size>0</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item29>
-      </Params>
-      <CustomAttributes />
-      <IsPublic>True</IsPublic>
-      <DynamicWhereXML />
-      <BusinessClassID />
-      <Description />
-      <Name>cmdCrearConsumo</Name>
-    </Item6>
   </Commands>
   <RelationShips IsObject="true" Count="0" IsCollection="true" Type="TDADatasetRelationshipCollection" ItemClass="TDADatasetRelationship" />
   <UpdateRules IsObject="true" Count="0" IsCollection="true" Type="TDAUpdateRuleCollection" ItemClass="TDAUpdateRule" />
