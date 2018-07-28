@@ -189,6 +189,7 @@ C:\RPSuite\RPSuite\RPSuiteServer\obj\Debug\RPSuiteServer.csproj.CoreCompileInput
 C:\RPSuite\RPSuite\RPSuiteServer\obj\Debug\RPSuiteServer.exe
 C:\RPSuite\RPSuite\RPSuiteServer\obj\Debug\RPSuiteServer.pdb
 <<<<<<< HEAD
+<<<<<<< HEAD
 Z:\Compartida\Proyectos\LM\LMSuiteServer\bin\Debug\RPSuiteServer.exe.config
 Z:\Compartida\Proyectos\LM\LMSuiteServer\bin\Debug\RPSuiteServer.exe
 Z:\Compartida\Proyectos\LM\LMSuiteServer\bin\Debug\RPSuiteServer.pdb
@@ -247,3 +248,5 @@ C:\LM2\LMSuiteServer\obj\Debug\RPSuiteServer.csproj.CoreCompileInputs.cache
 C:\LM2\LMSuiteServer\obj\Debug\RPSuiteServer.exe
 C:\LM2\LMSuiteServer\obj\Debug\RPSuiteServer.pdb
 >>>>>>> f8313fd931e426a72fb0134f2857fa746ba84647
+=======
+>>>>>>> parent of f8313fd... 1
