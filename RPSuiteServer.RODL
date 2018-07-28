@@ -67,6 +67,14 @@
 </Parameter>
 </Parameters>
 </Operation>
+<Operation Name="CrearConsumo" UID="{D1D79207-789F-4543-A8B0-626086EF5E9F}">
+<Parameters>
+<Parameter Name="Result" DataType="Boolean" Flag="Result">
+</Parameter>
+<Parameter Name="Datos" DataType="TConsumo" Flag="In" >
+</Parameter>
+</Parameters>
+</Operation>
 </Operations>
 </Interface>
 </Interfaces>
@@ -313,6 +321,70 @@
 </Element>
 </Elements>
 </Struct>
+<Struct Name="TConsumo" UID="{DDEB3E19-C290-4273-8484-F83226F02F4F}" AutoCreateParams="1">
+<Elements>
+<Element Name="SecuenciaVenta" DataType="Integer">
+</Element>
+<Element Name="Serie" DataType="AnsiString">
+</Element>
+<Element Name="EstacionID" DataType="Integer">
+</Element>
+<Element Name="FechaMovimiento" DataType="DateTime">
+</Element>
+<Element Name="FechaCarga" DataType="DateTime">
+</Element>
+<Element Name="Ejercicio" DataType="Integer">
+</Element>
+<Element Name="Periodo" DataType="Integer">
+</Element>
+<Element Name="Dia" DataType="Integer">
+</Element>
+<Element Name="Turno" DataType="Integer">
+</Element>
+<Element Name="Kilometraje" DataType="Integer">
+</Element>
+<Element Name="Tarjeta" DataType="AnsiString">
+</Element>
+<Element Name="PosicionCarga" DataType="Integer">
+</Element>
+<Element Name="Cantidad" DataType="Decimal">
+</Element>
+<Element Name="Precio" DataType="Decimal">
+</Element>
+<Element Name="Importe" DataType="Decimal">
+</Element>
+<Element Name="ImpuestoImporte" DataType="Decimal">
+</Element>
+<Element Name="ImpuestoPorcentaje" DataType="Decimal">
+</Element>
+<Element Name="ManualAutomatico" DataType="AnsiString">
+</Element>
+<Element Name="Facturado" DataType="Boolean">
+</Element>
+<Element Name="EnIngresos" DataType="Boolean">
+</Element>
+<Element Name="Auditado" DataType="Integer">
+</Element>
+<Element Name="FacturaID" DataType="Integer">
+</Element>
+<Element Name="ProductoID" DataType="Integer">
+</Element>
+<Element Name="GasolineroID" DataType="Integer">
+</Element>
+<Element Name="ClienteID" DataType="Integer">
+</Element>
+<Element Name="VehiculoID" DataType="Integer">
+</Element>
+<Element Name="IEPS" DataType="Decimal">
+</Element>
+<Element Name="Rendimiento" DataType="Decimal">
+</Element>
+<Element Name="ID" DataType="Integer">
+</Element>
+<Element Name="FechaCaptura" DataType="DateTime">
+</Element>
+</Elements>
+</Struct>
 </Structs>
 <Enums>
 </Enums>
@@ -331,7 +403,7 @@
 </Array>
 </Arrays>
 <Uses>
-<Use Name="DataAbstract" UID="{30EEA332-03CE-45E5-8062-CCE8B6C1FAFE}" Rodl="C:\Program Files (x86)\RemObjects Software\Data Abstract for .NET\Source\RemObjects.DataAbstract.Server\DataAbstract.RODL" AbsoluteRodl="C:\Program Files (x86)\RemObjects Software\Data Abstract for .NET\Source\RemObjects.DataAbstract.Server\DataAbstract.RODL" UsedRodlUID="{DC8B7BE2-14AF-402D-B1F8-E1008B6FA4F6}" DontCodeGen="1">
+<Use Name="DataAbstract" UID="{30EEA332-03CE-45E5-8062-CCE8B6C1FAFE}" Rodl="..\..\Program Files (x86)\RemObjects Software\Data Abstract for .NET\Source\RemObjects.DataAbstract.Server\DataAbstract.RODL" AbsoluteRodl="C:\Program Files (x86)\RemObjects Software\Data Abstract for .NET\Source\RemObjects.DataAbstract.Server\DataAbstract.RODL" UsedRodlUID="{DC8B7BE2-14AF-402D-B1F8-E1008B6FA4F6}" DontCodeGen="1">
 <Includes UID="{ECE5910F-040B-4BDF-9502-EDF7F95642CF}" Delphi="DataAbstract4" DotNet="RemObjects.DataAbstract.Server" ObjC="DataAbstract/DataAbstract4_Intf" Java="com.remobjects.dataabstract.intf" Cocoa="DataAbstract"/>
 </Use>
 </Uses>

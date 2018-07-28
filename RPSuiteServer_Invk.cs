@@ -105,25 +105,6 @@ namespace RPSuiteServer {
                 @__ObjectDisposer.Dispose();
             }
         }
-        public static void Invoke_GuardaDocumentoNuevo(RemObjects.SDK.IROService @__Instance, RemObjects.SDK.IMessage @__Message, RemObjects.SDK.Server.IServerChannelInfo @__ServerChannelInfo, out RemObjects.SDK.Server.ResponseOptions @__oResponseOptions)
-        {
-            RemObjects.SDK.ObjectDisposer @__ObjectDisposer = new RemObjects.SDK.ObjectDisposer(1);
-            try
-            {
-                TDocumentoNuevo Datos = ((TDocumentoNuevo)(@__Message.Read("Datos", typeof(TDocumentoNuevo), RemObjects.SDK.StreamingFormat.Default)));
-                @__ObjectDisposer.Add(Datos);
-                int Result;
-                Result = ((IRPDataService)(@__Instance)).GuardaDocumentoNuevo(Datos);
-                @__Message.InitializeResponseMessage(@__ServerChannelInfo, "RPSuiteServer", "RPDataService", "GuardaDocumentoNuevoResponse");
-                @__Message.WriteInt32("Result", Result);
-                @__Message.FinalizeMessage();
-                @__oResponseOptions = RemObjects.SDK.Server.ResponseOptions.roDefault;
-            }
-            finally
-            {
-                @__ObjectDisposer.Dispose();
-            }
-        }
         public static void Invoke_BuscarCliente(RemObjects.SDK.IROService @__Instance, RemObjects.SDK.IMessage @__Message, RemObjects.SDK.Server.IServerChannelInfo @__ServerChannelInfo, out RemObjects.SDK.Server.ResponseOptions @__oResponseOptions) {
             RemObjects.SDK.ObjectDisposer @__ObjectDisposer = new RemObjects.SDK.ObjectDisposer(1);
             try {
@@ -133,6 +114,22 @@ namespace RPSuiteServer {
                 @__ObjectDisposer.Add(Result);
                 @__Message.InitializeResponseMessage(@__ServerChannelInfo, "RPSuiteServer", "RPDataService", "BuscarClienteResponse");
                 @__Message.Write("Result", Result, typeof(TCliente), RemObjects.SDK.StreamingFormat.Default);
+                @__Message.FinalizeMessage();
+                @__oResponseOptions = RemObjects.SDK.Server.ResponseOptions.roDefault;
+            }
+            finally {
+                @__ObjectDisposer.Dispose();
+            }
+        }
+        public static void Invoke_CrearConsumo(RemObjects.SDK.IROService @__Instance, RemObjects.SDK.IMessage @__Message, RemObjects.SDK.Server.IServerChannelInfo @__ServerChannelInfo, out RemObjects.SDK.Server.ResponseOptions @__oResponseOptions) {
+            RemObjects.SDK.ObjectDisposer @__ObjectDisposer = new RemObjects.SDK.ObjectDisposer(1);
+            try {
+                TConsumo Datos = ((TConsumo)(@__Message.Read("Datos", typeof(TConsumo), RemObjects.SDK.StreamingFormat.Default)));
+                @__ObjectDisposer.Add(Datos);
+                bool Result;
+                Result = ((IRPDataService)(@__Instance)).CrearConsumo(Datos);
+                @__Message.InitializeResponseMessage(@__ServerChannelInfo, "RPSuiteServer", "RPDataService", "CrearConsumoResponse");
+                @__Message.WriteBoolean("Result", Result);
                 @__Message.FinalizeMessage();
                 @__oResponseOptions = RemObjects.SDK.Server.ResponseOptions.roDefault;
             }
