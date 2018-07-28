@@ -1789,10 +1789,14 @@ namespace RPSuiteServer {
         TCliente BuscarCliente(int ClienteID);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         bool CrearConsumo(TConsumo Datos);
 =======
         bool EntregarPremio(int ClienteID, string Descripcion, double cargo, double Abono, string Observaciones, int PuntosPremioID);
 >>>>>>> 4661ac925d3060108529ec52b7bd5780c1779c5c
+=======
+        int GuardaDocumentoNuevo(TDocumentoNuevo Datos);
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
 =======
         int GuardaDocumentoNuevo(TDocumentoNuevo Datos);
 >>>>>>> parent of d67a937... Implementacion CrearConsumo
@@ -1913,6 +1917,7 @@ namespace RPSuiteServer {
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         public virtual bool CrearConsumo(TConsumo Datos) {
             RemObjects.SDK.IMessage @__LocalMessage = this.@__GetMessage();
             try {
@@ -1930,6 +1935,13 @@ namespace RPSuiteServer {
                 @__LocalMessage.WriteAnsiString("Observaciones", Observaciones);
                 @__LocalMessage.WriteInt32("PuntosPremioID", PuntosPremioID);
 >>>>>>> 4661ac925d3060108529ec52b7bd5780c1779c5c
+=======
+        public virtual TCliente BuscarCliente(int ClienteID) {
+            RemObjects.SDK.IMessage @__LocalMessage = this.@__GetMessage();
+            try {
+                @__LocalMessage.InitializeRequestMessage(this.ClientChannel, "RPSuiteServer", this.ActiveInterfaceName, "BuscarCliente");
+                @__LocalMessage.WriteInt32("ClienteID", ClienteID);
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
 =======
         public virtual TCliente BuscarCliente(int ClienteID) {
             RemObjects.SDK.IMessage @__LocalMessage = this.@__GetMessage();
@@ -1982,6 +1994,7 @@ namespace RPSuiteServer {
         System.Threading.Tasks.Task<TCliente> BuscarClienteAsync(int ClienteID);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         System.IAsyncResult BeginCrearConsumo(TConsumo Datos, System.AsyncCallback @__Callback, object @__UserData);
         bool EndCrearConsumo(System.IAsyncResult @__AsyncResult);
         System.Threading.Tasks.Task<bool> CrearConsumoAsync(TConsumo Datos);
@@ -1990,6 +2003,8 @@ namespace RPSuiteServer {
         bool EndEntregarPremio(System.IAsyncResult @__AsyncResult);
         System.Threading.Tasks.Task<bool> EntregarPremioAsync(int ClienteID, string Descripcion, double cargo, double Abono, string Observaciones, int PuntosPremioID);
 >>>>>>> 4661ac925d3060108529ec52b7bd5780c1779c5c
+=======
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
 =======
 >>>>>>> parent of d67a937... Implementacion CrearConsumo
     }
@@ -2178,6 +2193,7 @@ namespace RPSuiteServer {
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         public virtual System.IAsyncResult BeginCrearConsumo(TConsumo Datos, System.AsyncCallback @__Callback, object @__UserData) {
             RemObjects.SDK.IMessage @__LocalMessage = this.@__GetMessage();
             try {
@@ -2225,6 +2241,8 @@ namespace RPSuiteServer {
             return System.Threading.Tasks.Task<bool>.Factory.FromAsync(this.BeginEntregarPremio(ClienteID, Descripcion, cargo, Abono, Observaciones, PuntosPremioID, null, null), new System.Func<System.IAsyncResult, bool>(this.EndEntregarPremio));
 >>>>>>> 4661ac925d3060108529ec52b7bd5780c1779c5c
         }
+=======
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
 =======
 >>>>>>> parent of d67a937... Implementacion CrearConsumo
     }

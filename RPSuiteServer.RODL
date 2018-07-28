@@ -69,6 +69,7 @@
 </Operation>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <Operation Name="CrearConsumo" UID="{D1D79207-789F-4543-A8B0-626086EF5E9F}">
 <Parameters>
 <Parameter Name="Result" DataType="Boolean" Flag="Result">
@@ -94,6 +95,8 @@
 </Parameter>
 </Parameters>
 </Operation>
+=======
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
 =======
 >>>>>>> parent of d67a937... Implementacion CrearConsumo
 </Operations>

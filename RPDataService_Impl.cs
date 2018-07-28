@@ -150,7 +150,12 @@ namespace RPSuiteServer
             return Res;
         }
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> e6c5ee7090e3834acf3e190c03d57277b81765e7
         //public int GuardaDocumentoNuevo(TDocumentoNuevo Datos)
         //{
         //    //string[] Params;
@@ -187,7 +192,13 @@ namespace RPSuiteServer
 
         //    return Res;
         //}
+<<<<<<< HEAD
 
+=======
+=======
+=======
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
+>>>>>>> e6c5ee7090e3834acf3e190c03d57277b81765e7
         public int GuardaDocumentoNuevo(TDocumentoNuevo Datos)
         {
             //string[] Params;
@@ -224,7 +235,14 @@ namespace RPSuiteServer
 
             return Res;
         }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
+=======
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
+>>>>>>> e6c5ee7090e3834acf3e190c03d57277b81765e7
 
 
         public TCliente BuscarCliente(int clienteID)
@@ -366,7 +384,12 @@ namespace RPSuiteServer
             }
             return res;
         }
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> e6c5ee7090e3834acf3e190c03d57277b81765e7
 
         public bool CrearConsumo(TConsumo Datos)
         {
@@ -444,7 +467,14 @@ namespace RPSuiteServer
         }
 
        
+<<<<<<< HEAD
 
 
+=======
+=======
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
+=======
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
+>>>>>>> e6c5ee7090e3834acf3e190c03d57277b81765e7
     }
 }
