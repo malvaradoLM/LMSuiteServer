@@ -126,7 +126,11 @@ namespace RPSuiteServer {
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         public static void Invoke_CrearConsumo(RemObjects.SDK.IROService @__Instance, RemObjects.SDK.IMessage @__Message, RemObjects.SDK.Server.IServerChannelInfo @__ServerChannelInfo, out RemObjects.SDK.Server.ResponseOptions @__oResponseOptions) {
+=======
+        public static void Invoke_BuscarCliente(RemObjects.SDK.IROService @__Instance, RemObjects.SDK.IMessage @__Message, RemObjects.SDK.Server.IServerChannelInfo @__ServerChannelInfo, out RemObjects.SDK.Server.ResponseOptions @__oResponseOptions) {
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
 =======
         public static void Invoke_BuscarCliente(RemObjects.SDK.IROService @__Instance, RemObjects.SDK.IMessage @__Message, RemObjects.SDK.Server.IServerChannelInfo @__ServerChannelInfo, out RemObjects.SDK.Server.ResponseOptions @__oResponseOptions) {
 >>>>>>> parent of d67a937... Implementacion CrearConsumo

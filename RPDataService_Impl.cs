@@ -151,6 +151,7 @@ namespace RPSuiteServer
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         //public int GuardaDocumentoNuevo(TDocumentoNuevo Datos)
         //{
         //    //string[] Params;
@@ -188,6 +189,8 @@ namespace RPSuiteServer
         //    return Res;
         //}
 =======
+=======
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
         public int GuardaDocumentoNuevo(TDocumentoNuevo Datos)
         {
             //string[] Params;
@@ -224,6 +227,9 @@ namespace RPSuiteServer
 
             return Res;
         }
+<<<<<<< HEAD
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
+=======
 >>>>>>> parent of d67a937... Implementacion CrearConsumo
 
 
@@ -367,6 +373,7 @@ namespace RPSuiteServer
             return res;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         public bool CrearConsumo(TConsumo Datos)
         {
@@ -444,6 +451,8 @@ namespace RPSuiteServer
         }
 
        
+=======
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
 =======
 >>>>>>> parent of d67a937... Implementacion CrearConsumo
     }

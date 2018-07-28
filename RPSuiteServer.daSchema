@@ -14866,6 +14866,7 @@ WHERE
       <Name>spCatUsuario</Name>
     </Item35>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Item36>
       <ReadOnly>False</ReadOnly>
 <<<<<<< HEAD
@@ -16720,6 +16721,11 @@ DocumentoID
   <Commands IsObject="true" Count="6" IsCollection="true" ItemClass="TDASQLCommand" Type="TDASQLCommandCollection">
     <Item0>
 >>>>>>> parent of d67a937... Implementacion CrearConsumo
+=======
+  </Datasets>
+  <Commands IsObject="true" Count="6" IsCollection="true" ItemClass="TDASQLCommand" Type="TDASQLCommandCollection">
+    <Item0>
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
       <BusinessRulesServer Type="TDABusinessRuleScript" IsObject="true">
         <Script />
         <ScriptLanguageStr />
@@ -16809,6 +16815,7 @@ DocumentoID
       </Statements>
       <Params IsObject="true" Count="22" IsCollection="true" Type="TDAParamCollection" ItemClass="TDAParam">
         <Item0>
+<<<<<<< HEAD
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>ClienteID</Name>
@@ -16892,6 +16899,13 @@ DocumentoID
           <Name>Ciudad</Name>
           <DataType>datString</DataType>
           <Size>30</Size>
+=======
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>ClienteID</Name>
+          <DataType>datInteger</DataType>
+          <Size>0</Size>
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
           <BlobType>dabtUnknown</BlobType>
@@ -16902,9 +16916,15 @@ DocumentoID
         <Item7>
           <Value />
           <ParamType>daptInput</ParamType>
+<<<<<<< HEAD
           <Name>Telefono</Name>
           <DataType>datString</DataType>
           <Size>20</Size>
+=======
+          <Name>Codigo</Name>
+          <DataType>datString</DataType>
+          <Size>10</Size>
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
           <BlobType>dabtUnknown</BlobType>
@@ -16915,9 +16935,15 @@ DocumentoID
         <Item8>
           <Value />
           <ParamType>daptInput</ParamType>
+<<<<<<< HEAD
           <Name>CodigoPostal</Name>
           <DataType>datString</DataType>
           <Size>5</Size>
+=======
+          <Name>Nombre</Name>
+          <DataType>datString</DataType>
+          <Size>80</Size>
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
           <BlobType>dabtUnknown</BlobType>
@@ -16928,9 +16954,15 @@ DocumentoID
         <Item9>
           <Value />
           <ParamType>daptInput</ParamType>
+<<<<<<< HEAD
           <Name>RFC</Name>
           <DataType>datString</DataType>
           <Size>15</Size>
+=======
+          <Name>Grupo</Name>
+          <DataType>datString</DataType>
+          <Size>30</Size>
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
           <BlobType>dabtUnknown</BlobType>
@@ -16941,9 +16973,15 @@ DocumentoID
         <Item10>
           <Value />
           <ParamType>daptInput</ParamType>
+<<<<<<< HEAD
           <Name>Curp</Name>
           <DataType>datString</DataType>
           <Size>20</Size>
+=======
+          <Name>Calle</Name>
+          <DataType>datString</DataType>
+          <Size>60</Size>
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
           <BlobType>dabtUnknown</BlobType>
@@ -16954,9 +16992,15 @@ DocumentoID
         <Item11>
           <Value />
           <ParamType>daptInput</ParamType>
+<<<<<<< HEAD
           <Name>status</Name>
           <DataType>datBoolean</DataType>
           <Size>0</Size>
+=======
+          <Name>Colonia</Name>
+          <DataType>datString</DataType>
+          <Size>60</Size>
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
           <BlobType>dabtUnknown</BlobType>
@@ -16967,6 +17011,125 @@ DocumentoID
         <Item12>
           <Value />
           <ParamType>daptInput</ParamType>
+<<<<<<< HEAD
+          <Name>AutorizaCheque</Name>
+          <DataType>datBoolean</DataType>
+          <Size>0</Size>
+=======
+          <Name>Ciudad</Name>
+          <DataType>datString</DataType>
+          <Size>30</Size>
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item12>
+        <Item13>
+          <Value />
+          <ParamType>daptInput</ParamType>
+<<<<<<< HEAD
+          <Name>TicketBoucher</Name>
+          <DataType>datBoolean</DataType>
+          <Size>0</Size>
+=======
+          <Name>Telefono</Name>
+          <DataType>datString</DataType>
+          <Size>20</Size>
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item13>
+        <Item14>
+          <Value />
+          <ParamType>daptInput</ParamType>
+<<<<<<< HEAD
+          <Name>AutorizaValeCredito</Name>
+          <DataType>datBoolean</DataType>
+          <Size>0</Size>
+=======
+          <Name>CodigoPostal</Name>
+          <DataType>datString</DataType>
+          <Size>5</Size>
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item14>
+        <Item15>
+          <Value />
+          <ParamType>daptInput</ParamType>
+<<<<<<< HEAD
+          <Name>LimiteCredito</Name>
+          <DataType>datFloat</DataType>
+          <Size>0</Size>
+=======
+          <Name>RFC</Name>
+          <DataType>datString</DataType>
+          <Size>15</Size>
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item15>
+        <Item16>
+          <Value />
+          <ParamType>daptInput</ParamType>
+<<<<<<< HEAD
+          <Name>email</Name>
+          <DataType>datString</DataType>
+          <Size>100</Size>
+=======
+          <Name>Curp</Name>
+          <DataType>datString</DataType>
+          <Size>20</Size>
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item16>
+        <Item17>
+          <Value />
+          <ParamType>daptInput</ParamType>
+<<<<<<< HEAD
+          <Name>Localidad</Name>
+          <DataType>datString</DataType>
+          <Size>300</Size>
+=======
+          <Name>status</Name>
+          <DataType>datBoolean</DataType>
+          <Size>0</Size>
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+        </Item17>
+        <Item18>
+          <Value />
+          <ParamType>daptInput</ParamType>
+<<<<<<< HEAD
+          <Name>Estado</Name>
+          <DataType>datString</DataType>
+          <Size>30</Size>
+=======
           <Name>AutorizaCheque</Name>
           <DataType>datBoolean</DataType>
           <Size>0</Size>
@@ -17009,6 +17172,7 @@ DocumentoID
           <Name>LimiteCredito</Name>
           <DataType>datFloat</DataType>
           <Size>0</Size>
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
           <BlobType>dabtUnknown</BlobType>
@@ -17172,6 +17336,15 @@ WHERE
           <GeneratorName />
           <ColumnMappings IsObject="true" Count="0" IsCollection="true" Type="TDAColumnMappingCollection" ItemClass="TDAColumnMapping" />
           <Description />
+<<<<<<< HEAD
+        </Item18>
+        <Item19>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>NoExterior</Name>
+          <DataType>datString</DataType>
+          <Size>10</Size>
+=======
         </Item0>
       </Statements>
       <Params IsObject="true" Count="1" IsCollection="true" Type="TDAParamCollection" ItemClass="TDAParam">
@@ -17181,12 +17354,205 @@ WHERE
           <Name>ClienteID</Name>
           <DataType>datInteger</DataType>
           <Size>0</Size>
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
           <BlobType>dabtUnknown</BlobType>
           <GeneratorName />
           <BusinessClassID />
           <Description />
+<<<<<<< HEAD
+        </Item19>
+        <Item20>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>NoInterior</Name>
+          <DataType>datString</DataType>
+          <Size>10</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+=======
+        </Item0>
+      </Params>
+      <CustomAttributes />
+      <IsPublic>True</IsPublic>
+      <DynamicWhereXML />
+      <BusinessClassID />
+      <Description />
+      <Name>cmdBuscarCliente</Name>
+    </Item2>
+    <Item3>
+      <BusinessRulesServer Type="TDABusinessRuleScript" IsObject="true">
+        <Script />
+        <ScriptLanguageStr />
+        <Description />
+        <Name />
+      </BusinessRulesServer>
+      <Statements IsCollection="true" IsObject="true" Count="1" ItemClass="TDAStatement" Type="TDAStatementCollection">
+        <Item0>
+          <Connection>RPSuite</Connection>
+          <SQL>Insert Into Documento
+(
+DocumentoID
+ ,Fecha
+ ,Observaciones
+ ,Imagen
+ ,EmpleadoID
+ ,TipoDocumentoID
+ ,UsuarioID
+ 
+ )
+ Values
+ (
+  :DocumentoID
+ ,:Fecha
+ ,:Observaciones
+ ,:Imagen
+ ,:EmpleadoID
+ ,:TipoDocumentoID
+ ,:UsuarioID
+ 
+ 
+ )</SQL>
+          <TargetTable>Documento</TargetTable>
+          <ConnectionType>SQLite</ConnectionType>
+          <Default>True</Default>
+          <StatementName />
+          <StatementType>stSQL</StatementType>
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
+          <GeneratorName />
+          <ColumnMappings IsObject="true" Count="0" IsCollection="true" Type="TDAColumnMappingCollection" ItemClass="TDAColumnMapping" />
+          <Description />
+<<<<<<< HEAD
+        </Item20>
+        <Item21>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>CuentaBancaria</Name>
+          <DataType>datString</DataType>
+          <Size>50</Size>
+=======
+        </Item0>
+      </Statements>
+      <Params IsObject="true" Count="7" IsCollection="true" Type="TDAParamCollection" ItemClass="TDAParam">
+        <Item0>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>DocumentoID</Name>
+          <DataType>datInteger</DataType>
+          <Size>0</Size>
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+<<<<<<< HEAD
+        </Item21>
+      </Params>
+      <CustomAttributes />
+      <IsPublic>True</IsPublic>
+      <DynamicWhereXML />
+      <BusinessClassID />
+      <Description />
+      <Name>InsertarClienteNuevo</Name>
+    </Item1>
+    <Item2>
+      <BusinessRulesServer Type="TDABusinessRuleScript" IsObject="true">
+        <Script />
+        <ScriptLanguageStr />
+        <Description />
+        <Name />
+      </BusinessRulesServer>
+      <Statements IsCollection="true" IsObject="true" Count="1" ItemClass="TDAStatement" Type="TDAStatementCollection">
+        <Item0>
+          <Connection>RPSuite</Connection>
+          <SQL>SELECT
+  ClienteID
+ ,Codigo
+ ,Nombre
+ ,Grupo
+ ,Calle
+ ,Colonia
+ ,Ciudad
+ ,Telefono
+ ,CodigoPostal
+ ,RFC
+ ,Curp
+ ,Status
+ ,AutorizaCheque
+ ,TicketBoucher
+ ,AutorizaValeCredito
+ ,CuentaContableAnticipo
+ ,CuentaContableCredito
+ ,LimiteCredito
+ ,Credito
+ ,DiasCredito
+ ,NIP
+ ,FacturayLiquidacion
+ ,ApellidoPaterno
+ ,ApellidoMaterno
+ ,Nombres
+ ,email
+ ,Nacimiento
+ ,Referencia
+ ,Telefonos
+ ,FacturaExpress
+ ,Saldo
+ ,PuntosCategoriaID
+ ,Localidad
+ ,Estado
+ ,NoExterior
+ ,NoInterior
+ ,Actualizado
+ ,CuentaBancaria
+ ,Sexo
+ ,Clasificacion
+ ,INE
+ ,INETipoProceso
+ ,INETipoComite
+ ,INEidContabilidad
+ ,INEClaveEntidad
+ ,INEEntidadAmbito
+ ,INEEntidadidContabilidad
+ ,UUID
+FROM dbo.Cliente 
+WHERE 
+  ClienteID=:ClienteID</SQL>
+          <TargetTable>Cliente</TargetTable>
+          <ConnectionType>SQLite</ConnectionType>
+          <Default>True</Default>
+          <StatementName />
+          <StatementType>stSQL</StatementType>
+          <GeneratorName />
+          <ColumnMappings IsObject="true" Count="0" IsCollection="true" Type="TDAColumnMappingCollection" ItemClass="TDAColumnMapping" />
+          <Description />
+        </Item0>
+      </Statements>
+      <Params IsObject="true" Count="1" IsCollection="true" Type="TDAParamCollection" ItemClass="TDAParam">
+        <Item0>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>ClienteID</Name>
+          <DataType>datInteger</DataType>
+=======
+        </Item0>
+        <Item1>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>Fecha</Name>
+          <DataType>datDateTime</DataType>
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
+          <Size>0</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+<<<<<<< HEAD
         </Item0>
       </Params>
       <CustomAttributes />
@@ -17259,12 +17625,7 @@ DocumentoID
           <Name>Fecha</Name>
           <DataType>datDateTime</DataType>
           <Size>0</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
+=======
         </Item1>
         <Item2>
           <Value />
@@ -17272,12 +17633,22 @@ DocumentoID
           <Name>Observaciones</Name>
           <DataType>datWideString</DataType>
           <Size>65536</Size>
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
           <BlobType>dabtUnknown</BlobType>
           <GeneratorName />
           <BusinessClassID />
           <Description />
+<<<<<<< HEAD
+        </Item1>
+        <Item2>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>Observaciones</Name>
+          <DataType>datWideString</DataType>
+          <Size>65536</Size>
+=======
         </Item2>
         <Item3>
           <Value />
@@ -17285,30 +17656,48 @@ DocumentoID
           <Name>Imagen</Name>
           <DataType>datBlob</DataType>
           <Size>0</Size>
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
           <BlobType>dabtBlob</BlobType>
           <GeneratorName />
           <BusinessClassID />
           <Description />
+<<<<<<< HEAD
+        </Item2>
+        <Item3>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>Imagen</Name>
+          <DataType>datBlob</DataType>
+=======
         </Item3>
         <Item4>
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>EmpleadoID</Name>
           <DataType>datInteger</DataType>
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
           <Size>0</Size>
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
+          <BlobType>dabtBlob</BlobType>
           <GeneratorName />
           <BusinessClassID />
           <Description />
+<<<<<<< HEAD
+        </Item3>
+        <Item4>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>EmpleadoID</Name>
+=======
         </Item4>
         <Item5>
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>TipoDocumentoID</Name>
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
           <DataType>datInteger</DataType>
           <Size>0</Size>
           <DecimalScale>0</DecimalScale>
@@ -17317,6 +17706,28 @@ DocumentoID
           <GeneratorName />
           <BusinessClassID />
           <Description />
+<<<<<<< HEAD
+        </Item4>
+        <Item5>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>TipoDocumentoID</Name>
+=======
+        </Item5>
+        <Item6>
+          <Value />
+          <ParamType>daptInput</ParamType>
+          <Name>UsuarioID</Name>
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
+          <DataType>datInteger</DataType>
+          <Size>0</Size>
+          <DecimalScale>0</DecimalScale>
+          <DecimalPrecision>0</DecimalPrecision>
+          <BlobType>dabtUnknown</BlobType>
+          <GeneratorName />
+          <BusinessClassID />
+          <Description />
+<<<<<<< HEAD
         </Item5>
         <Item6>
           <Value />
@@ -17327,9 +17738,74 @@ DocumentoID
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
           <BlobType>dabtUnknown</BlobType>
+=======
+        </Item6>
+      </Params>
+      <CustomAttributes />
+      <IsPublic>True</IsPublic>
+      <DynamicWhereXML />
+      <BusinessClassID />
+      <Description />
+      <Name>InsertaDocumentoNuevo</Name>
+    </Item3>
+    <Item4>
+      <BusinessRulesServer Type="TDABusinessRuleScript" IsObject="true">
+        <Script />
+        <ScriptLanguageStr />
+        <Description />
+        <Name />
+      </BusinessRulesServer>
+      <Statements IsCollection="true" IsObject="true" Count="0" ItemClass="TDAStatement" Type="TDAStatementCollection" />
+      <Params IsObject="true" Count="0" IsCollection="true" Type="TDAParamCollection" ItemClass="TDAParam" />
+      <CustomAttributes />
+      <IsPublic>True</IsPublic>
+      <DynamicWhereXML />
+      <BusinessClassID />
+      <Description />
+      <Name />
+    </Item4>
+    <Item5>
+      <BusinessRulesServer Type="TDABusinessRuleScript" IsObject="true">
+        <Script />
+        <ScriptLanguageStr />
+        <Description />
+        <Name />
+      </BusinessRulesServer>
+      <Statements IsCollection="true" IsObject="true" Count="1" ItemClass="TDAStatement" Type="TDAStatementCollection">
+        <Item0>
+          <Connection>RPSuite</Connection>
+          <SQL>Insert Into Direccion
+(
+DetallePedidoID
+ ,PedidoID
+ ,VehiculoID
+ ,ProductoID
+ ,TerminalID
+ ,Volumen
+
+ 
+ )
+ Values
+ (
+ :DetallePedidoID
+ ,:PedidoID
+ ,:VehiculoID
+ ,:ProductoID
+ ,:TerminalID
+ ,:Volumen
+ 
+ 
+ )</SQL>
+          <TargetTable>Direccion</TargetTable>
+          <ConnectionType>SQLite</ConnectionType>
+          <Default>True</Default>
+          <StatementName />
+          <StatementType>stSQL</StatementType>
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
           <GeneratorName />
-          <BusinessClassID />
+          <ColumnMappings IsObject="true" Count="0" IsCollection="true" Type="TDAColumnMappingCollection" ItemClass="TDAColumnMapping" />
           <Description />
+<<<<<<< HEAD
         </Item6>
       </Params>
       <CustomAttributes />
@@ -17395,6 +17871,8 @@ DetallePedidoID
           <GeneratorName />
           <ColumnMappings IsObject="true" Count="0" IsCollection="true" Type="TDAColumnMappingCollection" ItemClass="TDAColumnMapping" />
           <Description />
+=======
+>>>>>>> parent of d67a937... Implementacion CrearConsumo
         </Item0>
       </Statements>
       <Params IsObject="true" Count="6" IsCollection="true" Type="TDAParamCollection" ItemClass="TDAParam">
