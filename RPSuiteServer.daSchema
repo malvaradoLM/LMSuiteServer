@@ -14867,9 +14867,15 @@ WHERE
     </Item35>
     <Item36>
       <ReadOnly>False</ReadOnly>
+<<<<<<< HEAD
       <Fields IsObject="true" Count="30" IsCollection="true" ItemClass="TDAField" Type="TDASchemaFieldCollection">
         <Item0>
           <Name>SecuenciaVenta</Name>
+=======
+      <Fields IsObject="true" Count="4" IsCollection="true" ItemClass="TDAField" Type="TDASchemaFieldCollection">
+        <Item0>
+          <Name>PuntosPremioID</Name>
+>>>>>>> 4661ac925d3060108529ec52b7bd5780c1779c5c
           <Alignment>taLeftJustify</Alignment>
           <Calculated>False</Calculated>
           <ServerCalculated>False</ServerCalculated>
@@ -14878,7 +14884,11 @@ WHERE
           <CustomAttributes />
           <DictionaryEntry />
           <DisplayFormat />
+<<<<<<< HEAD
           <DisplayLabel>SecuenciaVenta</DisplayLabel>
+=======
+          <DisplayLabel>PuntosPremioID</DisplayLabel>
+>>>>>>> 4661ac925d3060108529ec52b7bd5780c1779c5c
           <DisplayWidth>0</DisplayWidth>
           <EditFormat />
           <EditMask />
@@ -14899,7 +14909,11 @@ WHERE
           <Description />
         </Item0>
         <Item1>
+<<<<<<< HEAD
           <Name>Serie</Name>
+=======
+          <Name>Codigo</Name>
+>>>>>>> 4661ac925d3060108529ec52b7bd5780c1779c5c
           <Alignment>taLeftJustify</Alignment>
           <Calculated>False</Calculated>
           <ServerCalculated>False</ServerCalculated>
@@ -14908,7 +14922,11 @@ WHERE
           <CustomAttributes />
           <DictionaryEntry />
           <DisplayFormat />
+<<<<<<< HEAD
           <DisplayLabel>Serie</DisplayLabel>
+=======
+          <DisplayLabel>Codigo</DisplayLabel>
+>>>>>>> 4661ac925d3060108529ec52b7bd5780c1779c5c
           <DisplayWidth>0</DisplayWidth>
           <EditFormat />
           <EditMask />
@@ -14929,6 +14947,7 @@ WHERE
           <Description />
         </Item1>
         <Item2>
+<<<<<<< HEAD
           <Name>EstacionID</Name>
           <Alignment>taLeftJustify</Alignment>
           <Calculated>False</Calculated>
@@ -15654,11 +15673,22 @@ WHERE
           <Calculated>False</Calculated>
           <ServerCalculated>False</ServerCalculated>
           <DataType>datFloat</DataType>
+=======
+          <Name>Descripcion</Name>
+          <Alignment>taLeftJustify</Alignment>
+          <Calculated>False</Calculated>
+          <ServerCalculated>False</ServerCalculated>
+          <DataType>datString</DataType>
+>>>>>>> 4661ac925d3060108529ec52b7bd5780c1779c5c
           <DefaultValue />
           <CustomAttributes />
           <DictionaryEntry />
           <DisplayFormat />
+<<<<<<< HEAD
           <DisplayLabel>IEPS</DisplayLabel>
+=======
+          <DisplayLabel>Descripcion</DisplayLabel>
+>>>>>>> 4661ac925d3060108529ec52b7bd5780c1779c5c
           <DisplayWidth>0</DisplayWidth>
           <EditFormat />
           <EditMask />
@@ -15670,16 +15700,26 @@ WHERE
           <ServerAutoRefresh>False</ServerAutoRefresh>
           <Visible>True</Visible>
           <Expression />
+<<<<<<< HEAD
           <Size>0</Size>
+=======
+          <Size>80</Size>
+>>>>>>> 4661ac925d3060108529ec52b7bd5780c1779c5c
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
           <BlobType>dabtUnknown</BlobType>
           <GeneratorName />
           <BusinessClassID />
           <Description />
+<<<<<<< HEAD
         </Item26>
         <Item27>
           <Name>Rendimiento</Name>
+=======
+        </Item2>
+        <Item3>
+          <Name>Puntos</Name>
+>>>>>>> 4661ac925d3060108529ec52b7bd5780c1779c5c
           <Alignment>taLeftJustify</Alignment>
           <Calculated>False</Calculated>
           <ServerCalculated>False</ServerCalculated>
@@ -15688,6 +15728,7 @@ WHERE
           <CustomAttributes />
           <DictionaryEntry />
           <DisplayFormat />
+<<<<<<< HEAD
           <DisplayLabel>Rendimiento</DisplayLabel>
           <DisplayWidth>0</DisplayWidth>
           <EditFormat />
@@ -15749,6 +15790,9 @@ WHERE
           <DictionaryEntry />
           <DisplayFormat />
           <DisplayLabel>FechaCaptura</DisplayLabel>
+=======
+          <DisplayLabel>Puntos</DisplayLabel>
+>>>>>>> 4661ac925d3060108529ec52b7bd5780c1779c5c
           <DisplayWidth>0</DisplayWidth>
           <EditFormat />
           <EditMask />
@@ -15767,7 +15811,11 @@ WHERE
           <GeneratorName />
           <BusinessClassID />
           <Description />
+<<<<<<< HEAD
         </Item29>
+=======
+        </Item3>
+>>>>>>> 4661ac925d3060108529ec52b7bd5780c1779c5c
       </Fields>
       <BusinessRulesClient IsObject="true" Type="TDAClientBusinessRuleScript">
         <CompileOnServer>False</CompileOnServer>
@@ -15792,6 +15840,7 @@ WHERE
           <SQL>Declare @Parametro Varchar(100)
 Declare @WildCards varchar(100)
 select @Parametro=(Select :Datos)
+<<<<<<< HEAD
 select @WildCards=(Select '%' + @Parametro + '%')
 
 SELECT 	
@@ -15811,11 +15860,25 @@ WHERE
 	(ClienteID Like @WildCards) OR
     (Cast(ID as Varchar(10))=@Parametro) </SQL>
           <TargetTable>Consumo</TargetTable>
+=======
+select @WildCards=(Select '%' + @Parametro + '%') 
+
+SELECT 	
+	[PuntosPremioID], [Codigo], [Descripcion], 
+	[Puntos] 
+FROM 
+	[PuntosPremio] 
+WHERE 
+   (Descripcion Like @WildCards) OR
+   (Cast(PuntosPremioID as Varchar(10))=@Parametro) </SQL>
+          <TargetTable>PuntosPremio</TargetTable>
+>>>>>>> 4661ac925d3060108529ec52b7bd5780c1779c5c
           <ConnectionType>SQLite</ConnectionType>
           <Default>True</Default>
           <StatementName />
           <StatementType>stSQL</StatementType>
           <GeneratorName />
+<<<<<<< HEAD
           <ColumnMappings IsObject="true" Count="30" IsCollection="true" Type="TDAColumnMappingCollection" ItemClass="TDAColumnMapping">
             <Item0>
               <DatasetField>SecuenciaVenta</DatasetField>
@@ -15967,17 +16030,48 @@ WHERE
               <SQLOrigin>FechaCaptura</SQLOrigin>
               <TableField>FechaCaptura</TableField>
             </Item29>
+=======
+          <ColumnMappings IsObject="true" Count="4" IsCollection="true" Type="TDAColumnMappingCollection" ItemClass="TDAColumnMapping">
+            <Item0>
+              <DatasetField>PuntosPremioID</DatasetField>
+              <SQLOrigin>PuntosPremioID</SQLOrigin>
+              <TableField>PuntosPremioID</TableField>
+            </Item0>
+            <Item1>
+              <DatasetField>Codigo</DatasetField>
+              <SQLOrigin>Codigo</SQLOrigin>
+              <TableField>Codigo</TableField>
+            </Item1>
+            <Item2>
+              <DatasetField>Descripcion</DatasetField>
+              <SQLOrigin>Descripcion</SQLOrigin>
+              <TableField>Descripcion</TableField>
+            </Item2>
+            <Item3>
+              <DatasetField>Puntos</DatasetField>
+              <SQLOrigin>Puntos</SQLOrigin>
+              <TableField>Puntos</TableField>
+            </Item3>
+>>>>>>> 4661ac925d3060108529ec52b7bd5780c1779c5c
           </ColumnMappings>
           <Description />
         </Item0>
       </Statements>
       <Params IsObject="true" Count="1" IsCollection="true" Type="TDAParamCollection" ItemClass="TDAParam">
         <Item0>
+<<<<<<< HEAD
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>Datos</Name>
           <DataType>datString</DataType>
           <Size>100</Size>
+=======
+          <Value>1</Value>
+          <ParamType>daptInput</ParamType>
+          <Name>Datos</Name>
+          <DataType>datString</DataType>
+          <Size>0</Size>
+>>>>>>> 4661ac925d3060108529ec52b7bd5780c1779c5c
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
           <BlobType>dabtUnknown</BlobType>
@@ -15991,7 +16085,11 @@ WHERE
       <DynamicWhereXML />
       <BusinessClassID />
       <Description />
+<<<<<<< HEAD
       <Name>spConsumo</Name>
+=======
+      <Name>spCatPremio</Name>
+>>>>>>> 4661ac925d3060108529ec52b7bd5780c1779c5c
     </Item36>
   </Datasets>
   <Commands IsObject="true" Count="7" IsCollection="true" ItemClass="TDASQLCommand" Type="TDASQLCommandCollection">

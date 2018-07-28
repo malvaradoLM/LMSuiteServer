@@ -329,6 +329,7 @@ namespace RPSuiteServer
             return res;
         }
 
+<<<<<<< HEAD
         public bool CrearConsumo(TConsumo Datos)
         {
             //string[] Params;
@@ -388,5 +389,24 @@ namespace RPSuiteServer
 
             return Res;
         }
+=======
+
+        public bool EntregarPremio(int ClienteID,string Descripcion, double Cargo, double Abono, string Observaciones,int PuntosPremioID)
+        {
+            IDbCommand command;
+            using (IDataReader reader = this.ServiceSchema.GetDataReader(this.Connection, "spFolio", new string[] { "Campo", "Serie" }, new object[] { "user", "password" }, out command))
+            {
+                while (reader.Read())
+                {
+
+
+                    // do something
+                }
+            }
+            return false;
+        }
+
+       
+>>>>>>> 4661ac925d3060108529ec52b7bd5780c1779c5c
     }
 }

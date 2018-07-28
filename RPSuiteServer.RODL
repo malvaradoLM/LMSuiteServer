@@ -67,11 +67,29 @@
 </Parameter>
 </Parameters>
 </Operation>
+<<<<<<< HEAD
 <Operation Name="CrearConsumo" UID="{D1D79207-789F-4543-A8B0-626086EF5E9F}">
 <Parameters>
 <Parameter Name="Result" DataType="Boolean" Flag="Result">
 </Parameter>
 <Parameter Name="Datos" DataType="TConsumo" Flag="In" >
+=======
+<Operation Name="EntregarPremio" UID="{834720B0-C3A2-48E5-BDDA-2A8E24A1A596}">
+<Parameters>
+<Parameter Name="Result" DataType="Boolean" Flag="Result">
+</Parameter>
+<Parameter Name="ClienteID" DataType="Integer" Flag="In" >
+</Parameter>
+<Parameter Name="Descripcion" DataType="AnsiString" Flag="In" >
+</Parameter>
+<Parameter Name="cargo" DataType="Double" Flag="In" >
+</Parameter>
+<Parameter Name="Abono" DataType="Double" Flag="In" >
+</Parameter>
+<Parameter Name="Observaciones" DataType="AnsiString" Flag="In" >
+</Parameter>
+<Parameter Name="PuntosPremioID" DataType="Integer" Flag="In" >
+>>>>>>> 4661ac925d3060108529ec52b7bd5780c1779c5c
 </Parameter>
 </Parameters>
 </Operation>

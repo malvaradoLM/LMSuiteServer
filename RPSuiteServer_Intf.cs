@@ -2242,7 +2242,11 @@ namespace RPSuiteServer {
         int Folio(string Campo, string Serie);
         int GuardaClienteNuevo(TClienteNuevo Datos);
         TCliente BuscarCliente(int ClienteID);
+<<<<<<< HEAD
         bool CrearConsumo(TConsumo Datos);
+=======
+        bool EntregarPremio(int ClienteID, string Descripcion, double cargo, double Abono, string Observaciones, int PuntosPremioID);
+>>>>>>> 4661ac925d3060108529ec52b7bd5780c1779c5c
     }
     public partial class RPDataService_Proxy : RemObjects.DataAbstract.Server.DataAbstractService_Proxy, IRPDataService {
         public RPDataService_Proxy(RemObjects.SDK.IMessage message, RemObjects.SDK.IClientChannel clientChannel) : 
@@ -2355,11 +2359,24 @@ namespace RPSuiteServer {
                 this.@__ClearMessage(@__LocalMessage);
             }
         }
+<<<<<<< HEAD
         public virtual bool CrearConsumo(TConsumo Datos) {
             RemObjects.SDK.IMessage @__LocalMessage = this.@__GetMessage();
             try {
                 @__LocalMessage.InitializeRequestMessage(this.ClientChannel, "RPSuiteServer", this.ActiveInterfaceName, "CrearConsumo");
                 @__LocalMessage.Write("Datos", Datos, typeof(TConsumo), RemObjects.SDK.StreamingFormat.Default);
+=======
+        public virtual bool EntregarPremio(int ClienteID, string Descripcion, double cargo, double Abono, string Observaciones, int PuntosPremioID) {
+            RemObjects.SDK.IMessage @__LocalMessage = this.@__GetMessage();
+            try {
+                @__LocalMessage.InitializeRequestMessage(this.ClientChannel, "RPSuiteServer", this.ActiveInterfaceName, "EntregarPremio");
+                @__LocalMessage.WriteInt32("ClienteID", ClienteID);
+                @__LocalMessage.WriteAnsiString("Descripcion", Descripcion);
+                @__LocalMessage.WriteDouble("cargo", cargo);
+                @__LocalMessage.WriteDouble("Abono", Abono);
+                @__LocalMessage.WriteAnsiString("Observaciones", Observaciones);
+                @__LocalMessage.WriteInt32("PuntosPremioID", PuntosPremioID);
+>>>>>>> 4661ac925d3060108529ec52b7bd5780c1779c5c
                 @__LocalMessage.FinalizeMessage();
                 this.ClientChannel.Dispatch(@__LocalMessage);
                 bool _Result = @__LocalMessage.ReadBoolean("Result");
@@ -2403,9 +2420,15 @@ namespace RPSuiteServer {
         System.IAsyncResult BeginBuscarCliente(int ClienteID, System.AsyncCallback @__Callback, object @__UserData);
         TCliente EndBuscarCliente(System.IAsyncResult @__AsyncResult);
         System.Threading.Tasks.Task<TCliente> BuscarClienteAsync(int ClienteID);
+<<<<<<< HEAD
         System.IAsyncResult BeginCrearConsumo(TConsumo Datos, System.AsyncCallback @__Callback, object @__UserData);
         bool EndCrearConsumo(System.IAsyncResult @__AsyncResult);
         System.Threading.Tasks.Task<bool> CrearConsumoAsync(TConsumo Datos);
+=======
+        System.IAsyncResult BeginEntregarPremio(int ClienteID, string Descripcion, double cargo, double Abono, string Observaciones, int PuntosPremioID, System.AsyncCallback @__Callback, object @__UserData);
+        bool EndEntregarPremio(System.IAsyncResult @__AsyncResult);
+        System.Threading.Tasks.Task<bool> EntregarPremioAsync(int ClienteID, string Descripcion, double cargo, double Abono, string Observaciones, int PuntosPremioID);
+>>>>>>> 4661ac925d3060108529ec52b7bd5780c1779c5c
     }
     public partial class RPDataService_AsyncProxy : RemObjects.DataAbstract.Server.DataAbstractService_AsyncProxy, IRPDataService_Async {
         public RPDataService_AsyncProxy(RemObjects.SDK.IMessage message, RemObjects.SDK.IClientChannel clientChannel) : 
@@ -2590,11 +2613,24 @@ namespace RPSuiteServer {
         public virtual System.Threading.Tasks.Task<TCliente> BuscarClienteAsync(int ClienteID) {
             return System.Threading.Tasks.Task<TCliente>.Factory.FromAsync(this.BeginBuscarCliente(ClienteID, null, null), new System.Func<System.IAsyncResult, TCliente>(this.EndBuscarCliente));
         }
+<<<<<<< HEAD
         public virtual System.IAsyncResult BeginCrearConsumo(TConsumo Datos, System.AsyncCallback @__Callback, object @__UserData) {
             RemObjects.SDK.IMessage @__LocalMessage = this.@__GetMessage();
             try {
                 @__LocalMessage.InitializeRequestMessage(this.ClientChannel, "RPSuiteServer", this.ActiveInterfaceName, "CrearConsumo");
                 @__LocalMessage.Write("Datos", Datos, typeof(TConsumo), RemObjects.SDK.StreamingFormat.Default);
+=======
+        public virtual System.IAsyncResult BeginEntregarPremio(int ClienteID, string Descripcion, double cargo, double Abono, string Observaciones, int PuntosPremioID, System.AsyncCallback @__Callback, object @__UserData) {
+            RemObjects.SDK.IMessage @__LocalMessage = this.@__GetMessage();
+            try {
+                @__LocalMessage.InitializeRequestMessage(this.ClientChannel, "RPSuiteServer", this.ActiveInterfaceName, "EntregarPremio");
+                @__LocalMessage.WriteInt32("ClienteID", ClienteID);
+                @__LocalMessage.WriteAnsiString("Descripcion", Descripcion);
+                @__LocalMessage.WriteDouble("cargo", cargo);
+                @__LocalMessage.WriteDouble("Abono", Abono);
+                @__LocalMessage.WriteAnsiString("Observaciones", Observaciones);
+                @__LocalMessage.WriteInt32("PuntosPremioID", PuntosPremioID);
+>>>>>>> 4661ac925d3060108529ec52b7bd5780c1779c5c
                 @__LocalMessage.FinalizeMessage();
                 return this.ClientChannel.AsyncDispatch(@__LocalMessage, @__Callback, @__UserData);
             }
@@ -2603,7 +2639,11 @@ namespace RPSuiteServer {
                 throw ex;
             }
         }
+<<<<<<< HEAD
         public virtual bool EndCrearConsumo(System.IAsyncResult @__AsyncResult) {
+=======
+        public virtual bool EndEntregarPremio(System.IAsyncResult @__AsyncResult) {
+>>>>>>> 4661ac925d3060108529ec52b7bd5780c1779c5c
             RemObjects.SDK.IMessage @__LocalMessage = ((RemObjects.SDK.IClientAsyncResult)(@__AsyncResult)).Message;
             try {
                 bool Result = @__LocalMessage.ReadBoolean("Result");
@@ -2613,8 +2653,13 @@ namespace RPSuiteServer {
                 this.@__ClearMessage(@__LocalMessage);
             }
         }
+<<<<<<< HEAD
         public virtual System.Threading.Tasks.Task<bool> CrearConsumoAsync(TConsumo Datos) {
             return System.Threading.Tasks.Task<bool>.Factory.FromAsync(this.BeginCrearConsumo(Datos, null, null), new System.Func<System.IAsyncResult, bool>(this.EndCrearConsumo));
+=======
+        public virtual System.Threading.Tasks.Task<bool> EntregarPremioAsync(int ClienteID, string Descripcion, double cargo, double Abono, string Observaciones, int PuntosPremioID) {
+            return System.Threading.Tasks.Task<bool>.Factory.FromAsync(this.BeginEntregarPremio(ClienteID, Descripcion, cargo, Abono, Observaciones, PuntosPremioID, null, null), new System.Func<System.IAsyncResult, bool>(this.EndEntregarPremio));
+>>>>>>> 4661ac925d3060108529ec52b7bd5780c1779c5c
         }
     }
     public class CoRPDataServiceAsync {
