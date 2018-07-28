@@ -124,16 +124,7 @@ namespace RPSuiteServer {
                 @__ObjectDisposer.Dispose();
             }
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        public static void Invoke_CrearConsumo(RemObjects.SDK.IROService @__Instance, RemObjects.SDK.IMessage @__Message, RemObjects.SDK.Server.IServerChannelInfo @__ServerChannelInfo, out RemObjects.SDK.Server.ResponseOptions @__oResponseOptions) {
-=======
         public static void Invoke_BuscarCliente(RemObjects.SDK.IROService @__Instance, RemObjects.SDK.IMessage @__Message, RemObjects.SDK.Server.IServerChannelInfo @__ServerChannelInfo, out RemObjects.SDK.Server.ResponseOptions @__oResponseOptions) {
->>>>>>> parent of d67a937... Implementacion CrearConsumo
-=======
-        public static void Invoke_BuscarCliente(RemObjects.SDK.IROService @__Instance, RemObjects.SDK.IMessage @__Message, RemObjects.SDK.Server.IServerChannelInfo @__ServerChannelInfo, out RemObjects.SDK.Server.ResponseOptions @__oResponseOptions) {
->>>>>>> parent of d67a937... Implementacion CrearConsumo
             RemObjects.SDK.ObjectDisposer @__ObjectDisposer = new RemObjects.SDK.ObjectDisposer(1);
             try {
                 int ClienteID = @__Message.ReadInt32("ClienteID");
@@ -148,21 +139,6 @@ namespace RPSuiteServer {
             finally {
                 @__ObjectDisposer.Dispose();
             }
-=======
-        public static void Invoke_EntregarPremio(RemObjects.SDK.IROService @__Instance, RemObjects.SDK.IMessage @__Message, RemObjects.SDK.Server.IServerChannelInfo @__ServerChannelInfo, out RemObjects.SDK.Server.ResponseOptions @__oResponseOptions) {
-            int ClienteID = @__Message.ReadInt32("ClienteID");
-            string Descripcion = @__Message.ReadAnsiString("Descripcion");
-            double cargo = @__Message.ReadDouble("cargo");
-            double Abono = @__Message.ReadDouble("Abono");
-            string Observaciones = @__Message.ReadAnsiString("Observaciones");
-            int PuntosPremioID = @__Message.ReadInt32("PuntosPremioID");
-            bool Result;
-            Result = ((IRPDataService)(@__Instance)).EntregarPremio(ClienteID, Descripcion, cargo, Abono, Observaciones, PuntosPremioID);
-            @__Message.InitializeResponseMessage(@__ServerChannelInfo, "RPSuiteServer", "RPDataService", "EntregarPremioResponse");
-            @__Message.WriteBoolean("Result", Result);
-            @__Message.FinalizeMessage();
-            @__oResponseOptions = RemObjects.SDK.Server.ResponseOptions.roDefault;
->>>>>>> 4661ac925d3060108529ec52b7bd5780c1779c5c
         }
     }
     [System.Reflection.ObfuscationAttribute(Exclude=true, ApplyToMembers=false)]

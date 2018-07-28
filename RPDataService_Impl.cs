@@ -150,55 +150,6 @@ namespace RPSuiteServer
             return Res;
         }
 
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> e6c5ee7090e3834acf3e190c03d57277b81765e7
-        //public int GuardaDocumentoNuevo(TDocumentoNuevo Datos)
-        //{
-        //    //string[] Params;
-        //    //Params = new string[32];
-        //    Datos.DocumentoId = Folio("DocumentoID", "");
-        //    byte[] Imagen= System.Text.Encoding.Default.GetBytes(Datos.Imagen);
-        //    int Res = -1;
-        //    //bool Res = false;
-        //    try
-        //    {
-        //        //using (IDbCommand lcommand = this.ServiceSchema.NewCommand(this.Connection, "InsertarClienteNuevo", new string[] { }, new object[] { }))
-
-        //        //using (IDbCommand lcommand = this.ServiceSchema.NewCommand(this.Connection, "InsertarClienteNuevo", new string[] {"ClienteID", "Codigo"
-        //        //     ,"Nombre" ,"Grupo" ,"Calle" ,"Colonia" ,"Ciudad" ,"Telefono" ,"CodigoPostal" ,"RFC" ,"Curp" ,"LimiteCredito" ,"email" 
-        //        //     ,"Localidad" ,"Estado" ,"NoExterior" ,"NoInterior"  ,"CuentaBancaria" }, new object[] {
-        //        //         Datos.ClienteId, Datos.Codigo,Datos.Nombre,Datos.Grupo,Datos.Calle,Datos.Colonia,Datos.Ciudad,Datos.Telefono,Datos.CodigoPostal,Datos.RFC,
-        //        //      Datos.CURP,Datos.LimiteCredito, Datos.Email,Datos.Localidad,Datos.Estado,Datos.NoExterior,Datos.NoInterior,Datos.CuentaBancaria}))
-
-
-        //        using (IDbCommand lcommand = this.ServiceSchema.NewCommand(this.Connection, "InsertaDocumentoNuevo", new string[] {"DocumentoID", "Fecha"
-        //             ,"Observaciones" ,"Imagen" ,"EmpleadoID" ,"TipoDocumentoID" ,"UsuarioID"}, new object[] {
-        //                 Datos.DocumentoId,Datos.Fecha,Datos.Observaciones,Imagen,Datos.EmpleadoId,Datos.TipoDocumentoId,Datos.UsuarioId}))
-        //        {
-        //            lcommand.ExecuteNonQuery();
-        //            Res = Datos.DocumentoId;
-        //        }
-        //        // Res = true;
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Res = -1;
-        //        // Res = false;
-        //    }
-
-        //    return Res;
-        //}
-<<<<<<< HEAD
-
-=======
-=======
-=======
->>>>>>> parent of d67a937... Implementacion CrearConsumo
->>>>>>> e6c5ee7090e3834acf3e190c03d57277b81765e7
         public int GuardaDocumentoNuevo(TDocumentoNuevo Datos)
         {
             //string[] Params;
@@ -235,14 +186,6 @@ namespace RPSuiteServer
 
             return Res;
         }
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
->>>>>>> parent of d67a937... Implementacion CrearConsumo
-=======
->>>>>>> parent of d67a937... Implementacion CrearConsumo
->>>>>>> e6c5ee7090e3834acf3e190c03d57277b81765e7
 
 
         public TCliente BuscarCliente(int clienteID)
@@ -384,97 +327,5 @@ namespace RPSuiteServer
             }
             return res;
         }
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> e6c5ee7090e3834acf3e190c03d57277b81765e7
-
-        public bool CrearConsumo(TConsumo Datos)
-        {
-            //string[] Params;
-            //Params = new string[32];
-            Datos.ID = Folio("ID", "");
-
-            bool Res = false;
-            //bool Res = false;
-            try
-            {
-                //using (IDbCommand lcommand = this.ServiceSchema.NewCommand(this.Connection, "InsertarClienteNuevo", new string[] { }, new object[] { }))
-
-                //using (IDbCommand lcommand = this.ServiceSchema.NewCommand(this.Connection, "InsertarClienteNuevo", new string[] {"ClienteID", "Codigo"
-                //     ,"Nombre" ,"Grupo" ,"Calle" ,"Colonia" ,"Ciudad" ,"Telefono" ,"CodigoPostal" ,"RFC" ,"Curp" ,"LimiteCredito" ,"email" 
-                //     ,"Localidad" ,"Estado" ,"NoExterior" ,"NoInterior"  ,"CuentaBancaria" }, new object[] {
-                //         Datos.ClienteId, Datos.Codigo,Datos.Nombre,Datos.Grupo,Datos.Calle,Datos.Colonia,Datos.Ciudad,Datos.Telefono,Datos.CodigoPostal,Datos.RFC,
-                //      Datos.CURP,Datos.LimiteCredito, Datos.Email,Datos.Localidad,Datos.Estado,Datos.NoExterior,Datos.NoInterior,Datos.CuentaBancaria}))
-
-
-                using (IDbCommand lcommand = this.ServiceSchema.NewCommand(this.Connection, "cmdCrearConsumo", 
-                    new string[] 
-                    {
-                        "SecuenciaVenta", "Serie","EstacionID",
-                        "FechaMovimiento","FechaCarga","Ejercicio",
-                        "Periodo","Dia","Turno","Kilometraje",
-                        "Tarjeta","PosicionCarga","Cantidad",
-                        "Precio","Importe","ImpuestoImporte",
-                        "ImpuestoPorcentaje","ManualAutomatico",
-                        "Facturado","EnIngresos","Auditado",
-                        "FacturaID","ProductoID","GasolineroID",
-                        "ClienteID","VehiculoID","IEPS",
-                        "Rendimiento","ID","FechaCaptura"
-                    }, 
-                    new object[] 
-                    {
-                        Datos.SecuenciaVenta,Datos.Serie,Datos.EstacionID,
-                        Datos.FechaMovimiento,Datos.FechaCarga,Datos.Ejercicio,
-                        Datos.Periodo,Datos.Dia,Datos.Turno,Datos.Kilometraje,
-                        Datos.Tarjeta,Datos.PosicionCarga,Datos.Cantidad,
-                        Datos.Precio,Datos.Importe, Datos.ImpuestoImporte,
-                        Datos.ImpuestoPorcentaje,Datos.ManualAutomatico,
-                        Datos.Facturado,Datos.EnIngresos,Datos.Auditado,
-                        Datos.FacturaID,Datos.ProductoID,Datos.GasolineroID,
-                        Datos.ClienteID,Datos.VehiculoID,Datos.IEPS,Datos.Rendimiento,
-                        Datos.ID,Datos.FechaCaptura
-                    }
-                    ))
-                {
-                    lcommand.ExecuteNonQuery();
-                    Res = true;
-                }     
-            }
-            catch (Exception ex)
-            {
-                Res = false;
-            }
-
-            return Res;
-        }
-
-        public bool EntregarPremio(int ClienteID,string Descripcion, double Cargo, double Abono, string Observaciones,int PuntosPremioID)
-        {
-            IDbCommand command;
-            using (IDataReader reader = this.ServiceSchema.GetDataReader(this.Connection, "spFolio", new string[] { "Campo", "Serie" }, new object[] { "user", "password" }, out command))
-            {
-                while (reader.Read())
-                {
-
-
-                    // do something
-                }
-            }
-            return false;
-        }
-
-       
-<<<<<<< HEAD
-
-
-=======
-=======
->>>>>>> parent of d67a937... Implementacion CrearConsumo
-=======
->>>>>>> parent of d67a937... Implementacion CrearConsumo
->>>>>>> e6c5ee7090e3834acf3e190c03d57277b81765e7
     }
 }
