@@ -150,42 +150,42 @@ namespace RPSuiteServer
             return Res;
         }
 
-        public int GuardaDocumentoNuevo(TDocumentoNuevo Datos)
-        {
-            //string[] Params;
-            //Params = new string[32];
-            Datos.DocumentoId = Folio("DocumentoID", "");
-            byte[] Imagen= System.Text.Encoding.Default.GetBytes(Datos.Imagen);
-            int Res = -1;
-            //bool Res = false;
-            try
-            {
-                //using (IDbCommand lcommand = this.ServiceSchema.NewCommand(this.Connection, "InsertarClienteNuevo", new string[] { }, new object[] { }))
+        //public int GuardaDocumentoNuevo(TDocumentoNuevo Datos)
+        //{
+        //    //string[] Params;
+        //    //Params = new string[32];
+        //    Datos.DocumentoId = Folio("DocumentoID", "");
+        //    byte[] Imagen= System.Text.Encoding.Default.GetBytes(Datos.Imagen);
+        //    int Res = -1;
+        //    //bool Res = false;
+        //    try
+        //    {
+        //        //using (IDbCommand lcommand = this.ServiceSchema.NewCommand(this.Connection, "InsertarClienteNuevo", new string[] { }, new object[] { }))
 
-                //using (IDbCommand lcommand = this.ServiceSchema.NewCommand(this.Connection, "InsertarClienteNuevo", new string[] {"ClienteID", "Codigo"
-                //     ,"Nombre" ,"Grupo" ,"Calle" ,"Colonia" ,"Ciudad" ,"Telefono" ,"CodigoPostal" ,"RFC" ,"Curp" ,"LimiteCredito" ,"email" 
-                //     ,"Localidad" ,"Estado" ,"NoExterior" ,"NoInterior"  ,"CuentaBancaria" }, new object[] {
-                //         Datos.ClienteId, Datos.Codigo,Datos.Nombre,Datos.Grupo,Datos.Calle,Datos.Colonia,Datos.Ciudad,Datos.Telefono,Datos.CodigoPostal,Datos.RFC,
-                //      Datos.CURP,Datos.LimiteCredito, Datos.Email,Datos.Localidad,Datos.Estado,Datos.NoExterior,Datos.NoInterior,Datos.CuentaBancaria}))
+        //        //using (IDbCommand lcommand = this.ServiceSchema.NewCommand(this.Connection, "InsertarClienteNuevo", new string[] {"ClienteID", "Codigo"
+        //        //     ,"Nombre" ,"Grupo" ,"Calle" ,"Colonia" ,"Ciudad" ,"Telefono" ,"CodigoPostal" ,"RFC" ,"Curp" ,"LimiteCredito" ,"email" 
+        //        //     ,"Localidad" ,"Estado" ,"NoExterior" ,"NoInterior"  ,"CuentaBancaria" }, new object[] {
+        //        //         Datos.ClienteId, Datos.Codigo,Datos.Nombre,Datos.Grupo,Datos.Calle,Datos.Colonia,Datos.Ciudad,Datos.Telefono,Datos.CodigoPostal,Datos.RFC,
+        //        //      Datos.CURP,Datos.LimiteCredito, Datos.Email,Datos.Localidad,Datos.Estado,Datos.NoExterior,Datos.NoInterior,Datos.CuentaBancaria}))
 
 
-                using (IDbCommand lcommand = this.ServiceSchema.NewCommand(this.Connection, "InsertaDocumentoNuevo", new string[] {"DocumentoID", "Fecha"
-                     ,"Observaciones" ,"Imagen" ,"EmpleadoID" ,"TipoDocumentoID" ,"UsuarioID"}, new object[] {
-                         Datos.DocumentoId,Datos.Fecha,Datos.Observaciones,Imagen,Datos.EmpleadoId,Datos.TipoDocumentoId,Datos.UsuarioId}))
-                {
-                    lcommand.ExecuteNonQuery();
-                    Res = Datos.DocumentoId;
-                }
-                // Res = true;
-            }
-            catch (Exception ex)
-            {
-                Res = -1;
-                // Res = false;
-            }
+        //        using (IDbCommand lcommand = this.ServiceSchema.NewCommand(this.Connection, "InsertaDocumentoNuevo", new string[] {"DocumentoID", "Fecha"
+        //             ,"Observaciones" ,"Imagen" ,"EmpleadoID" ,"TipoDocumentoID" ,"UsuarioID"}, new object[] {
+        //                 Datos.DocumentoId,Datos.Fecha,Datos.Observaciones,Imagen,Datos.EmpleadoId,Datos.TipoDocumentoId,Datos.UsuarioId}))
+        //        {
+        //            lcommand.ExecuteNonQuery();
+        //            Res = Datos.DocumentoId;
+        //        }
+        //        // Res = true;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Res = -1;
+        //        // Res = false;
+        //    }
 
-            return Res;
-        }
+        //    return Res;
+        //}
 
 
         public TCliente BuscarCliente(int clienteID)
