@@ -17014,7 +17014,6 @@ ClienteID,
 VehiculoID,
 IEPS,
 Rendimiento,
-ID,
 FechaCaptura
 )
 Values
@@ -17047,7 +17046,6 @@ Values
 :VehiculoID,
 :IEPS,
 :Rendimiento,
-:ID,
 :FechaCaptura
 )</SQL>
           <TargetTable>Consumo</TargetTable>
@@ -17060,12 +17058,12 @@ Values
           <Description />
         </Item0>
       </Statements>
-      <Params IsObject="true" Count="30" IsCollection="true" Type="TDAParamCollection" ItemClass="TDAParam">
+      <Params IsObject="true" Count="29" IsCollection="true" Type="TDAParamCollection" ItemClass="TDAParam">
         <Item0>
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>SecuenciaVenta</Name>
-          <DataType>datUnknown</DataType>
+          <DataType>datInteger</DataType>
           <Size>0</Size>
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
@@ -17078,8 +17076,8 @@ Values
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>Serie</Name>
-          <DataType>datUnknown</DataType>
-          <Size>0</Size>
+          <DataType>datString</DataType>
+          <Size>5</Size>
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
           <BlobType>dabtUnknown</BlobType>
@@ -17091,7 +17089,7 @@ Values
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>EstacionID</Name>
-          <DataType>datUnknown</DataType>
+          <DataType>datInteger</DataType>
           <Size>0</Size>
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
@@ -17104,7 +17102,7 @@ Values
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>FechaMovimiento</Name>
-          <DataType>datUnknown</DataType>
+          <DataType>datDateTime</DataType>
           <Size>0</Size>
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
@@ -17117,7 +17115,7 @@ Values
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>FechaCarga</Name>
-          <DataType>datUnknown</DataType>
+          <DataType>datDateTime</DataType>
           <Size>0</Size>
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
@@ -17130,7 +17128,7 @@ Values
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>Ejercicio</Name>
-          <DataType>datUnknown</DataType>
+          <DataType>datInteger</DataType>
           <Size>0</Size>
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
@@ -17143,7 +17141,7 @@ Values
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>Periodo</Name>
-          <DataType>datUnknown</DataType>
+          <DataType>datInteger</DataType>
           <Size>0</Size>
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
@@ -17156,7 +17154,7 @@ Values
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>Dia</Name>
-          <DataType>datUnknown</DataType>
+          <DataType>datInteger</DataType>
           <Size>0</Size>
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
@@ -17169,7 +17167,7 @@ Values
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>Turno</Name>
-          <DataType>datUnknown</DataType>
+          <DataType>datInteger</DataType>
           <Size>0</Size>
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
@@ -17182,7 +17180,7 @@ Values
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>Kilometraje</Name>
-          <DataType>datUnknown</DataType>
+          <DataType>datInteger</DataType>
           <Size>0</Size>
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
@@ -17195,8 +17193,8 @@ Values
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>Tarjeta</Name>
-          <DataType>datUnknown</DataType>
-          <Size>0</Size>
+          <DataType>datString</DataType>
+          <Size>50</Size>
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
           <BlobType>dabtUnknown</BlobType>
@@ -17208,7 +17206,7 @@ Values
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>PosicionCarga</Name>
-          <DataType>datUnknown</DataType>
+          <DataType>datInteger</DataType>
           <Size>0</Size>
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
@@ -17221,7 +17219,7 @@ Values
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>Cantidad</Name>
-          <DataType>datUnknown</DataType>
+          <DataType>datFloat</DataType>
           <Size>0</Size>
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
@@ -17234,7 +17232,7 @@ Values
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>Precio</Name>
-          <DataType>datUnknown</DataType>
+          <DataType>datFloat</DataType>
           <Size>0</Size>
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
@@ -17247,7 +17245,7 @@ Values
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>Importe</Name>
-          <DataType>datUnknown</DataType>
+          <DataType>datFloat</DataType>
           <Size>0</Size>
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
@@ -17260,7 +17258,7 @@ Values
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>ImpuestoImporte</Name>
-          <DataType>datUnknown</DataType>
+          <DataType>datFloat</DataType>
           <Size>0</Size>
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
@@ -17273,7 +17271,7 @@ Values
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>ImpuestoPorcentaje</Name>
-          <DataType>datUnknown</DataType>
+          <DataType>datFloat</DataType>
           <Size>0</Size>
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
@@ -17286,8 +17284,8 @@ Values
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>ManualAutomatico</Name>
-          <DataType>datUnknown</DataType>
-          <Size>0</Size>
+          <DataType>datString</DataType>
+          <Size>1</Size>
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
           <BlobType>dabtUnknown</BlobType>
@@ -17299,7 +17297,7 @@ Values
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>Facturado</Name>
-          <DataType>datUnknown</DataType>
+          <DataType>datBoolean</DataType>
           <Size>0</Size>
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
@@ -17312,7 +17310,7 @@ Values
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>EnIngresos</Name>
-          <DataType>datUnknown</DataType>
+          <DataType>datBoolean</DataType>
           <Size>0</Size>
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
@@ -17325,7 +17323,7 @@ Values
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>Auditado</Name>
-          <DataType>datUnknown</DataType>
+          <DataType>datBoolean</DataType>
           <Size>0</Size>
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
@@ -17338,7 +17336,7 @@ Values
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>FacturaID</Name>
-          <DataType>datUnknown</DataType>
+          <DataType>datInteger</DataType>
           <Size>0</Size>
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
@@ -17351,7 +17349,7 @@ Values
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>ProductoID</Name>
-          <DataType>datUnknown</DataType>
+          <DataType>datInteger</DataType>
           <Size>0</Size>
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
@@ -17364,7 +17362,7 @@ Values
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>GasolineroID</Name>
-          <DataType>datUnknown</DataType>
+          <DataType>datInteger</DataType>
           <Size>0</Size>
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
@@ -17377,7 +17375,7 @@ Values
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>ClienteID</Name>
-          <DataType>datUnknown</DataType>
+          <DataType>datInteger</DataType>
           <Size>0</Size>
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
@@ -17390,7 +17388,7 @@ Values
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>VehiculoID</Name>
-          <DataType>datUnknown</DataType>
+          <DataType>datInteger</DataType>
           <Size>0</Size>
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
@@ -17403,7 +17401,7 @@ Values
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>IEPS</Name>
-          <DataType>datUnknown</DataType>
+          <DataType>datFloat</DataType>
           <Size>0</Size>
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
@@ -17416,7 +17414,7 @@ Values
           <Value />
           <ParamType>daptInput</ParamType>
           <Name>Rendimiento</Name>
-          <DataType>datUnknown</DataType>
+          <DataType>datFloat</DataType>
           <Size>0</Size>
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
@@ -17428,8 +17426,8 @@ Values
         <Item28>
           <Value />
           <ParamType>daptInput</ParamType>
-          <Name>ID</Name>
-          <DataType>datUnknown</DataType>
+          <Name>FechaCaptura</Name>
+          <DataType>datDateTime</DataType>
           <Size>0</Size>
           <DecimalScale>0</DecimalScale>
           <DecimalPrecision>0</DecimalPrecision>
@@ -17438,19 +17436,6 @@ Values
           <BusinessClassID />
           <Description />
         </Item28>
-        <Item29>
-          <Value />
-          <ParamType>daptInput</ParamType>
-          <Name>FechaCaptura</Name>
-          <DataType>datUnknown</DataType>
-          <Size>0</Size>
-          <DecimalScale>0</DecimalScale>
-          <DecimalPrecision>0</DecimalPrecision>
-          <BlobType>dabtUnknown</BlobType>
-          <GeneratorName />
-          <BusinessClassID />
-          <Description />
-        </Item29>
       </Params>
       <CustomAttributes />
       <IsPublic>True</IsPublic>

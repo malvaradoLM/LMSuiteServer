@@ -1702,12 +1702,439 @@ namespace RPSuiteServer {
     [RemObjects.SDK.Remotable(ActivatorClass=typeof(TConsumo_Activator))]
     [System.Reflection.ObfuscationAttribute(Exclude=true)]
     public partial class TConsumo : RemObjects.SDK.Types.ComplexType {
+        private int @__SecuenciaVenta;
+        private string @__Serie;
+        private int @__EstacionID;
+        private System.DateTime @__FechaMovimiento;
+        private System.DateTime @__FechaCarga;
+        private int @__Ejercicio;
+        private int @__Periodo;
+        private int @__Dia;
+        private int @__Turno;
+        private int @__Kilometraje;
+        private string @__Tarjeta;
+        private int @__PosicionCarga;
+        private double @__Cantidad;
+        private double @__Precio;
+        private double @__Importe;
+        private double @__ImpuestoImporte;
+        private double @__ImpuestoPorcentaje;
+        private string @__ManualAutomatico;
+        private bool @__Facturado;
+        private bool @__EnIngresos;
+        private bool @__Auditado;
+        private int @__FacturaID;
+        private int @__ProductoID;
+        private int @__GasolineroID;
+        private int @__ClienteID;
+        private int @__VehiculoID;
+        private double @__IEPS;
+        private double @__Rendimiento;
+        private int @__ID;
+        private System.DateTime @__FechaCaptura;
+        public virtual int SecuenciaVenta {
+            get {
+                return @__SecuenciaVenta;
+            }
+            set {
+                @__SecuenciaVenta = value;
+                this.TriggerPropertyChanged("SecuenciaVenta");
+            }
+        }
+        [RemObjects.SDK.StreamAs(RemObjects.SDK.StreamingFormat.AnsiString)]
+        public virtual string Serie {
+            get {
+                return @__Serie;
+            }
+            set {
+                @__Serie = value;
+                this.TriggerPropertyChanged("Serie");
+            }
+        }
+        public virtual int EstacionID {
+            get {
+                return @__EstacionID;
+            }
+            set {
+                @__EstacionID = value;
+                this.TriggerPropertyChanged("EstacionID");
+            }
+        }
+        public virtual System.DateTime FechaMovimiento {
+            get {
+                return @__FechaMovimiento;
+            }
+            set {
+                @__FechaMovimiento = value;
+                this.TriggerPropertyChanged("FechaMovimiento");
+            }
+        }
+        public virtual System.DateTime FechaCarga {
+            get {
+                return @__FechaCarga;
+            }
+            set {
+                @__FechaCarga = value;
+                this.TriggerPropertyChanged("FechaCarga");
+            }
+        }
+        public virtual int Ejercicio {
+            get {
+                return @__Ejercicio;
+            }
+            set {
+                @__Ejercicio = value;
+                this.TriggerPropertyChanged("Ejercicio");
+            }
+        }
+        public virtual int Periodo {
+            get {
+                return @__Periodo;
+            }
+            set {
+                @__Periodo = value;
+                this.TriggerPropertyChanged("Periodo");
+            }
+        }
+        public virtual int Dia {
+            get {
+                return @__Dia;
+            }
+            set {
+                @__Dia = value;
+                this.TriggerPropertyChanged("Dia");
+            }
+        }
+        public virtual int Turno {
+            get {
+                return @__Turno;
+            }
+            set {
+                @__Turno = value;
+                this.TriggerPropertyChanged("Turno");
+            }
+        }
+        public virtual int Kilometraje {
+            get {
+                return @__Kilometraje;
+            }
+            set {
+                @__Kilometraje = value;
+                this.TriggerPropertyChanged("Kilometraje");
+            }
+        }
+        [RemObjects.SDK.StreamAs(RemObjects.SDK.StreamingFormat.AnsiString)]
+        public virtual string Tarjeta {
+            get {
+                return @__Tarjeta;
+            }
+            set {
+                @__Tarjeta = value;
+                this.TriggerPropertyChanged("Tarjeta");
+            }
+        }
+        public virtual int PosicionCarga {
+            get {
+                return @__PosicionCarga;
+            }
+            set {
+                @__PosicionCarga = value;
+                this.TriggerPropertyChanged("PosicionCarga");
+            }
+        }
+        public virtual double Cantidad {
+            get {
+                return @__Cantidad;
+            }
+            set {
+                @__Cantidad = value;
+                this.TriggerPropertyChanged("Cantidad");
+            }
+        }
+        public virtual double Precio {
+            get {
+                return @__Precio;
+            }
+            set {
+                @__Precio = value;
+                this.TriggerPropertyChanged("Precio");
+            }
+        }
+        public virtual double Importe {
+            get {
+                return @__Importe;
+            }
+            set {
+                @__Importe = value;
+                this.TriggerPropertyChanged("Importe");
+            }
+        }
+        public virtual double ImpuestoImporte {
+            get {
+                return @__ImpuestoImporte;
+            }
+            set {
+                @__ImpuestoImporte = value;
+                this.TriggerPropertyChanged("ImpuestoImporte");
+            }
+        }
+        public virtual double ImpuestoPorcentaje {
+            get {
+                return @__ImpuestoPorcentaje;
+            }
+            set {
+                @__ImpuestoPorcentaje = value;
+                this.TriggerPropertyChanged("ImpuestoPorcentaje");
+            }
+        }
+        [RemObjects.SDK.StreamAs(RemObjects.SDK.StreamingFormat.AnsiString)]
+        public virtual string ManualAutomatico {
+            get {
+                return @__ManualAutomatico;
+            }
+            set {
+                @__ManualAutomatico = value;
+                this.TriggerPropertyChanged("ManualAutomatico");
+            }
+        }
+        public virtual bool Facturado {
+            get {
+                return @__Facturado;
+            }
+            set {
+                @__Facturado = value;
+                this.TriggerPropertyChanged("Facturado");
+            }
+        }
+        public virtual bool EnIngresos {
+            get {
+                return @__EnIngresos;
+            }
+            set {
+                @__EnIngresos = value;
+                this.TriggerPropertyChanged("EnIngresos");
+            }
+        }
+        public virtual bool Auditado {
+            get {
+                return @__Auditado;
+            }
+            set {
+                @__Auditado = value;
+                this.TriggerPropertyChanged("Auditado");
+            }
+        }
+        public virtual int FacturaID {
+            get {
+                return @__FacturaID;
+            }
+            set {
+                @__FacturaID = value;
+                this.TriggerPropertyChanged("FacturaID");
+            }
+        }
+        public virtual int ProductoID {
+            get {
+                return @__ProductoID;
+            }
+            set {
+                @__ProductoID = value;
+                this.TriggerPropertyChanged("ProductoID");
+            }
+        }
+        public virtual int GasolineroID {
+            get {
+                return @__GasolineroID;
+            }
+            set {
+                @__GasolineroID = value;
+                this.TriggerPropertyChanged("GasolineroID");
+            }
+        }
+        public virtual int ClienteID {
+            get {
+                return @__ClienteID;
+            }
+            set {
+                @__ClienteID = value;
+                this.TriggerPropertyChanged("ClienteID");
+            }
+        }
+        public virtual int VehiculoID {
+            get {
+                return @__VehiculoID;
+            }
+            set {
+                @__VehiculoID = value;
+                this.TriggerPropertyChanged("VehiculoID");
+            }
+        }
+        public virtual double IEPS {
+            get {
+                return @__IEPS;
+            }
+            set {
+                @__IEPS = value;
+                this.TriggerPropertyChanged("IEPS");
+            }
+        }
+        public virtual double Rendimiento {
+            get {
+                return @__Rendimiento;
+            }
+            set {
+                @__Rendimiento = value;
+                this.TriggerPropertyChanged("Rendimiento");
+            }
+        }
+        public virtual int ID {
+            get {
+                return @__ID;
+            }
+            set {
+                @__ID = value;
+                this.TriggerPropertyChanged("ID");
+            }
+        }
+        public virtual System.DateTime FechaCaptura {
+            get {
+                return @__FechaCaptura;
+            }
+            set {
+                @__FechaCaptura = value;
+                this.TriggerPropertyChanged("FechaCaptura");
+            }
+        }
         public override void ReadComplex(RemObjects.SDK.Serializer serializer) {
             if (serializer.RecordStrictOrder) {
+                this.SecuenciaVenta = serializer.ReadInt32("SecuenciaVenta");
+                this.Serie = serializer.ReadAnsiString("Serie");
+                this.EstacionID = serializer.ReadInt32("EstacionID");
+                this.FechaMovimiento = serializer.ReadDateTime("FechaMovimiento");
+                this.FechaCarga = serializer.ReadDateTime("FechaCarga");
+                this.Ejercicio = serializer.ReadInt32("Ejercicio");
+                this.Periodo = serializer.ReadInt32("Periodo");
+                this.Dia = serializer.ReadInt32("Dia");
+                this.Turno = serializer.ReadInt32("Turno");
+                this.Kilometraje = serializer.ReadInt32("Kilometraje");
+                this.Tarjeta = serializer.ReadAnsiString("Tarjeta");
+                this.PosicionCarga = serializer.ReadInt32("PosicionCarga");
+                this.Cantidad = serializer.ReadDouble("Cantidad");
+                this.Precio = serializer.ReadDouble("Precio");
+                this.Importe = serializer.ReadDouble("Importe");
+                this.ImpuestoImporte = serializer.ReadDouble("ImpuestoImporte");
+                this.ImpuestoPorcentaje = serializer.ReadDouble("ImpuestoPorcentaje");
+                this.ManualAutomatico = serializer.ReadAnsiString("ManualAutomatico");
+                this.Facturado = serializer.ReadBoolean("Facturado");
+                this.EnIngresos = serializer.ReadBoolean("EnIngresos");
+                this.Auditado = serializer.ReadBoolean("Auditado");
+                this.FacturaID = serializer.ReadInt32("FacturaID");
+                this.ProductoID = serializer.ReadInt32("ProductoID");
+                this.GasolineroID = serializer.ReadInt32("GasolineroID");
+                this.ClienteID = serializer.ReadInt32("ClienteID");
+                this.VehiculoID = serializer.ReadInt32("VehiculoID");
+                this.IEPS = serializer.ReadDouble("IEPS");
+                this.Rendimiento = serializer.ReadDouble("Rendimiento");
+                this.ID = serializer.ReadInt32("ID");
+                this.FechaCaptura = serializer.ReadDateTime("FechaCaptura");
+            }
+            else {
+                this.Auditado = serializer.ReadBoolean("Auditado");
+                this.Cantidad = serializer.ReadDouble("Cantidad");
+                this.ClienteID = serializer.ReadInt32("ClienteID");
+                this.Dia = serializer.ReadInt32("Dia");
+                this.Ejercicio = serializer.ReadInt32("Ejercicio");
+                this.EnIngresos = serializer.ReadBoolean("EnIngresos");
+                this.EstacionID = serializer.ReadInt32("EstacionID");
+                this.Facturado = serializer.ReadBoolean("Facturado");
+                this.FacturaID = serializer.ReadInt32("FacturaID");
+                this.FechaCaptura = serializer.ReadDateTime("FechaCaptura");
+                this.FechaCarga = serializer.ReadDateTime("FechaCarga");
+                this.FechaMovimiento = serializer.ReadDateTime("FechaMovimiento");
+                this.GasolineroID = serializer.ReadInt32("GasolineroID");
+                this.ID = serializer.ReadInt32("ID");
+                this.IEPS = serializer.ReadDouble("IEPS");
+                this.Importe = serializer.ReadDouble("Importe");
+                this.ImpuestoImporte = serializer.ReadDouble("ImpuestoImporte");
+                this.ImpuestoPorcentaje = serializer.ReadDouble("ImpuestoPorcentaje");
+                this.Kilometraje = serializer.ReadInt32("Kilometraje");
+                this.ManualAutomatico = serializer.ReadAnsiString("ManualAutomatico");
+                this.Periodo = serializer.ReadInt32("Periodo");
+                this.PosicionCarga = serializer.ReadInt32("PosicionCarga");
+                this.Precio = serializer.ReadDouble("Precio");
+                this.ProductoID = serializer.ReadInt32("ProductoID");
+                this.Rendimiento = serializer.ReadDouble("Rendimiento");
+                this.SecuenciaVenta = serializer.ReadInt32("SecuenciaVenta");
+                this.Serie = serializer.ReadAnsiString("Serie");
+                this.Tarjeta = serializer.ReadAnsiString("Tarjeta");
+                this.Turno = serializer.ReadInt32("Turno");
+                this.VehiculoID = serializer.ReadInt32("VehiculoID");
             }
         }
         public override void WriteComplex(RemObjects.SDK.Serializer serializer) {
             if (serializer.RecordStrictOrder) {
+                serializer.WriteInt32("SecuenciaVenta", this.SecuenciaVenta);
+                serializer.WriteAnsiString("Serie", this.Serie);
+                serializer.WriteInt32("EstacionID", this.EstacionID);
+                serializer.WriteDateTime("FechaMovimiento", this.FechaMovimiento);
+                serializer.WriteDateTime("FechaCarga", this.FechaCarga);
+                serializer.WriteInt32("Ejercicio", this.Ejercicio);
+                serializer.WriteInt32("Periodo", this.Periodo);
+                serializer.WriteInt32("Dia", this.Dia);
+                serializer.WriteInt32("Turno", this.Turno);
+                serializer.WriteInt32("Kilometraje", this.Kilometraje);
+                serializer.WriteAnsiString("Tarjeta", this.Tarjeta);
+                serializer.WriteInt32("PosicionCarga", this.PosicionCarga);
+                serializer.WriteDouble("Cantidad", this.Cantidad);
+                serializer.WriteDouble("Precio", this.Precio);
+                serializer.WriteDouble("Importe", this.Importe);
+                serializer.WriteDouble("ImpuestoImporte", this.ImpuestoImporte);
+                serializer.WriteDouble("ImpuestoPorcentaje", this.ImpuestoPorcentaje);
+                serializer.WriteAnsiString("ManualAutomatico", this.ManualAutomatico);
+                serializer.WriteBoolean("Facturado", this.Facturado);
+                serializer.WriteBoolean("EnIngresos", this.EnIngresos);
+                serializer.WriteBoolean("Auditado", this.Auditado);
+                serializer.WriteInt32("FacturaID", this.FacturaID);
+                serializer.WriteInt32("ProductoID", this.ProductoID);
+                serializer.WriteInt32("GasolineroID", this.GasolineroID);
+                serializer.WriteInt32("ClienteID", this.ClienteID);
+                serializer.WriteInt32("VehiculoID", this.VehiculoID);
+                serializer.WriteDouble("IEPS", this.IEPS);
+                serializer.WriteDouble("Rendimiento", this.Rendimiento);
+                serializer.WriteInt32("ID", this.ID);
+                serializer.WriteDateTime("FechaCaptura", this.FechaCaptura);
+            }
+            else {
+                serializer.WriteBoolean("Auditado", this.Auditado);
+                serializer.WriteDouble("Cantidad", this.Cantidad);
+                serializer.WriteInt32("ClienteID", this.ClienteID);
+                serializer.WriteInt32("Dia", this.Dia);
+                serializer.WriteInt32("Ejercicio", this.Ejercicio);
+                serializer.WriteBoolean("EnIngresos", this.EnIngresos);
+                serializer.WriteInt32("EstacionID", this.EstacionID);
+                serializer.WriteBoolean("Facturado", this.Facturado);
+                serializer.WriteInt32("FacturaID", this.FacturaID);
+                serializer.WriteDateTime("FechaCaptura", this.FechaCaptura);
+                serializer.WriteDateTime("FechaCarga", this.FechaCarga);
+                serializer.WriteDateTime("FechaMovimiento", this.FechaMovimiento);
+                serializer.WriteInt32("GasolineroID", this.GasolineroID);
+                serializer.WriteInt32("ID", this.ID);
+                serializer.WriteDouble("IEPS", this.IEPS);
+                serializer.WriteDouble("Importe", this.Importe);
+                serializer.WriteDouble("ImpuestoImporte", this.ImpuestoImporte);
+                serializer.WriteDouble("ImpuestoPorcentaje", this.ImpuestoPorcentaje);
+                serializer.WriteInt32("Kilometraje", this.Kilometraje);
+                serializer.WriteAnsiString("ManualAutomatico", this.ManualAutomatico);
+                serializer.WriteInt32("Periodo", this.Periodo);
+                serializer.WriteInt32("PosicionCarga", this.PosicionCarga);
+                serializer.WriteDouble("Precio", this.Precio);
+                serializer.WriteInt32("ProductoID", this.ProductoID);
+                serializer.WriteDouble("Rendimiento", this.Rendimiento);
+                serializer.WriteInt32("SecuenciaVenta", this.SecuenciaVenta);
+                serializer.WriteAnsiString("Serie", this.Serie);
+                serializer.WriteAnsiString("Tarjeta", this.Tarjeta);
+                serializer.WriteInt32("Turno", this.Turno);
+                serializer.WriteInt32("VehiculoID", this.VehiculoID);
             }
         }
     }
@@ -1808,6 +2235,7 @@ namespace RPSuiteServer {
         int Folio(string Campo, string Serie);
         int GuardaClienteNuevo(TClienteNuevo Datos);
         TCliente BuscarCliente(int ClienteID);
+        bool GenerarConsumo(TConsumo Datos);
     }
     public partial class RPDataService_Proxy : RemObjects.DataAbstract.Server.DataAbstractService_Proxy, IRPDataService {
         public RPDataService_Proxy(RemObjects.SDK.IMessage message, RemObjects.SDK.IClientChannel clientChannel) : 
@@ -1920,6 +2348,20 @@ namespace RPSuiteServer {
                 this.@__ClearMessage(@__LocalMessage);
             }
         }
+        public virtual bool GenerarConsumo(TConsumo Datos) {
+            RemObjects.SDK.IMessage @__LocalMessage = this.@__GetMessage();
+            try {
+                @__LocalMessage.InitializeRequestMessage(this.ClientChannel, "RPSuiteServer", this.ActiveInterfaceName, "GenerarConsumo");
+                @__LocalMessage.Write("Datos", Datos, typeof(TConsumo), RemObjects.SDK.StreamingFormat.Default);
+                @__LocalMessage.FinalizeMessage();
+                this.ClientChannel.Dispatch(@__LocalMessage);
+                bool _Result = @__LocalMessage.ReadBoolean("Result");
+                return _Result;
+            }
+            finally {
+                this.@__ClearMessage(@__LocalMessage);
+            }
+        }
     }
     public class CoRPDataService {
         public static IRPDataService Create(RemObjects.SDK.IMessage message, RemObjects.SDK.IClientChannel clientChannel) {
@@ -1954,6 +2396,9 @@ namespace RPSuiteServer {
         System.IAsyncResult BeginBuscarCliente(int ClienteID, System.AsyncCallback @__Callback, object @__UserData);
         TCliente EndBuscarCliente(System.IAsyncResult @__AsyncResult);
         System.Threading.Tasks.Task<TCliente> BuscarClienteAsync(int ClienteID);
+        System.IAsyncResult BeginGenerarConsumo(TConsumo Datos, System.AsyncCallback @__Callback, object @__UserData);
+        bool EndGenerarConsumo(System.IAsyncResult @__AsyncResult);
+        System.Threading.Tasks.Task<bool> GenerarConsumoAsync(TConsumo Datos);
     }
     public partial class RPDataService_AsyncProxy : RemObjects.DataAbstract.Server.DataAbstractService_AsyncProxy, IRPDataService_Async {
         public RPDataService_AsyncProxy(RemObjects.SDK.IMessage message, RemObjects.SDK.IClientChannel clientChannel) : 
@@ -2137,6 +2582,32 @@ namespace RPSuiteServer {
         }
         public virtual System.Threading.Tasks.Task<TCliente> BuscarClienteAsync(int ClienteID) {
             return System.Threading.Tasks.Task<TCliente>.Factory.FromAsync(this.BeginBuscarCliente(ClienteID, null, null), new System.Func<System.IAsyncResult, TCliente>(this.EndBuscarCliente));
+        }
+        public virtual System.IAsyncResult BeginGenerarConsumo(TConsumo Datos, System.AsyncCallback @__Callback, object @__UserData) {
+            RemObjects.SDK.IMessage @__LocalMessage = this.@__GetMessage();
+            try {
+                @__LocalMessage.InitializeRequestMessage(this.ClientChannel, "RPSuiteServer", this.ActiveInterfaceName, "GenerarConsumo");
+                @__LocalMessage.Write("Datos", Datos, typeof(TConsumo), RemObjects.SDK.StreamingFormat.Default);
+                @__LocalMessage.FinalizeMessage();
+                return this.ClientChannel.AsyncDispatch(@__LocalMessage, @__Callback, @__UserData);
+            }
+            catch (System.Exception ex) {
+                this.@__ClearMessage(@__LocalMessage);
+                throw ex;
+            }
+        }
+        public virtual bool EndGenerarConsumo(System.IAsyncResult @__AsyncResult) {
+            RemObjects.SDK.IMessage @__LocalMessage = ((RemObjects.SDK.IClientAsyncResult)(@__AsyncResult)).Message;
+            try {
+                bool Result = @__LocalMessage.ReadBoolean("Result");
+                return Result;
+            }
+            finally {
+                this.@__ClearMessage(@__LocalMessage);
+            }
+        }
+        public virtual System.Threading.Tasks.Task<bool> GenerarConsumoAsync(TConsumo Datos) {
+            return System.Threading.Tasks.Task<bool>.Factory.FromAsync(this.BeginGenerarConsumo(Datos, null, null), new System.Func<System.IAsyncResult, bool>(this.EndGenerarConsumo));
         }
     }
     public class CoRPDataServiceAsync {
