@@ -3,96 +3,96 @@
   <Structs>
     <Struct Name="DataParameter" UID="{960c67f1-f39a-43ef-9d45-e091ace04a86}" FromUsedRodlUID="{dc8b7be2-14af-402d-b1f8-e1008b6fa4f6}" AutoCreateParams="1">
       <Elements>
-        <Element Name="Name" UID="{7de6c305-ee84-410a-a738-0d7a519a5cc1}" DataType="Utf8String" />
-        <Element Name="Value" UID="{300edb0c-47d1-4d16-931b-f147ce5dd832}" DataType="Variant" />
+        <Element Name="Name" UID="{ba01ec99-f378-4eb5-8492-4f9fd22db89c}" DataType="Utf8String" />
+        <Element Name="Value" UID="{be1f7479-377a-4308-8fec-103cc6802bfb}" DataType="Variant" />
       </Elements>
     </Struct>
     <Struct Name="TableRequestInfo" UID="{ad4d327e-650e-42af-8d57-1166124fb515}" FromUsedRodlUID="{dc8b7be2-14af-402d-b1f8-e1008b6fa4f6}" AutoCreateParams="1">
       <Elements>
-        <Element Name="UserFilter" UID="{8c7f76d2-6075-42e3-a6b0-b545cfc2b6b7}" DataType="Utf8String" />
-        <Element Name="IncludeSchema" UID="{fcb0bdfb-bec2-48e0-afc9-48c5374cbcd9}" DataType="Boolean" />
-        <Element Name="MaxRecords" UID="{5e0f4147-3077-4b79-a16b-d8b3ba4bd89e}" DataType="Integer">
+        <Element Name="UserFilter" UID="{06dce12a-da7a-4a78-b14c-fa2feb1c13a0}" DataType="Utf8String" />
+        <Element Name="IncludeSchema" UID="{b7aefcef-44fa-4846-803f-254281d89249}" DataType="Boolean" />
+        <Element Name="MaxRecords" UID="{521d0510-8f05-4b02-b066-868b6dabe843}" DataType="Integer">
           <CustomAttributes>
             <default Value="-1" />
           </CustomAttributes>
         </Element>
-        <Element Name="Parameters" UID="{3ea7ee0d-d4d9-44aa-b415-3993e58ffa29}" DataType="DataParameterArray" />
+        <Element Name="Parameters" UID="{596d47ae-1543-45ee-894b-020986cd9188}" DataType="DataParameterArray" />
       </Elements>
     </Struct>
     <Struct Name="UserInfo" UID="{c07a7008-f183-4015-9503-5c8fae347e1c}" FromUsedRodlUID="{dc8b7be2-14af-402d-b1f8-e1008b6fa4f6}" AutoCreateParams="1">
       <Elements>
-        <Element Name="SessionID" UID="{a8ad5bf5-da74-4c3c-80c0-ca6befc9e900}" DataType="Utf8String" />
-        <Element Name="UserID" UID="{3d8785fe-41c7-492e-90f5-c4412a262bfa}" DataType="Utf8String" />
-        <Element Name="Privileges" UID="{c396f075-115b-413f-b788-1f34d8ab61a2}" DataType="StringArray" />
-        <Element Name="Attributes" UID="{ee96ae4c-057c-4b55-91cc-51e2ed41aee0}" DataType="VariantArray" />
-        <Element Name="UserData" UID="{d237b518-bb65-4405-8221-f22bcada95c1}" DataType="Binary" />
+        <Element Name="SessionID" UID="{6d2dc0c2-240d-4534-b489-3d82dd69f1ca}" DataType="Utf8String" />
+        <Element Name="UserID" UID="{ca9e4404-b2c7-475e-b540-0a2255f311d8}" DataType="Utf8String" />
+        <Element Name="Privileges" UID="{559eed4e-2050-4c00-937f-e08abac7024f}" DataType="StringArray" />
+        <Element Name="Attributes" UID="{74a13d6d-19ee-4c09-a740-7e8108e14c90}" DataType="VariantArray" />
+        <Element Name="UserData" UID="{496734ae-174f-4ea2-9b47-fbce3c93a618}" DataType="Binary" />
       </Elements>
     </Struct>
     <Struct Name="TableRequestInfoV5" UID="{f212b25a-167b-409c-be99-23348e82aa5e}" FromUsedRodlUID="{dc8b7be2-14af-402d-b1f8-e1008b6fa4f6}" Ancestor="TableRequestInfo" AutoCreateParams="1">
       <Elements>
-        <Element Name="WhereClause" UID="{b9381d77-2e5e-42b1-b021-da2d5a916f28}" DataType="Xml" />
-        <Element Name="DynamicSelectFieldNames" UID="{d1d4b584-c7ec-4d91-a009-34fd80fad322}" DataType="StringArray" />
-        <Element Name="Sorting" UID="{eb6f0ee6-f212-48cc-b555-3ead00f15ae0}" DataType="ColumnSorting" />
+        <Element Name="WhereClause" UID="{97b8e9e1-3b77-49c5-9fdc-6ab74afd6793}" DataType="Xml" />
+        <Element Name="DynamicSelectFieldNames" UID="{d4ae37e8-0c4e-49cf-a029-2476229c9467}" DataType="StringArray" />
+        <Element Name="Sorting" UID="{228c4e3e-adad-4f12-82c5-c6c0c7eaa218}" DataType="ColumnSorting" />
       </Elements>
     </Struct>
     <Struct Name="ColumnSorting" UID="{81a8fad7-b72d-4962-ad43-cd8e827dbc12}" FromUsedRodlUID="{dc8b7be2-14af-402d-b1f8-e1008b6fa4f6}" AutoCreateParams="1">
       <Elements>
-        <Element Name="FieldName" UID="{b2c42043-71c7-49ab-9c09-7199164a3eb7}" DataType="Utf8String" />
-        <Element Name="SortDirection" UID="{3bab839a-d94a-4a5a-95e6-ddbc2ceb7498}" DataType="ColumnSortDirection" />
+        <Element Name="FieldName" UID="{22fd3b08-0cd1-472f-ae50-3ba56caba11e}" DataType="Utf8String" />
+        <Element Name="SortDirection" UID="{33c5539a-71fb-4f49-8158-b342e9eee3b6}" DataType="ColumnSortDirection" />
       </Elements>
     </Struct>
     <Struct Name="TableRequestInfoV6" UID="{9bc1458b-11f9-44eb-81d9-06198336f72d}" FromUsedRodlUID="{dc8b7be2-14af-402d-b1f8-e1008b6fa4f6}" Ancestor="TableRequestInfo" AutoCreateParams="1">
       <Elements>
-        <Element Name="Sql" UID="{ba814742-dbe7-4e63-86f0-4ae671fb7635}" DataType="Widestring" />
+        <Element Name="Sql" UID="{1720e657-1feb-48f3-96d6-1194400bae51}" DataType="Widestring" />
       </Elements>
     </Struct>
     <Struct Name="TFactura" UID="{bb2b437f-a12a-485f-bcd3-717fd42aa1fe}" AutoCreateParams="1">
       <Elements>
-        <Element Name="FacturaID" UID="{3b1286f9-cf9f-414d-a450-4fff85862be3}" DataType="Integer" />
-        <Element Name="Folio" UID="{d071409b-0499-4a9c-9625-b4e0561f62c1}" DataType="Integer" />
-        <Element Name="Serie" UID="{d81f8547-9c1d-4a43-83af-d32003c54ac8}" DataType="AnsiString" />
-        <Element Name="Ejercicio" UID="{4c71bf5a-c9e4-42ee-bd66-46ad70f8ca5d}" DataType="Integer" />
-        <Element Name="Periodo" UID="{53d26120-2ef3-4435-9ad1-5d19e849bfb5}" DataType="Integer" />
-        <Element Name="Dia" UID="{028c89c5-c8b0-4155-9b21-28e6208021a2}" DataType="Integer" />
-        <Element Name="Fecha" UID="{8a21067a-454e-420f-b819-88b1982b136c}" DataType="Integer" />
-        <Element Name="Subtotal" UID="{6647920a-b804-4726-aba6-90598236ed03}" DataType="Double" />
-        <Element Name="Impuesto" UID="{c65e6369-8fde-4aba-821b-eebbf077e9fa}" DataType="Double" />
-        <Element Name="Total" UID="{175a4e63-3b3c-4fac-b09a-63d46eddace8}" DataType="Double" />
-        <Element Name="ImpuestoPorcentaje" UID="{289261a2-42c8-440f-9a22-ab39789bff8a}" DataType="Double" />
-        <Element Name="Turno" UID="{93020833-a27a-4721-98c1-51bcd8eb0eb8}" DataType="Integer" />
-        <Element Name="Cancelada" UID="{cd07d440-7d4a-400f-88b0-879a3a1d268d}" DataType="Boolean" />
-        <Element Name="EstacionID" UID="{cc102c42-c267-4ed7-be16-37bfa2d34909}" DataType="Integer" />
-        <Element Name="ClienteID" UID="{ab7a0504-e207-407d-879c-5f9eae9c999a}" DataType="Integer" />
-        <Element Name="LiquidacionID" UID="{6f04159c-b44c-4c2a-95fc-05c841364b87}" DataType="Integer" />
-        <Element Name="FormaPagoID" UID="{89f97044-cb03-45ec-984c-f897bfa3a493}" DataType="Integer" />
-        <Element Name="TipoFacturaID" UID="{8118ffc2-4224-4a4f-8b6f-6bcdcbbaab75}" DataType="Integer" />
-        <Element Name="Tickets" UID="{afcb29b6-a172-4abb-943c-26bd92df74c1}" DataType="AnsiString" />
-        <Element Name="UsuarioID" UID="{7ed6708e-d30c-4ffd-b0f4-3305cb824bac}" DataType="Integer" />
-        <Element Name="Detalle" UID="{2354d452-4d3f-40dd-9e92-21823cea53a7}" DataType="TADetalle" />
+        <Element Name="FacturaID" UID="{bf80dd1c-d8d7-49fe-b6ca-0f6593ac6536}" DataType="Integer" />
+        <Element Name="Folio" UID="{9f275b48-c69f-40d5-b6ad-8c6e3a621a6e}" DataType="Integer" />
+        <Element Name="Serie" UID="{39b0311a-7921-475d-abb6-86d4ba9eca1c}" DataType="AnsiString" />
+        <Element Name="Ejercicio" UID="{0043f92a-d1ae-4cfa-878c-c76ee872cc70}" DataType="Integer" />
+        <Element Name="Periodo" UID="{49fe49c2-38ac-47ef-bfce-3538dfd0ac13}" DataType="Integer" />
+        <Element Name="Dia" UID="{d51e98c6-1218-40c3-bba3-017df15ec1ad}" DataType="Integer" />
+        <Element Name="Fecha" UID="{fd9dbe32-6893-4891-aa12-04af2989dc3c}" DataType="Integer" />
+        <Element Name="Subtotal" UID="{9f16b5e6-3504-476c-a26e-cba9ad33779e}" DataType="Double" />
+        <Element Name="Impuesto" UID="{1d52d582-06c4-4447-9bf2-b014d5b38fab}" DataType="Double" />
+        <Element Name="Total" UID="{a4221414-5906-4f2a-830f-6cb7b3b1f8aa}" DataType="Double" />
+        <Element Name="ImpuestoPorcentaje" UID="{71a9e20f-4eaa-4c71-82ac-72dde2ec7884}" DataType="Double" />
+        <Element Name="Turno" UID="{80a160ed-d89c-4ee0-925b-ebb44de871cc}" DataType="Integer" />
+        <Element Name="Cancelada" UID="{dc0983f5-b078-41e0-b39c-2a3214d50999}" DataType="Boolean" />
+        <Element Name="EstacionID" UID="{2f930f09-2cbf-46cc-81f6-adba883f3ca0}" DataType="Integer" />
+        <Element Name="ClienteID" UID="{2afde4ff-4977-48c2-b33a-30e05e612060}" DataType="Integer" />
+        <Element Name="LiquidacionID" UID="{f4ae77ca-1bc3-4696-9573-4615a9182559}" DataType="Integer" />
+        <Element Name="FormaPagoID" UID="{751f2ffe-6118-45f5-8c2f-d1cffcf31ed9}" DataType="Integer" />
+        <Element Name="TipoFacturaID" UID="{75ee92c6-d696-47d4-acb1-52396cdd405a}" DataType="Integer" />
+        <Element Name="Tickets" UID="{5db6c463-618a-4c94-9750-048c55e5bc0d}" DataType="AnsiString" />
+        <Element Name="UsuarioID" UID="{8ecae6cb-bd4c-4099-8528-e3b32c3703e2}" DataType="Integer" />
+        <Element Name="Detalle" UID="{6baad132-6e34-4dd2-9cfb-70d095221dfd}" DataType="TADetalle" />
       </Elements>
     </Struct>
     <Struct Name="TDetalle" UID="{72ed0187-e7b2-4bd8-b2e0-61e669a48afc}" AutoCreateParams="1">
       <Elements>
-        <Element Name="DetalleFacturaID" UID="{b624121e-431a-42c0-a73b-fe80b3dab017}" DataType="Integer" />
-        <Element Name="ProductoID" UID="{ae2bfdce-7782-455b-b194-366508e1c211}" DataType="Integer" />
-        <Element Name="Cantidad" UID="{dc6e5d9b-82e3-4d56-b62e-12b724cf9011}" DataType="Double" />
-        <Element Name="Precio" UID="{9fdfbbcf-def2-4b6e-b0c3-0bbe2c89d628}" DataType="Double" />
+        <Element Name="DetalleFacturaID" UID="{1e61cb13-6a71-464c-95bc-dc519fb1ba24}" DataType="Integer" />
+        <Element Name="ProductoID" UID="{3d1b44a2-c972-4552-a45d-28694bd3ce39}" DataType="Integer" />
+        <Element Name="Cantidad" UID="{c324e295-1d52-4dcf-87a8-b4f8dbfa46f4}" DataType="Double" />
+        <Element Name="Precio" UID="{44ba7a85-9f8c-43c0-a0e7-bd5d6c01ce1d}" DataType="Double" />
       </Elements>
     </Struct>
     <Struct Name="TConfiguraEstacion" UID="{7dca63d3-ea2f-42b0-83cb-384d3299d490}" AutoCreateParams="1">
       <Elements>
-        <Element Name="Numero" UID="{917ffb26-dfd0-47c2-a55e-aeaf945cd1fa}" DataType="Integer" />
-        <Element Name="Protocolo" UID="{76e9da83-0ee4-4c02-aba9-f1b6dd7862a7}" DataType="Integer" />
-        <Element Name="Telemedicion" UID="{24c8a30e-2983-47a4-aa6b-c5b2fd1505cf}" DataType="Integer" />
-        <Element Name="Nombre" UID="{60da3af2-1f17-40bb-b0bb-1efc0a37fb87}" DataType="AnsiString" />
-        <Element Name="RazonSocial" UID="{608270b7-fa34-4803-a4f9-1fa4e23ba88e}" DataType="AnsiString" />
+        <Element Name="Numero" UID="{1f103107-f52c-4b2d-a87a-4244e832186a}" DataType="Integer" />
+        <Element Name="Protocolo" UID="{cd8579f0-2acc-4029-bd1c-78d4ff1142b5}" DataType="Integer" />
+        <Element Name="Telemedicion" UID="{7403065a-ef1a-4028-8d3b-87f8e0caeff7}" DataType="Integer" />
+        <Element Name="Nombre" UID="{6f359e1d-b622-4e06-848a-d0d564fbae84}" DataType="AnsiString" />
+        <Element Name="RazonSocial" UID="{949f632a-22a0-48bd-a8aa-50e6fa7eac29}" DataType="AnsiString" />
       </Elements>
     </Struct>
     <Struct Name="TConfiguraEstacionBombas" UID="{ed5ffa3f-907e-4732-a2d4-2af8590c48e7}" AutoCreateParams="1">
       <Elements>
-        <Element Name="BombaID" UID="{db6f6164-b965-4870-82c3-4bdd635ab20b}" DataType="Integer" />
-        <Element Name="MangueraID" UID="{b2401a8a-feb2-4d2f-b57c-eb54397af55a}" DataType="Integer" />
-        <Element Name="ProductoID" UID="{f58e6340-39de-419f-968d-e140355da995}" DataType="Integer" />
+        <Element Name="BombaID" UID="{311ef73a-b536-467f-ad38-90ccec3ad7be}" DataType="Integer" />
+        <Element Name="MangueraID" UID="{797b6401-b26d-44e7-9ecb-a85e387c2f6c}" DataType="Integer" />
+        <Element Name="ProductoID" UID="{93c64a8d-5a47-4397-9404-00d7c6cfe17d}" DataType="Integer" />
       </Elements>
     </Struct>
     <Struct Name="TConfiguraEstacionTanques" UID="{602f21d2-a656-42ef-81f3-274b7b844e01}" AutoCreateParams="1">
@@ -103,114 +103,114 @@
     </Struct>
     <Struct Name="TClienteNuevo" UID="{e07d30d5-e8db-49cd-bfc0-c96cd83c726c}" AutoCreateParams="1">
       <Elements>
-        <Element Name="ClienteId" UID="{344cd54c-0a4f-408d-b4a3-19a33ebf8118}" DataType="Integer" />
-        <Element Name="Codigo" UID="{c6cb7bd9-9bca-459f-a386-8973ae685231}" DataType="AnsiString" />
-        <Element Name="Nombre" UID="{dd9092d8-94f1-4d8e-bbad-8f957a514507}" DataType="AnsiString" />
-        <Element Name="Grupo" UID="{6942b45c-8fb3-4e83-be7b-d4ca5bdaba37}" DataType="AnsiString" />
-        <Element Name="Calle" UID="{e1637091-d76a-46df-a241-87d2dde7b921}" DataType="AnsiString" />
-        <Element Name="Colonia" UID="{d4713469-1064-4821-84a5-d4202a88e993}" DataType="AnsiString" />
-        <Element Name="Ciudad" UID="{91558899-4f59-446f-874c-fc1b658d9b33}" DataType="AnsiString" />
-        <Element Name="Telefono" UID="{c10ed8d4-472d-4833-aaca-3019298a523c}" DataType="AnsiString" />
-        <Element Name="CodigoPostal" UID="{634c11cb-2ef5-4a0c-a97c-79f81e35c364}" DataType="AnsiString" />
-        <Element Name="RFC" UID="{1793dad9-9484-401f-a0a1-fc0d81f4f7a6}" DataType="AnsiString" />
-        <Element Name="CURP" UID="{960531ce-bcbd-418e-957c-dcd6bdfbe663}" DataType="AnsiString" />
-        <Element Name="Status" UID="{d6fd0049-ffe3-4dba-86b1-b329c29d1827}" DataType="Boolean" />
-        <Element Name="AutorizaCheque" UID="{be46cde6-b3a2-43f2-b6f2-a5175ef25f23}" DataType="Boolean" />
-        <Element Name="TicketBoucher" UID="{b6f3433f-8a81-4448-93d3-d05c2adb9e90}" DataType="Boolean" />
-        <Element Name="AutorizaValeCredito" UID="{06cf9a3e-e7cc-43e3-bcbf-a0c9def151fd}" DataType="Boolean" />
-        <Element Name="LimiteCredito" UID="{477a5cba-a337-4541-bd1d-7d94abeaef30}" DataType="Double" />
-        <Element Name="Email" UID="{a9dadee1-762f-4144-8108-955a23705162}" DataType="AnsiString" />
-        <Element Name="Localidad" UID="{abdaafc1-8a69-41ff-be30-ccf6a3deeecb}" DataType="AnsiString" />
-        <Element Name="Estado" UID="{0b11d866-449c-4a9d-9964-9a7b10dd1b6e}" DataType="AnsiString" />
-        <Element Name="NoExterior" UID="{995cad6b-cb73-4229-9e12-9bcbffcb4d35}" DataType="AnsiString" />
-        <Element Name="NoInterior" UID="{ffbddc3f-f68f-4bb8-8a98-de43021e2a99}" DataType="AnsiString" />
-        <Element Name="CuentaBancaria" UID="{26549b50-b7d1-40b5-972e-522f106d9c0e}" DataType="AnsiString" />
+        <Element Name="ClienteId" UID="{9d11fe38-3537-4207-beff-67a15d8d84a0}" DataType="Integer" />
+        <Element Name="Codigo" UID="{ae592296-ad88-4927-8d1e-7b7e0081b37d}" DataType="AnsiString" />
+        <Element Name="Nombre" UID="{71cb9271-f5cf-4226-98ef-09dbe4372d1b}" DataType="AnsiString" />
+        <Element Name="Grupo" UID="{18cd8ca8-02e4-4704-a182-08a469d5f76f}" DataType="AnsiString" />
+        <Element Name="Calle" UID="{451581a0-4089-4d23-bba7-ae68f7d6a2b1}" DataType="AnsiString" />
+        <Element Name="Colonia" UID="{f55dcdf7-18e3-4315-ad9d-c25790558c97}" DataType="AnsiString" />
+        <Element Name="Ciudad" UID="{621b185d-7d67-4020-a41b-10a59bdb1975}" DataType="AnsiString" />
+        <Element Name="Telefono" UID="{9b108a14-8793-4ceb-b47a-f130f31565ba}" DataType="AnsiString" />
+        <Element Name="CodigoPostal" UID="{32fdb767-face-45de-b0f9-c0c5a773da19}" DataType="AnsiString" />
+        <Element Name="RFC" UID="{94971350-2f61-489d-8557-9494369ca20d}" DataType="AnsiString" />
+        <Element Name="CURP" UID="{9643a4cb-9ea4-4601-81ab-256d80f20208}" DataType="AnsiString" />
+        <Element Name="Status" UID="{b8f03259-92b4-4919-9ab0-b02d976cac41}" DataType="Boolean" />
+        <Element Name="AutorizaCheque" UID="{554a1020-528d-4b1e-b328-d7023c691716}" DataType="Boolean" />
+        <Element Name="TicketBoucher" UID="{baa6f0ba-66f5-4feb-b198-43debab88fdf}" DataType="Boolean" />
+        <Element Name="AutorizaValeCredito" UID="{3105264a-e568-4d6a-9e57-f3e311e51c09}" DataType="Boolean" />
+        <Element Name="LimiteCredito" UID="{8fc1b77a-307f-46d5-9780-4e80effa1b2c}" DataType="Double" />
+        <Element Name="Email" UID="{e3390879-0b36-4c50-bc6f-e6783f3520d0}" DataType="AnsiString" />
+        <Element Name="Localidad" UID="{92d99e1a-90c5-441c-8049-0b6310ab3d22}" DataType="AnsiString" />
+        <Element Name="Estado" UID="{6db0390c-276d-414b-9f0e-2c4c17c201da}" DataType="AnsiString" />
+        <Element Name="NoExterior" UID="{ceebc15d-261e-4274-a5e4-8be16dfc32cd}" DataType="AnsiString" />
+        <Element Name="NoInterior" UID="{e2d82bb5-886e-4062-a57e-7428e73b71a3}" DataType="AnsiString" />
+        <Element Name="CuentaBancaria" UID="{40ce29ee-48e1-459c-bb2c-b91e7a2c47fb}" DataType="AnsiString" />
       </Elements>
     </Struct>
     <Struct Name="TCliente" UID="{3fdacbe4-f866-4d52-a621-0d38cb31b493}" AutoCreateParams="1">
       <Elements>
-        <Element Name="ClienteID" UID="{cd02046a-13bd-4d75-b439-495bcf4032bd}" DataType="Integer" />
-        <Element Name="Codigo" UID="{893ace7b-0cf8-4a52-8531-a574f460923f}" DataType="AnsiString" />
-        <Element Name="Nombre" UID="{3b4f6dc1-4d46-4453-b415-e64633a430f4}" DataType="AnsiString" />
-        <Element Name="Grupo" UID="{16f8517d-0cdd-459b-a1eb-06367a7e840d}" DataType="AnsiString" />
-        <Element Name="Calle" UID="{81cc9a2a-c36e-465f-a442-9f08ca0418cb}" DataType="AnsiString" />
-        <Element Name="Colonia" UID="{abdb2f5d-1e5e-4c62-9b60-912b955c478c}" DataType="AnsiString" />
-        <Element Name="Ciudad" UID="{d78d2cf0-6111-4b32-991f-8bf2c13a26b6}" DataType="AnsiString" />
-        <Element Name="Telefono" UID="{9cc13043-5945-4353-a4e3-a8d825b98e6b}" DataType="AnsiString" />
-        <Element Name="CodigoPostal" UID="{e68216f1-85f7-41b0-b800-149257357c12}" DataType="AnsiString" />
-        <Element Name="RFC" UID="{e243ff56-2394-4622-93ba-f74c39b76a9a}" DataType="AnsiString" />
-        <Element Name="CURP" UID="{e745b532-1f98-41f3-a785-69c396ca6033}" DataType="AnsiString" />
-        <Element Name="Status" UID="{fab28ca0-fd2a-4ee3-aa52-2b9311eaf429}" DataType="Boolean" />
-        <Element Name="AutorizaCheque" UID="{df8f62f4-735d-48c3-83b9-30744fc2b95e}" DataType="Boolean" />
-        <Element Name="TicketBoucher" UID="{cfc9fcba-bdf4-4c74-b11c-5be0ca27cbd8}" DataType="Boolean" />
-        <Element Name="AutorizaValeCredito" UID="{46d7628e-46db-4f52-b031-459a5a3dd755}" DataType="Boolean" />
-        <Element Name="CuentaContableAnticipo" UID="{b8d3889e-fa22-4e45-8b74-7eabf825e08b}" DataType="AnsiString" />
-        <Element Name="CuentaContableCredito" UID="{c391a92b-4786-43b2-bbb7-efc788f1eb82}" DataType="AnsiString" />
-        <Element Name="LimiteCredito" UID="{9ccfa5a7-eeba-4d19-938b-7935f4ac9fb5}" DataType="Double" />
-        <Element Name="Credito" UID="{b280f87e-7324-414a-aced-c575cc73834b}" DataType="Boolean" />
-        <Element Name="DiasCredito" UID="{d2d761bc-28ed-4003-872f-3231553d171d}" DataType="Integer" />
-        <Element Name="NIP" UID="{059f5a91-d926-426f-aeb2-3aeb0b754047}" DataType="Integer" />
-        <Element Name="FacturayLiquidacion" UID="{4f351064-07b6-4255-917f-b09ad1785f57}" DataType="Boolean" />
-        <Element Name="ApellidoPaterno" UID="{42c39bb7-b777-42b0-90ab-4f2ae1573915}" DataType="AnsiString" />
-        <Element Name="ApellidoMaterno" UID="{d1bf6289-50f7-4d6d-a6ae-e4fbb2cbb009}" DataType="AnsiString" />
-        <Element Name="Nombres" UID="{7d617e7d-2bef-4842-9fc6-86d6177644dd}" DataType="AnsiString" />
-        <Element Name="Email" UID="{aa7dc5a5-7609-433a-b0e2-33ccf88ee74b}" DataType="AnsiString" />
-        <Element Name="Nacimiento" UID="{c482352b-7638-478b-85d7-27817dc33ebb}" DataType="DateTime" />
-        <Element Name="Referencia" UID="{98d4a069-2f32-4142-99e3-00462385d92e}" DataType="AnsiString" />
-        <Element Name="Telefonos" UID="{1debb20f-7542-41ec-b380-a2b6121d8c66}" DataType="AnsiString" />
-        <Element Name="FacturaExpress" UID="{44c963c5-00d9-40cb-80b8-34daf069df75}" DataType="Boolean" />
-        <Element Name="Saldo" UID="{b2e36229-ef60-4f24-ab2c-7e205ac06bd1}" DataType="Double" />
-        <Element Name="PuntosCategoriaID" UID="{45eca759-4f90-4d4c-bed4-86e9a42d681b}" DataType="Integer" />
-        <Element Name="Localidad" UID="{dca67f4b-dbf0-446d-b551-3f09f6199fae}" DataType="AnsiString" />
-        <Element Name="Estado" UID="{2ec4c3b2-eba4-472e-b8d6-a3d65b345d5e}" DataType="AnsiString" />
-        <Element Name="NoExterior" UID="{711573f1-18b9-4c90-ab4d-544359c7711c}" DataType="AnsiString" />
-        <Element Name="NoInterior" UID="{c787d593-9c08-4336-b43c-cb7ab7fee675}" DataType="AnsiString" />
-        <Element Name="Actualizado" UID="{0fa63943-2754-449c-a41c-8c14f47e44fe}" DataType="Boolean" />
-        <Element Name="CuentaBancaria" UID="{cc593c65-4dc9-4fee-a650-2fe554f655e3}" DataType="AnsiString" />
-        <Element Name="Sexo" UID="{0e5b4020-7e15-4b4b-a7c6-9d3eea13f1d4}" DataType="AnsiString" />
-        <Element Name="Clasificacion" UID="{a8bb5a51-4450-445b-88fb-1c5846769f7f}" DataType="Double" />
-        <Element Name="INE" UID="{9a1e42dc-b43c-45c3-82db-725442e7caa9}" DataType="Boolean" />
-        <Element Name="INETipoProceso" UID="{72631396-1bd5-49e9-b899-dcbe69af00c5}" DataType="AnsiString" />
-        <Element Name="INETipoComite" UID="{178bdf6c-45e7-44dc-8993-922f4dba97ed}" DataType="AnsiString" />
-        <Element Name="INEidContabilidad" UID="{a97dc57a-fca5-49b4-9e73-babaa75e3c57}" DataType="Integer" />
-        <Element Name="INEClaveEntidad" UID="{aac13d8d-e073-4831-9282-ce0ff545f2e4}" DataType="AnsiString" />
-        <Element Name="INEEntidadAmbito" UID="{62b99751-985a-4f5e-a356-17dceeae090d}" DataType="AnsiString" />
-        <Element Name="INEEntidadContabilidad" UID="{23a5989f-a29a-44a0-b1b9-c29095a57a6f}" DataType="Integer" />
-        <Element Name="UUID" UID="{1d6ddca1-b8df-469d-a895-1279ebb6c35f}" DataType="AnsiString" />
+        <Element Name="ClienteID" UID="{f8ee6ae9-6935-4041-b389-31bad9abf1d6}" DataType="Integer" />
+        <Element Name="Codigo" UID="{2feb62db-bf65-4c92-a8c1-4e2a1dacf310}" DataType="AnsiString" />
+        <Element Name="Nombre" UID="{d87a7722-55bc-48e7-a0e9-54c5fe799174}" DataType="AnsiString" />
+        <Element Name="Grupo" UID="{e0d14679-730a-492a-a976-db0e260edbd0}" DataType="AnsiString" />
+        <Element Name="Calle" UID="{6997f92b-d5f9-4c39-9ead-6b0f761b7aba}" DataType="AnsiString" />
+        <Element Name="Colonia" UID="{ce2f460d-6181-443b-885f-7e43b4503264}" DataType="AnsiString" />
+        <Element Name="Ciudad" UID="{bc804d9f-5e16-424d-9cbe-a336e01bac3b}" DataType="AnsiString" />
+        <Element Name="Telefono" UID="{bb0f722d-95d4-4275-861e-96c5477e39b5}" DataType="AnsiString" />
+        <Element Name="CodigoPostal" UID="{efe3ee6a-9ed4-4329-80a0-2f3125c2987e}" DataType="AnsiString" />
+        <Element Name="RFC" UID="{5b9e83ca-d502-4874-baba-04fa9e19e9a4}" DataType="AnsiString" />
+        <Element Name="CURP" UID="{2e53d1e7-6f98-4409-b9a5-28da0c079098}" DataType="AnsiString" />
+        <Element Name="Status" UID="{c6ffcf9b-c078-4cd3-834a-0656fcad4bb8}" DataType="Boolean" />
+        <Element Name="AutorizaCheque" UID="{ad47c36c-0e62-4aa8-86db-934a921eba81}" DataType="Boolean" />
+        <Element Name="TicketBoucher" UID="{64488cc8-370a-4ace-91a2-94f41a810b9c}" DataType="Boolean" />
+        <Element Name="AutorizaValeCredito" UID="{542757d0-8338-4364-a3c4-84052e123c80}" DataType="Boolean" />
+        <Element Name="CuentaContableAnticipo" UID="{8d9f9c5e-4dd3-47c0-bb11-f0d53e660687}" DataType="AnsiString" />
+        <Element Name="CuentaContableCredito" UID="{1b6e8d30-f2e8-4018-9fb5-2a8e82dff243}" DataType="AnsiString" />
+        <Element Name="LimiteCredito" UID="{b77700f7-f957-423f-87bc-0a531db42be0}" DataType="Double" />
+        <Element Name="Credito" UID="{0737dc1a-a854-41dc-92cf-5e44cc58ade7}" DataType="Boolean" />
+        <Element Name="DiasCredito" UID="{32b4a901-0ffd-4e4d-914f-cc7fa3f8a989}" DataType="Integer" />
+        <Element Name="NIP" UID="{928e00b5-0505-4f9e-a4a7-84856f9c1132}" DataType="Integer" />
+        <Element Name="FacturayLiquidacion" UID="{1d59f2dd-7929-410b-92ae-d53d7b8f9e82}" DataType="Boolean" />
+        <Element Name="ApellidoPaterno" UID="{ea922c1a-583a-457a-a355-eefce64df228}" DataType="AnsiString" />
+        <Element Name="ApellidoMaterno" UID="{9f81d76a-b2df-4a57-97e0-a561d11bae5b}" DataType="AnsiString" />
+        <Element Name="Nombres" UID="{7bcba70a-8b0a-45d4-8a28-a3b795282933}" DataType="AnsiString" />
+        <Element Name="Email" UID="{b76de0b5-ac0c-47e6-a1af-62f650cb423a}" DataType="AnsiString" />
+        <Element Name="Nacimiento" UID="{e02181dc-5ef8-49a0-8149-90aeeeeabded}" DataType="DateTime" />
+        <Element Name="Referencia" UID="{5b974b67-5334-492a-986b-9f283c1912bd}" DataType="AnsiString" />
+        <Element Name="Telefonos" UID="{1737dfcf-1e14-4c42-8b3b-d3e458685ede}" DataType="AnsiString" />
+        <Element Name="FacturaExpress" UID="{ee9e95e8-2711-4bae-aca8-2d996be1988b}" DataType="Boolean" />
+        <Element Name="Saldo" UID="{7ec60315-d952-4268-84d0-ab0071720576}" DataType="Double" />
+        <Element Name="PuntosCategoriaID" UID="{fb54b0eb-44ab-4cb5-b3ad-922a8b049808}" DataType="Integer" />
+        <Element Name="Localidad" UID="{8a16fddc-c2fc-4fb6-bed2-a200999d3647}" DataType="AnsiString" />
+        <Element Name="Estado" UID="{7028bd98-b6d9-4ffc-bc06-679e5940ae75}" DataType="AnsiString" />
+        <Element Name="NoExterior" UID="{4a55aaa8-d845-4951-8544-61fbe4350872}" DataType="AnsiString" />
+        <Element Name="NoInterior" UID="{31d9e92e-dbcb-408e-8d4f-83707a5c7108}" DataType="AnsiString" />
+        <Element Name="Actualizado" UID="{2f87f4ce-e786-432e-850b-6ea2e57ab37c}" DataType="Boolean" />
+        <Element Name="CuentaBancaria" UID="{8a4d122a-0a1f-48ad-ac83-daf541daba88}" DataType="AnsiString" />
+        <Element Name="Sexo" UID="{57413d7a-2915-491c-bf68-6b4246842a48}" DataType="AnsiString" />
+        <Element Name="Clasificacion" UID="{4540656e-c0f6-4e8b-acee-8d4071f0ccbd}" DataType="Double" />
+        <Element Name="INE" UID="{dbbeda5f-3894-4064-82c8-6b050a98d4ca}" DataType="Boolean" />
+        <Element Name="INETipoProceso" UID="{fa87e1ad-f282-49d5-a1d3-2a3bd25c0c83}" DataType="AnsiString" />
+        <Element Name="INETipoComite" UID="{cafc6b1d-0c40-42ba-8334-4c08de1a65a8}" DataType="AnsiString" />
+        <Element Name="INEidContabilidad" UID="{1eafb4b8-4fa9-4371-9eab-2bc50ed3d268}" DataType="Integer" />
+        <Element Name="INEClaveEntidad" UID="{2b61a30e-d9c3-43ab-8ed8-219b6ee893d6}" DataType="AnsiString" />
+        <Element Name="INEEntidadAmbito" UID="{b2aa2a31-32d0-4132-b2ea-5eadb6ac06f9}" DataType="AnsiString" />
+        <Element Name="INEEntidadContabilidad" UID="{28fe37f8-c42c-48d8-9bcf-6de4c12d0141}" DataType="Integer" />
+        <Element Name="UUID" UID="{0fd849fa-22e6-442e-aec0-7a67649353cc}" DataType="AnsiString" />
       </Elements>
     </Struct>
     <Struct Name="TConsumo" UID="{0e3edab3-3eff-4825-98bf-729cfe861287}" AutoCreateParams="1">
       <Elements>
-        <Element Name="SecuenciaVenta" UID="{aeee88a0-a04b-4ecb-9773-1494329cb6b8}" DataType="Integer" />
-        <Element Name="Serie" UID="{5f8712de-3ab4-46d4-9cb3-b0526ca845bf}" DataType="AnsiString" />
-        <Element Name="EstacionID" UID="{f1dd41a4-664b-45fa-b4bd-e753deed9ce9}" DataType="Integer" />
-        <Element Name="FechaMovimiento" UID="{589a6c2b-7049-4b54-98f4-0b9ce8fa75ce}" DataType="DateTime" />
-        <Element Name="FechaCarga" UID="{fc7183ae-f763-4836-b0b1-b03f8d107495}" DataType="DateTime" />
-        <Element Name="Ejercicio" UID="{dca57169-72b0-4f49-89eb-14f8e1db7276}" DataType="Integer" />
-        <Element Name="Periodo" UID="{89aeca2e-0ef8-42a7-9d5f-b9b43253191f}" DataType="Integer" />
-        <Element Name="Dia" UID="{e886f758-b542-4922-a823-9dd6df22790d}" DataType="Integer" />
-        <Element Name="Turno" UID="{c0f3dd4e-6ea9-4699-9a71-cd2a2b22bb1b}" DataType="Integer" />
-        <Element Name="Kilometraje" UID="{6beb7385-bb72-4933-aa53-1f7b7498dcc0}" DataType="Integer" />
-        <Element Name="Tarjeta" UID="{3d67be59-67ce-4ec4-bcd8-8e0f5a69e00c}" DataType="AnsiString" />
-        <Element Name="PosicionCarga" UID="{e0939350-03c6-40a0-949e-36d8300c2c89}" DataType="Integer" />
-        <Element Name="Cantidad" UID="{fe0054c5-8a01-4667-8c9b-8b82774ec26f}" DataType="Double" />
-        <Element Name="Precio" UID="{90ca6e24-e20b-4e48-8d69-200ac206ead4}" DataType="Double" />
-        <Element Name="Importe" UID="{68aa63c9-8249-46d9-a400-b6e9527e4227}" DataType="Double" />
-        <Element Name="ImpuestoImporte" UID="{b46014e4-1250-4229-8ae8-120819ac550f}" DataType="Double" />
-        <Element Name="ImpuestoPorcentaje" UID="{d154479f-b5b5-47b3-ae6d-a4a8ff4fa94e}" DataType="Double" />
-        <Element Name="ManualAutomatico" UID="{79d164e6-4984-4707-a083-abcd8d87acb3}" DataType="AnsiString" />
-        <Element Name="Facturado" UID="{fbf1d47f-e10b-4c98-86f2-adf12385134a}" DataType="Boolean" />
-        <Element Name="EnIngresos" UID="{979a7451-ed27-433c-971e-e03369353774}" DataType="Boolean" />
-        <Element Name="Auditado" UID="{63ddc232-8fb8-494c-af0c-bbfc3a1ae036}" DataType="Boolean" />
-        <Element Name="FacturaID" UID="{2df01790-e461-40ce-92f6-3d0521309cec}" DataType="Integer" />
-        <Element Name="ProductoID" UID="{48fb6c14-f84e-4f95-a303-1faa9a1d0fe8}" DataType="Integer" />
-        <Element Name="GasolineroID" UID="{6e6f08da-0aac-4ac4-87ec-7025b87bd6e4}" DataType="Integer" />
-        <Element Name="ClienteID" UID="{0b54f2fb-6dd0-4644-91d4-fc63c169cffa}" DataType="Integer" />
-        <Element Name="VehiculoID" UID="{f73abab7-03f1-49d7-9249-655a263f8398}" DataType="Integer" />
-        <Element Name="IEPS" UID="{0dfb3310-7e9f-49de-9e90-b7fc373ac861}" DataType="Double" />
-        <Element Name="Rendimiento" UID="{1e26bcc3-d3ea-44bc-8308-cc6beb5aa4f3}" DataType="Double" />
-        <Element Name="ID" UID="{c92738ce-4d06-4325-8622-70e9f65fe0f2}" DataType="Integer" />
-        <Element Name="FechaCaptura" UID="{d9a6a966-4cc3-4f0d-9340-20afeb3f6c4b}" DataType="DateTime" />
+        <Element Name="SecuenciaVenta" UID="{c0fe2245-c8ae-40a0-af5f-9f2a61d4daa7}" DataType="Integer" />
+        <Element Name="Serie" UID="{3870c068-9941-4e8b-b055-fb0a43cc2d8e}" DataType="AnsiString" />
+        <Element Name="EstacionID" UID="{016926c6-e3c7-4d0c-8d7c-0486db238334}" DataType="Integer" />
+        <Element Name="FechaMovimiento" UID="{872b9f26-b122-494a-b482-fa2b58b46dc9}" DataType="DateTime" />
+        <Element Name="FechaCarga" UID="{33af026f-789a-44e7-834a-3ea22ae60bc1}" DataType="DateTime" />
+        <Element Name="Ejercicio" UID="{8c4f6aa5-d8d5-4c84-ba1f-a6eb6d4508d3}" DataType="Integer" />
+        <Element Name="Periodo" UID="{8804889d-ec0d-4339-a78e-e5bda4511f94}" DataType="Integer" />
+        <Element Name="Dia" UID="{487e3b97-593c-454c-95b7-65a4607058fe}" DataType="Integer" />
+        <Element Name="Turno" UID="{0ac15a93-0317-4f81-8196-77bb79b3b4bb}" DataType="Integer" />
+        <Element Name="Kilometraje" UID="{63fdd3b6-2589-4105-9894-f7fae67f22e3}" DataType="Integer" />
+        <Element Name="Tarjeta" UID="{445b95d0-87ae-4db7-89fc-67cf87909fd4}" DataType="AnsiString" />
+        <Element Name="PosicionCarga" UID="{d00ea0c3-dc3a-4327-a923-2332b1a63831}" DataType="Integer" />
+        <Element Name="Cantidad" UID="{7e641a6e-4ec2-47ee-bac8-31e87e1f1972}" DataType="Double" />
+        <Element Name="Precio" UID="{2e271b00-feb5-4c83-a7c5-85211e219458}" DataType="Double" />
+        <Element Name="Importe" UID="{dba70ddf-d862-4e94-815c-077a289fa9ec}" DataType="Double" />
+        <Element Name="ImpuestoImporte" UID="{e3c14473-06eb-4848-9628-1850ebf89138}" DataType="Double" />
+        <Element Name="ImpuestoPorcentaje" UID="{6e703133-f266-4634-8eb8-602c875e73e1}" DataType="Double" />
+        <Element Name="ManualAutomatico" UID="{f8369f84-c3e7-4df9-82de-9edd52828c87}" DataType="AnsiString" />
+        <Element Name="Facturado" UID="{25b67234-d279-4eb6-acd7-684f4ceb821e}" DataType="Boolean" />
+        <Element Name="EnIngresos" UID="{9048ff4f-8562-49ec-82ae-7e290e50704a}" DataType="Boolean" />
+        <Element Name="Auditado" UID="{67e6331a-4c2d-458d-80a8-213e3c64b856}" DataType="Boolean" />
+        <Element Name="FacturaID" UID="{0180c3f2-ae28-4636-b752-b7e3183dbdba}" DataType="Integer" />
+        <Element Name="ProductoID" UID="{10626929-2a70-464c-ba98-0e91ddc5f090}" DataType="Integer" />
+        <Element Name="GasolineroID" UID="{06740792-ab9b-4724-a980-05ea2b0e3602}" DataType="Integer" />
+        <Element Name="ClienteID" UID="{af9b33ab-3ac8-4e67-a580-f0f083983df3}" DataType="Integer" />
+        <Element Name="VehiculoID" UID="{276016d1-aa8a-45e1-a83b-c6205957cda4}" DataType="Integer" />
+        <Element Name="IEPS" UID="{1fd32b64-1844-43ac-88cd-9df3793cb583}" DataType="Double" />
+        <Element Name="Rendimiento" UID="{3450244a-25ec-44a8-bb74-f9187a8b7fca}" DataType="Double" />
+        <Element Name="ID" UID="{2f19b01f-2d58-4894-a3ea-135fbfbe880f}" DataType="Integer" />
+        <Element Name="FechaCaptura" UID="{aec4f557-e64c-4837-bca5-ca930777c951}" DataType="DateTime" />
       </Elements>
     </Struct>
   </Structs>
@@ -249,28 +249,28 @@
   <Enums>
     <Enum Name="ColumnSortDirection" UID="{eaead7d2-3a0e-48d6-be19-a74265d14503}" FromUsedRodlUID="{dc8b7be2-14af-402d-b1f8-e1008b6fa4f6}">
       <EnumValues>
-        <EnumValue Name="Ascending" UID="{99a4646e-fe9c-4502-bd96-ef13b233bab4}" />
-        <EnumValue Name="Descending" UID="{ef17b4d4-8a59-4377-8474-f856bdb74dde}" />
+        <EnumValue Name="Ascending" UID="{cc7987a2-5b97-4774-aa0f-7b123bc78219}" />
+        <EnumValue Name="Descending" UID="{d3127518-c874-4f53-9d6e-e66c4c5dfc3f}" />
       </EnumValues>
     </Enum>
     <Enum Name="ScriptExceptionType" UID="{60698d9b-61e3-4bda-aa4c-58235fe6f4f5}" FromUsedRodlUID="{dc8b7be2-14af-402d-b1f8-e1008b6fa4f6}">
       <EnumValues>
-        <EnumValue Name="ParserError" UID="{49f094f0-4d2d-4bb9-8a9c-2f4a4aff83f5}" />
-        <EnumValue Name="RuntimeError" UID="{8c02914f-cd9e-447c-a1cd-7f5205daa79c}" />
-        <EnumValue Name="Fail" UID="{aeb9eb76-8e51-4779-9676-14b1f09c1b8e}" />
-        <EnumValue Name="UnexpectedException" UID="{57b839a4-8fdc-4dbd-92d0-23d2307f9ca1}" />
-        <EnumValue Name="Abort" UID="{5370f68b-8d23-40da-af02-d06a660c47ff}" />
+        <EnumValue Name="ParserError" UID="{936a9c9a-f1b8-4ce5-ba4b-ecf5835f82c5}" />
+        <EnumValue Name="RuntimeError" UID="{645d2c65-0575-45d5-8df9-af6ecc7ed272}" />
+        <EnumValue Name="Fail" UID="{5b716200-a2a4-4527-9c62-f9bbeb1ac761}" />
+        <EnumValue Name="UnexpectedException" UID="{10310d98-f7b4-45f6-aa93-245fbb588cb1}" />
+        <EnumValue Name="Abort" UID="{24874f0a-4a57-470a-b533-29ea01c259ea}" />
       </EnumValues>
     </Enum>
   </Enums>
   <Exceptions>
     <Exception Name="ScriptException" UID="{8bf890a1-81cf-4371-93fd-39e44cbd052f}" FromUsedRodlUID="{dc8b7be2-14af-402d-b1f8-e1008b6fa4f6}">
       <Elements>
-        <Element Name="Line" UID="{6a321701-cc8f-4fa0-8b8e-d1bfd038ba84}" DataType="Integer" />
-        <Element Name="Column" UID="{a3c34069-a0ec-44f7-83b4-3fcf3b2d4d9b}" DataType="Integer" />
-        <Element Name="Event" UID="{bc2a031f-7374-4859-b1a9-92b24e72736a}" DataType="Utf8String" />
-        <Element Name="InnerStackTrace" UID="{564dbb1d-9220-4d2b-ba7a-b9283c7e823e}" DataType="Utf8String" />
-        <Element Name="Type" UID="{6f9cda9e-0d1a-4952-98ea-02587ed9094e}" DataType="ScriptExceptionType" />
+        <Element Name="Line" UID="{3ea07c15-9001-4381-8756-3de6008bd5f2}" DataType="Integer" />
+        <Element Name="Column" UID="{e9141e56-d859-4bb1-859b-cb6b840db147}" DataType="Integer" />
+        <Element Name="Event" UID="{8be033d5-757d-4fa9-bfa6-f28d8dc0cbcd}" DataType="Utf8String" />
+        <Element Name="InnerStackTrace" UID="{d37d2c6b-ec10-4acb-be40-b0bb1c552830}" DataType="Utf8String" />
+        <Element Name="Type" UID="{a1a729a0-7810-41d6-affe-e75bb7ef7a4a}" DataType="ScriptExceptionType" />
       </Elements>
     </Exception>
   </Exceptions>
@@ -283,94 +283,94 @@
           <Operations>
             <Operation Name="GetSchema" UID="{684994aa-6829-4497-a054-0acb6647e24f}">
               <Parameters>
-                <Parameter Name="Result" UID="{a35c8778-5804-4731-afcd-34109f6a9a1f}" DataType="Utf8String" Flag="Result" />
-                <Parameter Name="aFilter" UID="{664958f6-8ff6-4686-89a9-d9473b5109c5}" DataType="Utf8String" Flag="In" />
+                <Parameter Name="Result" UID="{e33b01ba-2dbd-46c6-9459-56f5d4d00418}" DataType="Utf8String" Flag="Result" />
+                <Parameter Name="aFilter" UID="{40018c86-315e-40c2-bbb4-6332419ddfa1}" DataType="Utf8String" Flag="In" />
               </Parameters>
             </Operation>
             <Operation Name="GetData" UID="{7c394d25-2b02-4cc9-838b-7099b06f857c}">
               <Parameters>
-                <Parameter Name="Result" UID="{5182850d-9479-414a-a82c-2b6f081b5555}" DataType="Binary" Flag="Result" />
-                <Parameter Name="aTableNameArray" UID="{78dbb42d-cda5-46f8-8798-815d4f9f8808}" DataType="StringArray" Flag="In" />
-                <Parameter Name="aTableRequestInfoArray" UID="{356d3823-7df9-4707-bb2e-902464787f99}" DataType="TableRequestInfoArray" Flag="In" />
+                <Parameter Name="Result" UID="{e02f3fac-c339-4a1e-97e8-fec07cd8f445}" DataType="Binary" Flag="Result" />
+                <Parameter Name="aTableNameArray" UID="{a5648315-f64f-4cee-a3e9-254c3bad8f8d}" DataType="StringArray" Flag="In" />
+                <Parameter Name="aTableRequestInfoArray" UID="{904ad16a-2782-42fe-8489-6b6caa978493}" DataType="TableRequestInfoArray" Flag="In" />
               </Parameters>
             </Operation>
             <Operation Name="UpdateData" UID="{8fbde1af-a3da-487a-9e08-fb7f446f8dc6}">
               <Parameters>
-                <Parameter Name="Result" UID="{bedef3e0-ec0a-4b4f-9815-4674c4eea2a6}" DataType="Binary" Flag="Result" />
-                <Parameter Name="aDelta" UID="{4a81653f-8a4c-462a-b67a-09835b383433}" DataType="Binary" Flag="In" />
+                <Parameter Name="Result" UID="{a6ba0753-0c1a-47c6-93df-24ad3be8faa2}" DataType="Binary" Flag="Result" />
+                <Parameter Name="aDelta" UID="{2b8dc9f3-e958-4646-8a83-718e2af4b42a}" DataType="Binary" Flag="In" />
               </Parameters>
             </Operation>
             <Operation Name="ExecuteCommand" UID="{bebb190e-a511-4808-9424-5594cb5b5f58}">
               <Parameters>
-                <Parameter Name="Result" UID="{b73f45a4-4e2d-4556-9993-c50bf5b20b0d}" DataType="Integer" Flag="Result" />
-                <Parameter Name="aCommandName" UID="{86cd619e-216a-4f5e-939e-b11543a3b73d}" DataType="Utf8String" Flag="In" />
-                <Parameter Name="aParameterArray" UID="{245753d4-d120-4ce0-a963-b5744f08c1be}" DataType="DataParameterArray" Flag="In" />
+                <Parameter Name="Result" UID="{f11c3a9c-4d50-4d34-9172-14d5c82a5331}" DataType="Integer" Flag="Result" />
+                <Parameter Name="aCommandName" UID="{249fba13-0a72-4f3b-8023-b2b13d3744c7}" DataType="Utf8String" Flag="In" />
+                <Parameter Name="aParameterArray" UID="{227174be-0c19-4f58-8f8a-bb0539661b4f}" DataType="DataParameterArray" Flag="In" />
               </Parameters>
             </Operation>
             <Operation Name="ExecuteCommandEx" UID="{b2c8e6da-f233-4365-9f56-1590c0583604}">
               <Parameters>
-                <Parameter Name="Result" UID="{a10ba0d0-d9ab-443f-8587-c3aa0ed844ea}" DataType="Integer" Flag="Result" />
-                <Parameter Name="aCommandName" UID="{a422e3eb-96fc-4623-93fb-37c38df0c546}" DataType="Utf8String" Flag="In" />
-                <Parameter Name="aInputParameters" UID="{e2a0c124-afc5-468d-b668-e6d7308a0311}" DataType="DataParameterArray" Flag="In" />
-                <Parameter Name="aOutputParameters" UID="{8bef440c-f33c-4a79-a58b-e6d20b2d328b}" DataType="DataParameterArray" Flag="Out" />
+                <Parameter Name="Result" UID="{e0e0bfe4-e38c-4f18-9e6d-a933d9d9ef1e}" DataType="Integer" Flag="Result" />
+                <Parameter Name="aCommandName" UID="{906eec64-87f2-4d9f-ad9b-acb027412d80}" DataType="Utf8String" Flag="In" />
+                <Parameter Name="aInputParameters" UID="{63279967-ecc3-4dca-93a6-4b5ef0a13cc9}" DataType="DataParameterArray" Flag="In" />
+                <Parameter Name="aOutputParameters" UID="{699a2724-ef62-4e11-a625-e05ffe11cda7}" DataType="DataParameterArray" Flag="Out" />
               </Parameters>
             </Operation>
             <Operation Name="GetTableSchema" UID="{cfd45ba0-fd52-40c5-951a-08ff71cf5059}">
               <Parameters>
-                <Parameter Name="Result" UID="{c072a8db-95d6-4879-823f-abcb701f1fb1}" DataType="Utf8String" Flag="Result" />
-                <Parameter Name="aTableNameArray" UID="{9c427c1c-b1a3-4d53-a9ba-02ec80e976c7}" DataType="StringArray" Flag="In" />
+                <Parameter Name="Result" UID="{b068cdee-249f-4cef-b13d-bded1a2dc91c}" DataType="Utf8String" Flag="Result" />
+                <Parameter Name="aTableNameArray" UID="{12320c1a-dc42-46c7-8e79-9618bea459a7}" DataType="StringArray" Flag="In" />
               </Parameters>
             </Operation>
             <Operation Name="GetCommandSchema" UID="{15345f7d-9962-485c-b383-bcb0397dd50a}">
               <Parameters>
-                <Parameter Name="Result" UID="{d0a65a33-9735-4f78-b50f-8494a416cc2d}" DataType="Utf8String" Flag="Result" />
-                <Parameter Name="aCommandNameArray" UID="{65ac7bcd-a658-4c94-a9a5-e91c25c56285}" DataType="StringArray" Flag="In" />
+                <Parameter Name="Result" UID="{2a00c945-e857-4453-914c-0b89df117bd7}" DataType="Utf8String" Flag="Result" />
+                <Parameter Name="aCommandNameArray" UID="{6552d97c-2db8-42bd-ad71-8cbbb7152814}" DataType="StringArray" Flag="In" />
               </Parameters>
             </Operation>
             <Operation Name="SQLGetData" UID="{f3a01874-e954-48f5-9db3-315f248a0e08}">
               <Parameters>
-                <Parameter Name="Result" UID="{28da3e7b-0efe-472f-aba8-b29c1179bf84}" DataType="Binary" Flag="Result" />
-                <Parameter Name="aSQLText" UID="{40a0e419-90dc-4e6c-942b-b47db921c2dd}" DataType="Utf8String" Flag="In" />
-                <Parameter Name="aIncludeSchema" UID="{ea2d54ec-cbaf-48a2-8cf3-7e255f2243b3}" DataType="Boolean" Flag="In" />
-                <Parameter Name="aMaxRecords" UID="{ce094834-1890-45ef-970d-5695af4f1770}" DataType="Integer" Flag="In" />
+                <Parameter Name="Result" UID="{6d947463-4535-4bed-8d4c-b83f654eda15}" DataType="Binary" Flag="Result" />
+                <Parameter Name="aSQLText" UID="{0ab5a5fb-f0f8-4432-b590-0fad7276522d}" DataType="Utf8String" Flag="In" />
+                <Parameter Name="aIncludeSchema" UID="{be3ee466-0c6e-40c5-aa23-ad1f47f4ef3d}" DataType="Boolean" Flag="In" />
+                <Parameter Name="aMaxRecords" UID="{b4f92148-648c-4cf9-ad67-e2c215020e00}" DataType="Integer" Flag="In" />
               </Parameters>
             </Operation>
             <Operation Name="SQLGetDataEx" UID="{025a6e0d-8583-44c7-8f5f-6ade175e446f}">
               <Parameters>
-                <Parameter Name="Result" UID="{93f7c842-5f77-41ff-8f91-f903a65f7760}" DataType="Binary" Flag="Result" />
-                <Parameter Name="aSQLText" UID="{e31c79bc-7b64-448a-b91a-b96222bab246}" DataType="Utf8String" Flag="In" />
-                <Parameter Name="aIncludeSchema" UID="{aba283fd-72d8-4c79-bfe1-eaefc4aa6dbd}" DataType="Boolean" Flag="In" />
-                <Parameter Name="aMaxRecords" UID="{bc511c97-50a0-47bb-8c49-4ab6e9f38ef6}" DataType="Integer" Flag="In" />
-                <Parameter Name="aDynamicWhereXML" UID="{4d354041-2a59-4584-a9e0-69ed654ffb72}" DataType="Widestring" Flag="In" />
+                <Parameter Name="Result" UID="{e364943a-3ab5-4221-9609-093376b971e2}" DataType="Binary" Flag="Result" />
+                <Parameter Name="aSQLText" UID="{09671c79-a04c-4621-ad0f-82a600fc3f9c}" DataType="Utf8String" Flag="In" />
+                <Parameter Name="aIncludeSchema" UID="{8fd11139-ac0b-4611-9b7e-f1bbc9ccc582}" DataType="Boolean" Flag="In" />
+                <Parameter Name="aMaxRecords" UID="{13744d41-2696-4685-bf57-fa4664dbe195}" DataType="Integer" Flag="In" />
+                <Parameter Name="aDynamicWhereXML" UID="{861de1e2-5c84-423b-966f-acdc901c4b90}" DataType="Widestring" Flag="In" />
               </Parameters>
             </Operation>
             <Operation Name="SQLExecuteCommand" UID="{c2525bdb-0cba-4258-8016-37eb75c24bd7}">
               <Parameters>
-                <Parameter Name="Result" UID="{9a5cf775-9d2e-45e7-8121-46bf8ccbb027}" DataType="Integer" Flag="Result" />
-                <Parameter Name="aSQLText" UID="{6649f531-979d-4f65-98ca-aa80d2b993ba}" DataType="Utf8String" Flag="In" />
+                <Parameter Name="Result" UID="{137c4733-97ce-4813-ab07-a5bf4506a8c5}" DataType="Integer" Flag="Result" />
+                <Parameter Name="aSQLText" UID="{37175a9a-40d3-4ca7-abcb-15af5b7fc8e9}" DataType="Utf8String" Flag="In" />
               </Parameters>
             </Operation>
             <Operation Name="SQLExecuteCommandEx" UID="{284f296c-a86b-410e-8a91-72d6e0da86b9}">
               <Parameters>
-                <Parameter Name="Result" UID="{17b6c140-a8a5-47ca-b9d4-43f3e800ad80}" DataType="Integer" Flag="Result" />
-                <Parameter Name="aSQLText" UID="{14185587-7e4a-4bba-9eee-2a2f69029b0f}" DataType="Utf8String" Flag="In" />
-                <Parameter Name="aDynamicWhereXML" UID="{72a81fe0-443c-4c1d-bdaa-544971f2cbda}" DataType="Widestring" Flag="In" />
+                <Parameter Name="Result" UID="{79bef057-4671-416d-9c83-93ef701d97eb}" DataType="Integer" Flag="Result" />
+                <Parameter Name="aSQLText" UID="{3a0b3b27-b478-4a1b-8efa-0642ba2795b6}" DataType="Utf8String" Flag="In" />
+                <Parameter Name="aDynamicWhereXML" UID="{4be5fda8-5fd6-4222-94a3-06ded7f5b54f}" DataType="Widestring" Flag="In" />
               </Parameters>
             </Operation>
             <Operation Name="GetDatasetScripts" UID="{1025b82b-49fd-4d62-ace1-908baa8d330c}">
               <Parameters>
-                <Parameter Name="Result" UID="{2a13d846-363d-4728-81fa-c2d462843cf4}" DataType="Utf8String" Flag="Result" />
-                <Parameter Name="DatasetNames" UID="{52fbcf03-2be8-4513-8f2f-365d8b3e2f08}" DataType="Utf8String" Flag="In" />
+                <Parameter Name="Result" UID="{81afdc0f-56d1-4cbd-ac17-0369591c2445}" DataType="Utf8String" Flag="Result" />
+                <Parameter Name="DatasetNames" UID="{6fdfb574-e260-4b90-9a43-1f397a98a1db}" DataType="Utf8String" Flag="In" />
               </Parameters>
             </Operation>
             <Operation Name="RegisterForDataChangeNotification" UID="{3bfc17c7-6676-4b43-a90d-abec10072b48}">
               <Parameters>
-                <Parameter Name="aTableName" UID="{8bd96247-cb94-42f6-a34d-f78542546a75}" DataType="Utf8String" Flag="In" />
+                <Parameter Name="aTableName" UID="{a31917e1-d5b8-46b3-8d0f-2b7c7f03af44}" DataType="Utf8String" Flag="In" />
               </Parameters>
             </Operation>
             <Operation Name="UnregisterForDataChangeNotification" UID="{f3d1b5fb-42fa-46b4-8528-16cf915d4b4d}">
               <Parameters>
-                <Parameter Name="aTableName" UID="{c922c068-ab29-41bb-984d-6e1d1ae124e9}" DataType="Utf8String" Flag="In" />
+                <Parameter Name="aTableName" UID="{47f18d68-231e-42b1-96ff-d8f2a5e3d091}" DataType="Utf8String" Flag="In" />
               </Parameters>
             </Operation>
           </Operations>
@@ -383,10 +383,10 @@
           <Operations>
             <Operation Name="Login" UID="{87e7258d-59b1-4e76-8619-bf46780562f0}">
               <Parameters>
-                <Parameter Name="Result" UID="{0d29871e-a7e9-4a11-9814-65db50ff5e99}" DataType="Boolean" Flag="Result" />
-                <Parameter Name="aUserID" UID="{2325207c-00f4-4e0d-aa88-5ca50f90f371}" DataType="Utf8String" Flag="In" />
-                <Parameter Name="aPassword" UID="{0034228b-f9a4-4ccb-9cf5-550950d4a4e7}" DataType="Utf8String" Flag="In" />
-                <Parameter Name="aUserInfo" UID="{70b24c64-989c-4b2e-93fa-083df7a150d8}" DataType="UserInfo" Flag="Out" />
+                <Parameter Name="Result" UID="{14decdf7-391f-4985-8c74-54f81a56fad2}" DataType="Boolean" Flag="Result" />
+                <Parameter Name="aUserID" UID="{01795bbc-7f05-4126-8ddc-05913268f60b}" DataType="Utf8String" Flag="In" />
+                <Parameter Name="aPassword" UID="{37683e65-9321-4d91-ad55-fdb7a4810545}" DataType="Utf8String" Flag="In" />
+                <Parameter Name="aUserInfo" UID="{9bc36b49-4f38-4f51-bee2-cec8384874ae}" DataType="UserInfo" Flag="Out" />
               </Parameters>
             </Operation>
           </Operations>
@@ -399,8 +399,8 @@
           <Operations>
             <Operation Name="LoginEx" UID="{2d036c75-65dc-42b0-b5ab-ec414f54b106}">
               <Parameters>
-                <Parameter Name="Result" UID="{f469b37d-1598-4513-9757-f1d540549628}" DataType="Boolean" Flag="Result" />
-                <Parameter Name="aLoginString" UID="{325443a2-b8b7-48cf-8137-a4343c4b6c2e}" DataType="Utf8String" Flag="In" />
+                <Parameter Name="Result" UID="{a514d8ae-cebb-45b0-8b34-cd02d3b9d8aa}" DataType="Boolean" Flag="Result" />
+                <Parameter Name="aLoginString" UID="{36289a17-8aa1-426c-8026-ecc04a9069a9}" DataType="Utf8String" Flag="In" />
               </Parameters>
             </Operation>
             <Operation Name="Logout" UID="{866d0287-09d7-4368-aa5a-d4718cf698af}">
@@ -416,11 +416,11 @@
           <Operations>
             <Operation Name="Login" UID="{64f02ae6-1efd-40fd-979e-d0cc21320ccb}">
               <Parameters>
-                <Parameter Name="Result" UID="{df4f98ca-eb96-4eb0-ac33-d482032a5d14}" DataType="Boolean" Flag="Result" />
-                <Parameter Name="aUserID" UID="{a7c754ad-af5e-4415-8596-4f9e5afd1ff4}" DataType="Utf8String" Flag="In" />
-                <Parameter Name="aPassword" UID="{6da5278f-0e20-443f-b8b4-6a11d397f9ea}" DataType="Utf8String" Flag="In" />
-                <Parameter Name="aConnectionName" UID="{bd8ed994-107c-4c67-b820-5dccd78cc655}" DataType="Utf8String" Flag="In" />
-                <Parameter Name="aUserInfo" UID="{6a5f8e0f-1b4a-45fe-8ded-7eec71bb784f}" DataType="UserInfo" Flag="Out" />
+                <Parameter Name="Result" UID="{82aadc1c-b78b-4aaa-a63f-c1a4e992b081}" DataType="Boolean" Flag="Result" />
+                <Parameter Name="aUserID" UID="{ff58fb17-fc0b-441f-acb4-895df92d6b4a}" DataType="Utf8String" Flag="In" />
+                <Parameter Name="aPassword" UID="{fef0223b-c7dc-45d8-a0db-61ec183cc2d6}" DataType="Utf8String" Flag="In" />
+                <Parameter Name="aConnectionName" UID="{c7946510-0e1a-4bd2-a4bd-16b7256f1b92}" DataType="Utf8String" Flag="In" />
+                <Parameter Name="aUserInfo" UID="{7f60a4ae-f6fe-4a44-b489-950be352f2ac}" DataType="UserInfo" Flag="Out" />
               </Parameters>
             </Operation>
           </Operations>
@@ -433,12 +433,12 @@
           <Operations>
             <Operation Name="GetConnectionNames" UID="{bf3ae66f-a496-4b4d-aedc-a484f8e2b20e}">
               <Parameters>
-                <Parameter Name="Result" UID="{24106bd0-4b30-4d11-b51a-894d0ea4ee3a}" DataType="StringArray" Flag="Result" />
+                <Parameter Name="Result" UID="{d5d1fb7b-4ed2-46df-82a3-5c856f27a247}" DataType="StringArray" Flag="Result" />
               </Parameters>
             </Operation>
             <Operation Name="GetDefaultConnectionName" UID="{ba63f191-03a5-48fb-99d7-f48b150cb1c6}">
               <Parameters>
-                <Parameter Name="Result" UID="{e9056d5d-145e-457a-8b8f-c2c2925db979}" DataType="Utf8String" Flag="Result" />
+                <Parameter Name="Result" UID="{1bd66bfb-803f-42df-afb4-d16669ad0dba}" DataType="Utf8String" Flag="Result" />
               </Parameters>
             </Operation>
           </Operations>
@@ -458,47 +458,47 @@
           <Operations>
             <Operation Name="GuardaFactura" UID="{9e882f32-88d9-4b65-8968-239953873d71}">
               <Parameters>
-                <Parameter Name="Result" UID="{80942eed-0010-4d36-897b-422d3ed0936c}" DataType="Boolean" Flag="Result" />
-                <Parameter Name="Datos" UID="{d76a0b62-3e73-49bc-99bf-f0ffa54ae019}" DataType="TFactura" Flag="In" />
+                <Parameter Name="Result" UID="{aa38e299-af1c-44fa-82a6-728505b06bd3}" DataType="Boolean" Flag="Result" />
+                <Parameter Name="Datos" UID="{dc10f16f-fc05-4b44-9375-704da4a5fcbd}" DataType="TFactura" Flag="In" />
               </Parameters>
             </Operation>
             <Operation Name="NotaCredito" UID="{4cd21a0a-e6bd-49cf-9f30-b632b36d6ad8}">
               <Parameters>
-                <Parameter Name="Result" UID="{97ed6843-f2ba-49cf-8f66-87d2ab3d388a}" DataType="TFactura" Flag="Result" />
-                <Parameter Name="NewParam" UID="{fe7ed2bb-69da-43a3-ac9f-77f566c08e23}" DataType="AnsiString" Flag="In" />
-                <Parameter Name="NewParam1" UID="{ddb4ba6d-a08a-41ae-a553-29724955fb4d}" DataType="AnsiString" Flag="In" />
-                <Parameter Name="NewParam2" UID="{56e7b327-0087-48ee-b92c-366a69a354e2}" DataType="AnsiString" Flag="In" />
-                <Parameter Name="NewParam3" UID="{7870f0aa-7db1-4af7-92ef-ab086496ebc1}" DataType="AnsiString" Flag="In" />
+                <Parameter Name="Result" UID="{6b60ca92-ecaa-4aa2-8229-96faf451af12}" DataType="TFactura" Flag="Result" />
+                <Parameter Name="NewParam" UID="{fdefdd2b-43a4-4922-afd5-d556c97eeb83}" DataType="AnsiString" Flag="In" />
+                <Parameter Name="NewParam1" UID="{5c169701-2862-47af-9fb8-2ca1df178f3d}" DataType="AnsiString" Flag="In" />
+                <Parameter Name="NewParam2" UID="{6649faa5-940f-4f46-903e-e22ec44ebb83}" DataType="AnsiString" Flag="In" />
+                <Parameter Name="NewParam3" UID="{10ddf53d-f42d-4604-8577-aa411bf3e0db}" DataType="AnsiString" Flag="In" />
               </Parameters>
             </Operation>
             <Operation Name="Fecha" UID="{8f8e57c7-055f-486d-9022-88d1a7ef621b}">
               <Parameters>
-                <Parameter Name="Result" UID="{fcf4f4e4-67f4-41ed-81cd-941d9ff4c646}" DataType="DateTime" Flag="Result" />
+                <Parameter Name="Result" UID="{52150bc0-6dc5-478f-8628-4141d5fef544}" DataType="DateTime" Flag="Result" />
               </Parameters>
             </Operation>
             <Operation Name="Folio" UID="{02189c71-43ea-4b71-b280-8dcbf821baeb}">
               <Parameters>
-                <Parameter Name="Result" UID="{9dc689d5-1a91-4668-ba38-4451c7807c22}" DataType="Integer" Flag="Result" />
-                <Parameter Name="Campo" UID="{5b3d398c-a6bc-4cba-9ebf-bf3a40226003}" DataType="AnsiString" Flag="In" />
-                <Parameter Name="Serie" UID="{e5f74616-7451-4f82-bded-6592fc633a69}" DataType="AnsiString" Flag="In" />
+                <Parameter Name="Result" UID="{0c53c249-f037-471e-8905-33302f3c7276}" DataType="Integer" Flag="Result" />
+                <Parameter Name="Campo" UID="{3b500de0-b94a-4e16-9a92-1e139e2d5e09}" DataType="AnsiString" Flag="In" />
+                <Parameter Name="Serie" UID="{fcee0ade-c02f-4a2b-84ed-68877b0256f6}" DataType="AnsiString" Flag="In" />
               </Parameters>
             </Operation>
             <Operation Name="GuardaClienteNuevo" UID="{836135a4-a2d5-4337-872c-2f7068712672}">
               <Parameters>
-                <Parameter Name="Result" UID="{d16b9894-7a8d-4950-bea8-52c4dc7b1341}" DataType="Integer" Flag="Result" />
-                <Parameter Name="Datos" UID="{62045d33-f237-4c1d-a18c-52d91e311d27}" DataType="TClienteNuevo" Flag="In" />
+                <Parameter Name="Result" UID="{87216468-6df2-4142-ae6b-01a00c821c2e}" DataType="Integer" Flag="Result" />
+                <Parameter Name="Datos" UID="{0bd7b5e5-8e14-4d59-9155-f0b13a44524e}" DataType="TClienteNuevo" Flag="In" />
               </Parameters>
             </Operation>
             <Operation Name="BuscarCliente" UID="{253cd163-2781-4eb4-b3e2-da59676ccbab}">
               <Parameters>
-                <Parameter Name="Result" UID="{48e0b2da-748e-4055-b550-c62da88aba8f}" DataType="TCliente" Flag="Result" />
-                <Parameter Name="ClienteID" UID="{98bde5d5-f3a8-4e59-a891-7ad2234640c1}" DataType="Integer" Flag="In" />
+                <Parameter Name="Result" UID="{00d8ec0f-3524-4ab3-9346-8e1926af670d}" DataType="TCliente" Flag="Result" />
+                <Parameter Name="ClienteID" UID="{a0e2ba33-ddba-43c3-81fe-0c89599e3164}" DataType="Integer" Flag="In" />
               </Parameters>
             </Operation>
             <Operation Name="GenerarConsumo" UID="{b2fb25ae-d3ce-482d-a826-77a824001ae7}">
               <Parameters>
-                <Parameter Name="Result" UID="{5e106718-9db4-4f39-9eeb-af85a9c36976}" DataType="Boolean" Flag="Result" />
-                <Parameter Name="Datos" UID="{87767ef2-eff1-4745-a7a9-0354e7ad5251}" DataType="TConsumo" Flag="In" />
+                <Parameter Name="Result" UID="{be44317b-d7dd-4260-ba4d-bc44d378dc24}" DataType="Boolean" Flag="Result" />
+                <Parameter Name="Datos" UID="{bbac7bd9-9ade-404f-96b0-5353445451ea}" DataType="TConsumo" Flag="In" />
               </Parameters>
             </Operation>
           </Operations>
@@ -513,8 +513,8 @@
           <Operations>
             <Operation Name="OnDataTableChanged" UID="{61437ab0-dd71-44d3-967a-25199ce8c1cd}">
               <Parameters>
-                <Parameter Name="aTableName" UID="{0385939e-885e-4954-bbf0-596ee5ac927c}" DataType="Utf8String" Flag="In" />
-                <Parameter Name="aDelta" UID="{cab5f2bb-8304-46dd-ad72-cc1d2a7ddcf2}" DataType="Binary" Flag="In" />
+                <Parameter Name="aTableName" UID="{d0a45bef-0a1a-4763-badb-abfa34043a72}" DataType="Utf8String" Flag="In" />
+                <Parameter Name="aDelta" UID="{70646ab9-a469-4d72-9bad-fdf9a2ae4177}" DataType="Binary" Flag="In" />
               </Parameters>
             </Operation>
           </Operations>
