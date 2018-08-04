@@ -243,4 +243,3 @@ C:\LM2\LMSuiteServer\obj\Debug\RPSuiteServer.exe.licenses
 C:\LM2\LMSuiteServer\obj\Debug\RPSuiteServer.csproj.CoreCompileInputs.cache
 C:\LM2\LMSuiteServer\obj\Debug\RPSuiteServer.exe
 C:\LM2\LMSuiteServer\obj\Debug\RPSuiteServer.pdb
-C:\LM2\LMSuiteServer\obj\Debug\RPSuiteServer.csprojResolveAssemblyReference.cache
