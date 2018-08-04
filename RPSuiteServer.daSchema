@@ -1,7 +1,11 @@
 <TDASchema>
   <UnionDataTables IsObject="true" Count="0" IsCollection="true" Type="TDAUnionDataTableCollection" ItemClass="TDAUnionDataTable" />
   <JoinDataTables IsObject="true" Count="0" IsCollection="true" Type="TDAJoinDataTableCollection" ItemClass="TDAJoinDataTable" />
+<<<<<<< HEAD
+  <Datasets IsObject="true" Count="38" IsCollection="true" Type="TDADatasetCollection" ItemClass="TDADataset">
+=======
   <Datasets IsObject="true" Count="39" IsCollection="true" Type="TDADatasetCollection" ItemClass="TDADataset">
+>>>>>>> beef8245a9786b0b0627bcdda6f252edcaf8810c
     <Item0>
       <ReadOnly>False</ReadOnly>
       <Fields IsObject="true" Count="44" IsCollection="true" ItemClass="TDAField" Type="TDASchemaFieldCollection">
@@ -16207,6 +16211,8 @@ WHERE
       <Description />
       <Name>spConsumo</Name>
     </Item37>
+<<<<<<< HEAD
+=======
     <Item38>
       <ReadOnly>False</ReadOnly>
       <Fields IsObject="true" Count="0" IsCollection="true" ItemClass="TDAField" Type="TDASchemaFieldCollection" />
@@ -16273,6 +16279,7 @@ WHERE
       <Description />
       <Name>spCatVehicul</Name>
     </Item38>
+>>>>>>> beef8245a9786b0b0627bcdda6f252edcaf8810c
   </Datasets>
   <Commands IsObject="true" Count="7" IsCollection="true" ItemClass="TDASQLCommand" Type="TDASQLCommandCollection">
     <Item0>
